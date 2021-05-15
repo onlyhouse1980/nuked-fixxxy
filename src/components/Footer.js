@@ -6,7 +6,7 @@ const FooterPage = () => {
       <div className={styles.footer}>
         &copy; {new Date().getFullYear()} Powered By:
         <a href='http://anewshade.de'>
-        <img src="/images/anewshade.png" alt="aNewShade Logo" className={styles.footerLogo} /></a>
+        <img src="/Images/anewshade.png" alt="aNewShade Logo" className={styles.footerLogo} /></a>
       </div>
   );
 };

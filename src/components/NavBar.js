@@ -32,19 +32,30 @@ class Layout extends React.Component {
         <MDBNavbar color='indigo' dark expand='md'>
         <motion.div whileHover= {{ scale: 1.5 }} >
           <MDBNavbarBrand>
-            <a href="https://obcg.org"><img src="../../images/obcglogo-p-500.png" alt="logo" width={60} height={60} /></a>
+            <a 
+              href="https://obcg.org"><img 
+              src="../../Images/WebPFiles/obcglogo-p-500.webp" 
+              alt="logo" 
+              width={60} 
+              height={60} />
+            </a>
           </MDBNavbarBrand>
           </motion.div>
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
-          <MDBCollapse id='navbarCollapse3' isOpen={this.state.isOpen} navbar>
-            <MDBNavbarNav left>
+          <MDBNavbarToggler 
+            onClick={this.toggleCollapse} />
+          <MDBCollapse 
+            id='navbarCollapse3' 
+            isOpen={this.state.isOpen} navbar>
+          <MDBNavbarNav left>
               
             </MDBNavbarNav>
             <MDBNavbarNav right>
             <motion.div whileHover= {{ scale: 1.15 }} >
-              <MDBNavItem>
+            <MDBNavItem>
                 <Link href='/'>
-                  <a className='nav-link' onClick={this.toggleCollapse}>Home</a>
+                  <a className='nav-link' 
+                    onClick={this.toggleCollapse}
+                    >Home</a>
                 </Link>
               </MDBNavItem>
             </motion.div>
