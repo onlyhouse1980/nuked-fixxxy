@@ -32,7 +32,7 @@ class Layout extends React.Component {
         <MDBNavbar color='indigo' dark expand='md'>
         <motion.div whileHover= {{ scale: 1.5 }} >
           <MDBNavbarBrand>
-            <a href="https://obcg.org"><img src="/images/obcglogo-p-500.png" alt="logo" width={60} height={60} /></a>
+            <a href="https://obcg.org"><img src="../../images/obcglogo-p-500.png" alt="logo" width={60} height={60} /></a>
           </MDBNavbarBrand>
           </motion.div>
           <MDBNavbarToggler onClick={this.toggleCollapse} />
