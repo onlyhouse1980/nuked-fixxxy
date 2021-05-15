@@ -1,0 +1,18 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.navbar ul li {
+    position: fixed;
+    text-align: center;
+    top: 0;
+}
+
+.navbar ul ul {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}

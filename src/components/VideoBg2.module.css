@@ -1,0 +1,33 @@
+.fullscreenbg {
+    position: fixed;
+    top: 0;
+    width: 300%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreenbg__video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300%;
+    overflow: hidden;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreenbg__video {
+        width: auto;
+        width: 100vw;
+        top: 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .fullscreen-bg__video {
+        position: fixed;
+        width: 300%;
+        left: -100%;
+        overflow: hidden;
+    }
+}
