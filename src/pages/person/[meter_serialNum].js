@@ -169,7 +169,7 @@ export default function Person() {
         </tr>
         <tr>
           <td className={styles.h5head}>
-          <h5>*If you are having problems with the<br />form, we recommend reading <Link href="/howtoreadmeter.pdf">How to read your meter?</Link> </h5>
+          <h5>*If you are having problems with the<br />form, we recommend reading <a href="/howtoreadmeter.pdf">How to read your meter?</a> </h5>
           <h5>*</h5>
           </td>
           <td className={styles.td6}></td>
