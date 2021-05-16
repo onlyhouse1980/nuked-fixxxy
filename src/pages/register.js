@@ -14,9 +14,6 @@ import Zoom from 'react-reveal/Zoom';
 import { motion } from 'framer-motion'
 import React from 'react'
 import { MDBAnimation } from "mdbreact";
-import { TextBoxComponent } from '../components/textbox'
-
-
 
 <div suppressHydrationWarning={true}>
     { process.browser }
