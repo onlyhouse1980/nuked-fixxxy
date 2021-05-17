@@ -82,12 +82,21 @@ export default function Over() {
       var Answer = document.getElementById("Percent");
         Answer.value = (((info1 - info2) / 6000 ) * 100).toFixed(0)+"%";
       }
-    function myFunction() {
-      var age, voteable;
-      age = document.getElementById("age").value;
-      voteable = (age < 6000) ? "no ":"yes, ";
-      document.getElementById("demo").innerHTML = voteable + " additional charges.";
+    
+    function tier1() {
+      var x = april2020.value;
+      let y = 6000;
+      if (x>y) {
+        value = x-y
       }
+      if (x>y) {
+        return (x-y);
+         
+          return 0;
+        }
+      }
+
+    
     
     
   return ( 
@@ -97,8 +106,8 @@ export default function Over() {
     <table className={styles.table}>
       <thead>
         <tr>
-          <th className={styles.th2}><h4><span>Last Name </span><br /></h4></th>
-          <th className={styles.th2}><h4><span>{data.last_name}</span></h4></th>
+          <th className={styles.th2}><h4><span>{data.last_name} </span><br /></h4></th>
+          <th className={styles.th2}><h4><span></span></h4></th>
         </tr>
         
       </thead>
@@ -124,10 +133,13 @@ export default function Over() {
               type="text" 
               name="greaterThan" 
               id="gTApril2020"
-              value={data.jun10_20-data.apr05_20} 
+              value={april2020.value - 6000}
+              
               label="answers" 
               readOnly>
             </input>
+
+           
           </td>
         </tr>
         <tr>
@@ -143,6 +155,20 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3rd}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="greaterThanJ" 
+              id="gTJune2020"
+              value={June2020.value - 6000}
+              
+              label="answers" 
+              readOnly>
+            </input>
+
+           
+          </td>
         </tr>
         <tr>
           <td className={styles.td3}><p className={styles.p}>August 2020.</p></td>
@@ -157,6 +183,20 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3rd}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="greaterThanA" 
+              id="gTAug2020"
+              value={August2020.value - 6000}
+              
+              label="answers" 
+              readOnly>
+            </input>
+
+           
+          </td>
         </tr>
         <tr>
           <td className={styles.td3}><p className={styles.p}>October 2020.</p></td>
@@ -168,9 +208,22 @@ export default function Over() {
             id="October2020"
             value={data.dec10_20-data.oct07_20} 
             label="answers" 
-            onBlur="this.type=''; this.lastValue=this.value; this.value=this.value==''?'':(+this.value).toLocaleString()"
             readOnly>
           </input>
+          </td>
+          <td className={styles.td3rd}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="greaterThan" 
+              id="gTOctober2020"
+              value={October2020.value - 6000}
+              
+              label="answers" 
+              readOnly>
+            </input>
+
+           
           </td>
         </tr>
         <tr>
@@ -186,6 +239,20 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3rd}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="greaterThan" 
+              id="gTDec2020"
+              value={December2020.value - 6000}
+              
+              label="answers" 
+              readOnly>
+            </input>
+
+           
+          </td>
         </tr>
         <tr>
           <td className={styles.td3}><p className={styles.p}>February 2021.</p></td>
@@ -198,13 +265,28 @@ export default function Over() {
             value={data.apr05_21-data.feb19_21} 
             label="answers" 
             readOnly
-            onBlur="this.type=''; this.lastValue=this.value; this.value=this.value==''?'':(+this.value).toLocaleString()">
+  >
           </input>
+          </td>
+          <td className={styles.td3rd}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="greaterThan" 
+              id="gTFeb2021"
+              value={February2021.value - 6000}
+              
+              label="answers" 
+              readOnly>
+            </input>
+
+           
           </td>
         </tr>
         
       </tbody>
     </table>
+    
     
     </Zoom>
 
