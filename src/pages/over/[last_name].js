@@ -133,9 +133,8 @@ export default function Over() {
               type="text" 
               name="greaterThan" 
               id="gTApril2020"
-              value={april2020.value - 6000}
-              
-              label="answers" 
+              value={(data.jun10_20-data.apr05_20)-6000}
+              label="results" 
               readOnly>
             </input>
 
@@ -161,8 +160,7 @@ export default function Over() {
               type="text" 
               name="greaterThanJ" 
               id="gTJune2020"
-              value={June2020.value - 6000}
-              
+              value={(data.aug10_20-data.jun10_20)-6000}
               label="answers" 
               readOnly>
             </input>
@@ -189,8 +187,7 @@ export default function Over() {
               type="text" 
               name="greaterThanA" 
               id="gTAug2020"
-              value={August2020.value - 6000}
-              
+              value={(data.oct07_20-data.aug10_20) - 6000}
               label="answers" 
               readOnly>
             </input>
@@ -217,8 +214,7 @@ export default function Over() {
               type="text" 
               name="greaterThan" 
               id="gTOctober2020"
-              value={October2020.value - 6000}
-              
+              value={(data.dec10_20-data.oct07_20) - 6000}
               label="answers" 
               readOnly>
             </input>
@@ -245,8 +241,7 @@ export default function Over() {
               type="text" 
               name="greaterThan" 
               id="gTDec2020"
-              value={December2020.value - 6000}
-              
+              value={(data.feb19_21-data.dec10_20)-6000}
               label="answers" 
               readOnly>
             </input>
@@ -274,8 +269,7 @@ export default function Over() {
               type="text" 
               name="greaterThan" 
               id="gTFeb2021"
-              value={February2021.value - 6000}
-              
+              value={(data.apr05_21-data.feb19_21)-6000}
               label="answers" 
               readOnly>
             </input>
