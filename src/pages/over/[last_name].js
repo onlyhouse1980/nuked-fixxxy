@@ -1,32 +1,9 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 import useSWR from 'swr'
 import styles from '../person/[meter_serialNum].module.css'
-import Link from 'next/link';
 import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
-import { MDBBtn } from 'mdbreact';
-import { Component } from 'react';
-
-
-class App extends Component {
-  state = {
-    data: [last_name
-      // ...
-    ]
-  };
-
-  render () {
-    return (
-      <LiveBarChart
-        data={this.state.data}
-      />
-    )
-  }
-}
-
-
 
 
 <div suppressHydrationWarning={true}>
@@ -59,15 +36,7 @@ export default function Over() {
   if (!data) return <div>Loading...</div>
   
   
-    class FlipExample extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = { show: false };
-      this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick() {
-      this.setState({ show: !this.state.show });
-    }}
+  
     
     function sayHi() {
               
@@ -83,20 +52,14 @@ export default function Over() {
         Answer.value = (((info1 - info2) / 6000 ) * 100).toFixed(0)+"%";
       }
     
-    function tier1() {
-      var x = april2020.value;
-      let y = 6000;
-      if (x>y) {
-        value = x-y
-      }
-      if (x>y) {
-        return (x-y);
-         
-          return 0;
-        }
-      }
 
-    
+    //function daysInCycle() {
+      //let now = new Date();
+      //let acquired = new Date(this.dateAqquired);
+      //let elapsed = now - acquired; //elapsed time in milliseconds
+      //let daysSinceAcquired = Math.floor(elapsed / (1000 * 3600 * 24));
+     // return daysSinceAcquired;
+    //}
     
     
   return ( 
@@ -106,8 +69,14 @@ export default function Over() {
     <table className={styles.table}>
       <thead>
         <tr>
-          <th className={styles.th2}><h4><span>{data.last_name} </span><br /></h4></th>
+          <th className={styles.th2}><h4><span>{data.last_name} {data.meter_serialNum}</span><br /></h4></th>
           <th className={styles.th2}><h4><span></span></h4></th>
+        </tr>
+        <tr className={styles.trHeader}>
+          <td>Billing Period</td>
+          <td>Gallons Used</td>
+          <td>Gallons Over</td>
+          Additional Fee
         </tr>
         
       </thead>
@@ -121,8 +90,19 @@ export default function Over() {
               backgroundColor: bgColors.Blue}}
               type="text" 
               name="utilized" 
-              id="april2020"
+              id="april20201"
               value={data.jun10_20-data.apr05_20} 
+              label="answers" 
+              readOnly>
+            </input>
+          </td>
+          <td className={styles.td3}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="utilized" 
+              id="aprOver"
+              value={(data.jun10_20-data.apr05_20)-6000}
               label="answers" 
               readOnly>
             </input>
@@ -133,15 +113,15 @@ export default function Over() {
               type="text" 
               name="greaterThan" 
               id="gTApril2020"
-              value={(data.jun10_20-data.apr05_20)-6000}
+              value= {((data.jun10_20-data.apr05_20)-6000)*.005} 
+  
               label="results" 
               readOnly>
             </input>
-
-           
+            
           </td>
         </tr>
-        <tr>
+        <tr>  
           <td className={styles.td3}><p className={styles.p}>June 2020.</p></td>
           <td className={styles.td3}>
           <input style={{
@@ -154,13 +134,24 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="utilized" 
+              id="June20201"
+              value={(data.aug10_20-data.jun10_20)-6000}
+              label="answers" 
+              readOnly>
+            </input>
+          </td>
           <td className={styles.td3rd}>
             <input style={{
               backgroundColor: bgColors.Blue}}
               type="text" 
               name="greaterThanJ" 
-              id="gTJune2020"
-              value={(data.aug10_20-data.jun10_20)-6000}
+              id="June20202"
+              value={((data.aug10_20-data.jun10_20)-6000)*0.005}
               label="answers" 
               readOnly>
             </input>
@@ -181,13 +172,24 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="utilized" 
+              id="August20201"
+              value={(data.oct07_20-data.aug10_20) - 6000}
+              label="answers" 
+              readOnly>
+            </input>
+          </td>
           <td className={styles.td3rd}>
             <input style={{
               backgroundColor: bgColors.Blue}}
               type="text" 
-              name="greaterThanA" 
+              name="August20202" 
               id="gTAug2020"
-              value={(data.oct07_20-data.aug10_20) - 6000}
+              value={((data.oct07_20-data.aug10_20) - 6000)*0.005}
               label="answers" 
               readOnly>
             </input>
@@ -208,13 +210,24 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="utilized" 
+              id="October20201"
+              value={(data.dec10_20-data.oct07_20) - 6000} 
+              label="answers" 
+              readOnly>
+            </input>
+          </td>
           <td className={styles.td3rd}>
             <input style={{
               backgroundColor: bgColors.Blue}}
               type="text" 
               name="greaterThan" 
-              id="gTOctober2020"
-              value={(data.dec10_20-data.oct07_20) - 6000}
+              id="October20202"
+              value={((data.dec10_20-data.oct07_20) - 6000)*0.005}
               label="answers" 
               readOnly>
             </input>
@@ -235,13 +248,24 @@ export default function Over() {
             readOnly>
           </input>
           </td>
+          <td className={styles.td3}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="utilized" 
+              id="December20201"
+              value={(data.feb19_21-data.dec10_20)-6000}
+              label="answers" 
+              readOnly>
+            </input>
+          </td>
           <td className={styles.td3rd}>
             <input style={{
               backgroundColor: bgColors.Blue}}
               type="text" 
               name="greaterThan" 
-              id="gTDec2020"
-              value={(data.feb19_21-data.dec10_20)-6000}
+              id="December20202"
+              value={((data.feb19_21-data.dec10_20)-6000)*0.005}
               label="answers" 
               readOnly>
             </input>
@@ -263,13 +287,24 @@ export default function Over() {
   >
           </input>
           </td>
+          <td className={styles.td3}>
+            <input style={{
+              backgroundColor: bgColors.Blue}}
+              type="text" 
+              name="utilized" 
+              id="February20211"
+              value={(data.apr05_21-data.feb19_21)-6000}
+              label="answers" 
+              readOnly>
+            </input>
+          </td>
           <td className={styles.td3rd}>
             <input style={{
               backgroundColor: bgColors.Blue}}
               type="text" 
               name="greaterThan" 
-              id="gTFeb2021"
-              value={(data.apr05_21-data.feb19_21)-6000}
+              id="February20212"
+              value={((data.apr05_21-data.feb19_21)-6000)*0.005}
               label="answers" 
               readOnly>
             </input>
