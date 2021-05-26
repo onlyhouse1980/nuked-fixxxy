@@ -4,7 +4,7 @@ import styles from '../person/[meter_serialNum].module.css'
 import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
-import App from '../../components/reacttable'
+
 
 
 <div suppressHydrationWarning={true}>
