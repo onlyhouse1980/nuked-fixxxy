@@ -47,59 +47,56 @@ export default function Over() {
         Answer.value = (((info1 - info2) / 6000 ) * 1).toFixed(2);
       }
     function galOverApril() {
-      if ((data.jun10_20-data.apr05_20)>6000) {
+      let x = data.jun10_20-data.apr05_20
+      if (x>6000) {
         return <input style={{
           backgroundColor: bgColors.Blue}}
           type="number" 
-          min="0"
-          name="utilized" 
+          name="aprilUsed" 
           id="aprOver"
-          value={(data.jun10_20-data.apr05_20)-6000}   
-          label="galOver" 
+          value={(data.jun10_20-data.apr05_20)-6000}    
           readOnly>
         </input>;
       } else {
         return <input style={{
           backgroundColor: bgColors.Blue}}
           type="number" 
-          min="0"
-          name="utilized" 
+          name="aprilUsed" 
           id="aprOver"
-          value="0"   
-          label="galOver" 
+          value="0"    
           readOnly>
         </input>}}
 
     function galOverAprilFees() {
-      if ((data.jun10_20-data.apr05_20)>5999) {
+      let x = data.jun10_20-data.apr05_20
+      if ((x)>6000) {
         return <input style={{backgroundColor: bgColors.Blue}} 
           type="number"
-          name="greaterThan" 
+          name="aprGOver" 
           id="gTApril2020"
-          value= {((data.jun10_20-data.apr05_20)-6000)*.005} 
-          label="results" 
+          value= {((x)-6000)*.005}  
           readOnly>
         </input>;
       } else {
         <input style={{
             backgroundColor: bgColors.Blue}}
             type="number" 
-            name="greaterThan" 
+            name="aprGOver" 
             id="gTApril2020"
-            value="0"
-            label="results" 
+            value="0" 
             readOnly>
         </input>}}
       
       function galOverJune() {
-        if ((data.aug10_20-data.jun10_20)>6000) {
+        let x = data.aug10_20-data.jun10_20
+        if (x>6000) {
           return <input style={{
             backgroundColor: bgColors.Blue}}
             type="number" 
             min="0"
             name="utilized" 
             id="junOver"
-            value={(data.aug10_20-data.jun10_20)-6000}   
+            value={x-6000}   
             label="galOver" 
             readOnly>
           </input>;
@@ -116,25 +113,46 @@ export default function Over() {
           </input>}}
   
       function galOverJuneFees() {
-        if ((data.aug10_20-data.jun10_20)>5999) {
+        let x = data.aug10_20-data.jun10_20
+        if (x>6000 && x<10000) {
           return <input style={{backgroundColor: bgColors.Blue}} 
             type="number"
             name="greaterThan" 
             id="gTJune2020"
-            value= {((data.aug10_20-data.jun10_20)-6000)*.005} 
+            value= {((x)-6000)*.005} 
             label="results" 
             readOnly>
           </input>;
-        } else {
-          <input style={{
+        } else if (x>10000 && x<20000) {
+          return <input style={{
               backgroundColor: bgColors.Blue}}
               type="number" 
               name="greaterThan" 
-              id="gTJune2020"
-              value="0"
+              id="gTJune2020t1"
+              value={((x-10000)*.01)+19.99}
               label="results" 
               readOnly>
-          </input>}}
+          </input>;
+          } else if (x>20000) {
+            return <input style={{
+                backgroundColor: bgColors.Blue}}
+                type="number" 
+                name="greaterThan" 
+                id="gTJune2020t2"
+                value={((x-20000)*.025)+19.99+99.98}
+                label="results" 
+                readOnly>
+            </input>;
+        } else {
+          return <input style={{
+            backgroundColor: bgColors.Blue}}
+            type="number"
+            name="noneoftheabove"
+            id="gTJune2020t2"
+            value="0"
+            readOnly>
+            </input>
+        }}
 
 function galOverAugust() {
   if ((data.aug10_20-data.jun10_20)>6000) {
@@ -206,7 +224,7 @@ function galOverOctober() {
     </input>}}
 
 function galOverOctoberFees() {
-  if ((data.dec10_20-data.oct07_20)>5999) {
+  if ((data.dec10_20-data.oct07_20)>6000) {
     return <input style={{backgroundColor: bgColors.Blue}} 
       type="number"
       name="greaterThan" 
@@ -333,11 +351,11 @@ function galOverFebruaryFees() {
     
     <table className={styles.table}>
       <thead>
-        <tr>
-          <th className={styles.th2}><h4><span>{data.last_name} {data.meter_serialNum}</span><br /></h4></th>
-          <th className={styles.th2}><h4><span></span></h4></th>
+        <tr className={styles.th2}>
+          <th className={styles.th2}><h4><span>{data.last_name}</span><br /></h4></th>
+          <th className={styles.th2}><h4><span>#{data.meter_serialNum}</span></h4></th>
         </tr>
-        <tr className={styles.trHeader}>
+        <tr className={styles.th2}>
           <td>Billing Period</td>
           <td>Gallons Used</td>
           <td>Gallons Over</td>
