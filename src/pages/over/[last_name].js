@@ -226,6 +226,96 @@ function galOverOctoberFees() {
         readOnly>
     </input>}}
 
+function galOverDecember() {
+  if ((data.feb19_21-data.dec10_20)>6000) {
+    return <input style={{
+      backgroundColor: bgColors.Blue}}
+      type="number" 
+      min="0"
+      name="utilized" 
+      id="decOver"
+      value={(data.feb19_21-data.dec10_20)-6000}   
+      label="galOver" 
+      readOnly>
+    </input>;
+  } else {
+    return <input style={{
+      backgroundColor: bgColors.Blue}}
+      type="number" 
+      min="0"
+      name="utilized" 
+      id="decOver"
+      value="0"   
+      label="galOver" 
+      readOnly>
+    </input>}}
+
+function galOverDecemberFees() {
+  if ((data.feb19_21-data.dec10_20)>6000) {
+    return <input style={{backgroundColor: bgColors.Blue}} 
+      type="number"
+      name="greaterThan" 
+      id="gTDecember2020"
+      value= {((data.feb19_21-data.dec10_20)-6000)*.005} 
+      label="results" 
+      readOnly>
+    </input>;
+  } else {
+    <input style={{
+        backgroundColor: bgColors.Blue}}
+        type="number" 
+        name="greaterThan" 
+        id="gTDecember2020"
+        value="0"
+        label="results" 
+        readOnly>
+    </input>}}
+
+function galOverFebruary() {
+  if ((data.apr05_21-data.feb19_21)>6000) {
+    return <input style={{
+      backgroundColor: bgColors.Blue}}
+      type="number" 
+      min="0"
+      name="utilized" 
+      id="febOver"
+      value={(data.apr05_21-data.feb19_21)-6000}   
+      label="galOver" 
+      readOnly>
+    </input>;
+  } else {
+    return <input style={{
+      backgroundColor: bgColors.Blue}}
+      type="number" 
+      min="0"
+      name="utilized" 
+      id="febOver"
+      value="0"   
+      label="galOver" 
+      readOnly>
+    </input>}}
+
+function galOverFebruaryFees() {
+  if ((data.apr05_21-data.feb19_21)>6000) {
+    return <input style={{backgroundColor: bgColors.Blue}} 
+      type="number"
+      name="greaterThan" 
+      id="gTFebruary2020"
+      value= {((data.apr05_21-data.feb19_21)-6000)*.005} 
+      label="results" 
+      readOnly>
+    </input>;
+  } else {
+    <input style={{
+        backgroundColor: bgColors.Blue}}
+        type="number" 
+        name="greaterThan" 
+        id="gTFebruary2020"
+        value="0"
+        label="results" 
+        readOnly>
+    </input>}}
+
     
     
 
@@ -353,28 +443,10 @@ function galOverOctoberFees() {
           </input>
           </td>
           <td className={styles.td3}>
-            <input style={{
-              backgroundColor: bgColors.Blue}}
-              type="text" 
-              name="utilized" 
-              id="December20201"
-              value={(data.feb19_21-data.dec10_20)-6000}
-              label="galOver" 
-              readOnly>
-            </input>
+            {galOverDecember()}
           </td>
-          <td className={styles.td3rd}>
-            <input style={{
-              backgroundColor: bgColors.Blue}}
-              type="text" 
-              name="greaterThan" 
-              id="December20202"
-              value={((data.feb19_21-data.dec10_20)-6000)*0.005}
-              label="results" 
-              readOnly>
-            </input>
-
-           
+          <td className={styles.td3}>
+            {galOverDecemberFees()}
           </td>
         </tr>
         <tr>
@@ -392,35 +464,17 @@ function galOverOctoberFees() {
           </input>
           </td>
           <td className={styles.td3}>
-            <input style={{
-              backgroundColor: bgColors.Blue}}
-              type="text" 
-              name="utilized" 
-              id="February20211"
-              value={(data.apr05_21-data.feb19_21)-6000}
-              label="galOver" 
-              readOnly>
-            </input>
+            {galOverFebruary()}
           </td>
-          <td className={styles.td3rd}>
-            <input style={{
-              backgroundColor: bgColors.Blue}}
-              type="text" 
-              name="greaterThan" 
-              id="February20212"
-              value={((data.apr05_21-data.feb19_21)-6000)*0.005}
-              label="results" 
-              readOnly>
-            </input>
-
-           
+          <td className={styles.td3}>
+            {galOverFebruaryFees()}
           </td>
         </tr>
         
       </tbody>
     </table>
     
-    <App />
+    
     </Zoom>
 
 <VideoBg />
