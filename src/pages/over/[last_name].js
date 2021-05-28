@@ -265,45 +265,45 @@ function galOverOctober() {
 
 function galOverOctoberFees() {
   let x = data.dec10_20-data.oct07_20
-    if (x>6000 && x<10000) {
-      return <input style={{backgroundColor: bgColors.Blue}} 
-        type="number"
+  if (x>6000 && x<10000) {
+    return <input style={{backgroundColor: bgColors.Blue}} 
+      type="number"
+      name="greaterThan" 
+      id="gTOctober2020"
+      value= {(((x)-6000)*.005).toFixed(2)} 
+      label="results" 
+      readOnly>
+    </input>;
+  } else if (x>10000 && x<20000) {
+    return <input style={{
+        backgroundColor: bgColors.Blue}}
+        type="number" 
         name="greaterThan" 
-        id="gTJune2020"
-        value= {(((x)-6000)*.005).toFixed(2)} 
+        id="gTOctober2020t1"
+        value={(((x-10000)*.01)+19.99).toFixed(2)}
         label="results" 
         readOnly>
-      </input>;
-    } else if (x>10000 && x<20000) {
+    </input>;
+    } else if (x>20000) {
       return <input style={{
           backgroundColor: bgColors.Blue}}
           type="number" 
           name="greaterThan" 
-          id="gTJune2020t1"
-          value={(((x-10000)*.01)+19.99).toFixed(2)}
+          id="gTOctober2020t2"
+          value={(((x-20000)*.025)+19.99+99.98).toFixed(2)}
           label="results" 
           readOnly>
       </input>;
-      } else if (x>20000) {
-        return <input style={{
-            backgroundColor: bgColors.Blue}}
-            type="number" 
-            name="greaterThan" 
-            id="gTJune2020t2"
-            value={(((x-20000)*.025)+19.99+99.98).toFixed(2)}
-            label="results" 
-            readOnly>
-        </input>;
-  } else {
-    <input style={{
-        backgroundColor: bgColors.Blue}}
-        type="number" 
-        name="greaterThan" 
-        id="gTOctober2020"
-        value="0"
-        label="results" 
-        readOnly>
-    </input>}}
+} else {
+  return <input style={{
+      backgroundColor: bgColors.Blue}}
+      type="number" 
+      name="greaterThan" 
+      id="gTAugust2020"
+      value="0"
+      label="results" 
+      readOnly>
+  </input>}}
 
 function galOverDecember() {
   if ((data.feb19_21-data.dec10_20)>6000) {
@@ -462,7 +462,7 @@ function galOverFebruaryFees() {
           <td>Billing Period</td>
           <td>Gallons Used</td>
           <td>Gallons Over</td>
-          Additional Fee
+          <td>Additional Fee</td>
         </tr>
         
       </thead>
@@ -470,7 +470,9 @@ function galOverFebruaryFees() {
         
         
         <tr>
-          <td className={styles.td3}><p className={styles.p}>April 2020.</p></td>
+          <td className={styles.td3}><p className={styles.p}>April 2020</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(4/5-6/10)</p>
+          </td>
           <td className={styles.td3}>
             <input style={{
               backgroundColor: bgColors.Blue}}
@@ -491,7 +493,8 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>  
-          <td className={styles.td3}><p className={styles.p}>June 2020.</p></td>
+          <td className={styles.td3}><p className={styles.p}>June 2020.</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(6/11-8/10)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -511,7 +514,9 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>August 2020.</p></td>
+          <td className={styles.td3}><p className={styles.p}>August 2020.</p><br />
+          <p style={{fontSize:10, color:'white', margin:0, padding:0 }}>(8/11-10/7)</p>
+          </td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -531,7 +536,8 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>October 2020.</p></td>
+          <td className={styles.td3}><p className={styles.p}>October 2020</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(10/7-12/10)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -547,11 +553,12 @@ function galOverFebruaryFees() {
             {galOverOctober()}
           </td>
           <td className={styles.td3}>
-            {galOverOctoberFees}           
+            {galOverOctoberFees()}           
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>December 2020.</p></td>
+          <td className={styles.td3}><p className={styles.p}>December 2020.</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(12/11/20-02/19/21)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -571,7 +578,8 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>February 2021.</p></td>
+          <td className={styles.td3}><p className={styles.p}>February 2021.</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(02/20/21-04/05/21)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
