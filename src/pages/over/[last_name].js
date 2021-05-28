@@ -295,11 +295,11 @@ function galOverOctoberFees() {
           readOnly>
       </input>;
 } else {
-  return <input style={{
+  <input style={{
       backgroundColor: bgColors.Blue}}
       type="number" 
       name="greaterThan" 
-      id="gTAugust2020"
+      id="gTOctober2020"
       value="0"
       label="results" 
       readOnly>
