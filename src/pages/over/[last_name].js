@@ -5,7 +5,6 @@ import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
 
-
 var bgColors = { "Default": "#81b71a",
 "Blue": "#00B1E1",
 "Cyan": "#37BC9B",
