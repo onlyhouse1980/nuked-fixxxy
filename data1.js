@@ -521,7 +521,7 @@ export const lastname = [
     },
     {
          meter_serialNum: '22667348',
-         last_name: 'Zamzow',
+         last_name: 'Zamzow_1',
          oct02_18: '43608',
          nov02_18: '45392',
          dec04_18: '45903',
@@ -989,7 +989,7 @@ export const lastname = [
     },
     {
          meter_serialNum: '22169410',
-         last_name: 'Zamzow',
+         last_name: 'Zamzow_2',
          oct02_18: '3',
          nov02_18: '3',
          dec04_18: '3',
