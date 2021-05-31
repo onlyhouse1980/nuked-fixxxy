@@ -5,6 +5,10 @@ import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 var bgColors = { "Default": "#81b71a",
 "Blue": "#00B1E1",
 "Cyan": "#37BC9B",
@@ -494,7 +498,7 @@ function galOverFebruaryFees() {
             {galOverApril()}
           </td>
           <td className={styles.td3}>
-            {galOverAprilFees()}           
+            ${galOverAprilFees()}           
           </td>
         </tr>
         <tr>  
@@ -515,7 +519,7 @@ function galOverFebruaryFees() {
             {galOverJune()}
           </td>
           <td className={styles.td3}>
-            {galOverJuneFees()}
+            ${galOverJuneFees()}
           </td>
         </tr>
         <tr>
@@ -537,7 +541,7 @@ function galOverFebruaryFees() {
             {galOverAugust()}
           </td>
           <td className={styles.td3}>
-            {galOverAugustFees()}
+            ${galOverAugustFees()}
           </td>
         </tr>
         <tr>
@@ -558,7 +562,7 @@ function galOverFebruaryFees() {
             {galOverOctober()}
           </td>
           <td className={styles.td3}>
-            {galOverOctoberFees()}           
+            ${galOverOctoberFees()}           
           </td>
         </tr>
         <tr>
@@ -579,7 +583,7 @@ function galOverFebruaryFees() {
             {galOverDecember()}
           </td>
           <td className={styles.td3}>
-            {galOverDecemberFees()}
+          ${galOverDecemberFees()}
           </td>
         </tr>
         <tr>
@@ -601,7 +605,7 @@ function galOverFebruaryFees() {
             {galOverFebruary()}
           </td>
           <td className={styles.td3}>
-            {galOverFebruaryFees()}
+            ${galOverFebruaryFees()}
           </td>
         </tr>
         
