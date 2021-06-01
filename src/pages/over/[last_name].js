@@ -5,10 +5,6 @@ import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
 
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-
 var bgColors = { "Default": "#81b71a",
 "Blue": "#00B1E1",
 "Cyan": "#37BC9B",
@@ -489,7 +485,7 @@ function galOverFebruaryFees() {
               min="0" 
               name="utilized" 
               id="april20201"
-              value={data.jun10_20-data.apr05_20} 
+              value={data.jun10_20-data.apr05_20}
               label="answers" 
               readOnly>
             </input>
@@ -502,7 +498,7 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>  
-          <td className={styles.td3}><p className={styles.p}>June 2020.</p>
+          <td className={styles.td3}><p className={styles.p}>June 2020</p>
           <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(6/11-8/10)</p></td>
           <td className={styles.td3}>
           <input style={{
@@ -523,7 +519,7 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>August 2020.</p><br />
+          <td className={styles.td3}><p className={styles.p}>August 2020</p><br />
           <p style={{fontSize:10, color:'white', margin:0, padding:0 }}>(8/11-10/7)</p>
           </td>
           <td className={styles.td3}>
@@ -566,7 +562,7 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>December 2020.</p>
+          <td className={styles.td3}><p className={styles.p}>December 2020</p>
           <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(12/11/20-02/19/21)</p></td>
           <td className={styles.td3}>
           <input style={{
@@ -587,7 +583,7 @@ function galOverFebruaryFees() {
           </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>February 2021.</p>
+          <td className={styles.td3}><p className={styles.p}>February 2021</p>
           <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(02/20/21-04/05/21)</p></td>
           <td className={styles.td3}>
           <input style={{
