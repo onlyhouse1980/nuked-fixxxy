@@ -476,7 +476,7 @@ function galOverFebruaryFees() {
         
         <tr>
           <td className={styles.td3}><p className={styles.p}>April 2020</p>
-          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(4/5-6/10)</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(4/5/20-6/10/20)</p>
           </td>
           <td className={styles.td3}>
             <input style={{
@@ -499,7 +499,7 @@ function galOverFebruaryFees() {
         </tr>
         <tr>  
           <td className={styles.td3}><p className={styles.p}>June 2020</p>
-          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(6/11-8/10)</p></td>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(6/11/20-8/10/20)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -520,7 +520,7 @@ function galOverFebruaryFees() {
         </tr>
         <tr>
           <td className={styles.td3}><p className={styles.p}>August 2020</p><br />
-          <p style={{fontSize:10, color:'white', margin:0, padding:0 }}>(8/11-10/7)</p>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0 }}>(8/11/20-10/7/20)</p>
           </td>
           <td className={styles.td3}>
           <input style={{
@@ -542,7 +542,7 @@ function galOverFebruaryFees() {
         </tr>
         <tr>
           <td className={styles.td3}><p className={styles.p}>October 2020</p>
-          <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(10/7-12/10)</p></td>
+          <p style={{fontSize:10, color:'white', margin:0, padding:0}}>(10/7/20-12/10/20)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
