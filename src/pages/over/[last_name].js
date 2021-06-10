@@ -438,7 +438,7 @@ function galOverFebruaryFees() {
           type="number" 
           min="0"
           name="utilized" 
-          id="junOver"
+          id="aprOver"
           value={(data.jun04_21-data.feb19_21)-6000}   
           label="galOver" 
           readOnly>
@@ -449,19 +449,19 @@ function galOverFebruaryFees() {
           type="number" 
           min="0"
           name="utilized" 
-          id="junOver"
+          id="aprOver"
           value="0"   
           label="galOver" 
           readOnly>
         </input>}}
     
     function galOverAprilFees21() {
-      let x = data.feb19_21-data.jun04_21
+      let x = data.jun04_21-data.feb19_21
         if (x>6000 && x<10000) {
           return <input style={{backgroundColor: bgColors.Blue}} 
             type="number"
             name="greaterThan" 
-            id="gTJune2021"
+            id="gTApril2021"
             value= {(((x)-6000)*.005).toFixed(2)} 
             label="results" 
             readOnly>
@@ -471,7 +471,7 @@ function galOverFebruaryFees() {
               backgroundColor: bgColors.Blue}}
               type="number" 
               name="greaterThan" 
-              id="gTJune2021t1"
+              id="gTApril2021t1"
               value={(((x-10000)*.01)+19.99).toFixed(2)}
               label="results" 
               readOnly>
@@ -481,7 +481,7 @@ function galOverFebruaryFees() {
                 backgroundColor: bgColors.Blue}}
                 type="number" 
                 name="greaterThan" 
-                id="gTJune2021t2"
+                id="gTApril2021t2"
                 value={(((x-20000)*.025)+19.99+99.98).toFixed(2)}
                 label="results" 
                 readOnly>
@@ -491,7 +491,7 @@ function galOverFebruaryFees() {
             backgroundColor: bgColors.Blue}}
             type="number" 
             name="greaterThan" 
-            id="gTJune2020"
+            id="gTApril2020"
             value="0"
             label="results" 
             readOnly>
