@@ -298,7 +298,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   'SN199048',
-         last_name:   'Roswall',
+         last_name:   'Sijera',
          oct02_18:   '17916',
          nov02_18:   '19404',
          dec04_18:   '21048',
@@ -595,7 +595,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '22667352',
-         last_name:   'Hawkins',
+         last_name:   'Spaulding',
          oct02_18:   '719',
          nov02_18:   '719',
          dec04_18:   '719',
