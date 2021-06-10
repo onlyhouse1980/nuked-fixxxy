@@ -1,7 +1,7 @@
 export const lastname = [
      {
          meter_serialNum:   '13391844',
-         last_name:   'Main Well',
+         last_name:   'Main_Well',
          oct02_18:   '18117221',
          nov02_18:   '18160138',
          dec04_18:   '18393750',
@@ -28,7 +28,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '14310221',
-         last_name:   'Auxillary Well',
+         last_name:   'Auxillary_Well',
          oct02_18:   '194004',
          nov02_18:   '194127',
          dec04_18:   '194127',
@@ -217,7 +217,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '72845054',
-         last_name:   'Campbell/Aust',
+         last_name:   'Campbell_Aust_1',
          oct02_18:   '48650',
          nov02_18:   '49518',
          dec04_18:   '49769',
@@ -325,7 +325,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '10656114',
-         last_name:   'Ewart R.',
+         last_name:   'Ewart_R',
          oct02_18:   '252554',
          nov02_18:   '258880',
          dec04_18:   '265967',
@@ -352,7 +352,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '22667338',
-         last_name:   'Turner',
+         last_name:   'Turner_1',
          oct02_18:   '25751',
          nov02_18:   '26839',
          dec04_18:   '27463',
@@ -379,7 +379,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '77445947',
-         last_name:   'Turner',
+         last_name:   'Turner_2',
          oct02_18:   '37506',
          nov02_18:   '38116',
          dec04_18:   '38186',
@@ -703,7 +703,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '22329342',
-         last_name:   'Czeck/Cappuccino',
+         last_name:   'Czeck_Cappuccino',
          oct02_18:   '32',
          nov02_18:   '32',
          dec04_18:   '32',
@@ -730,7 +730,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '22667374',
-         last_name:   'Ewart N',
+         last_name:   'Ewart_N',
          oct02_18:   '36228',
          nov02_18:   '36229',
          dec04_18:   '237358',
@@ -757,7 +757,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '77445948',
-         last_name:   'Loder/Green',
+         last_name:   'Loder_Green_1',
          oct02_18:   '5',
          nov02_18:   '5',
          dec04_18:   '5',
@@ -784,7 +784,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '22667377',
-         last_name:   'Loder/Green',
+         last_name:   'Loder_Green_2',
          oct02_18:   '44984',
          nov02_18:   '45116',
          dec04_18:   '45210',
@@ -892,7 +892,7 @@ export const lastname = [
      },
      {
          meter_serialNum:   '10656199',
-         last_name:   'Campbell/Aust',
+         last_name:   'Campbell_Aust_2',
          oct02_18:   '53',
          nov02_18:   '53',
          dec04_18:   '53',
