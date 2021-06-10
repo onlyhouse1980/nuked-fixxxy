@@ -432,14 +432,14 @@ function galOverFebruaryFees() {
     </input>}}
 
     function galOverApril21() {
-      if ((data.jun04_21-data.feb19_21)>6000) {
+      if ((data.jun04_21-data.apr05_21)>6000) {
         return <input style={{
           backgroundColor: bgColors.Blue}}
           type="number" 
           min="0"
           name="utilized" 
           id="aprOver"
-          value={(data.jun04_21-data.feb19_21)-6000}   
+          value={(data.jun04_21-data.apr05_21)-6000}   
           label="galOver" 
           readOnly>
         </input>;
@@ -456,7 +456,7 @@ function galOverFebruaryFees() {
         </input>}}
     
     function galOverAprilFees21() {
-      let x = data.jun04_21-data.feb19_21
+      let x = data.jun04_21-data.apr05_21
         if (x>6000 && x<10000) {
           return <input style={{backgroundColor: bgColors.Blue}} 
             type="number"
