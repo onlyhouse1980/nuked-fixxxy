@@ -432,7 +432,7 @@ function galOverFebruaryFees() {
     </input>}}
 
     function galOverApril21() {
-      if ((data.feb19_21-data.jun04_21)>6000) {
+      if ((data.jun04_21-data.feb19_21)>6000) {
         return <input style={{
           backgroundColor: bgColors.Blue}}
           type="number" 
