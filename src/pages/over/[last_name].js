@@ -439,7 +439,7 @@ function galOverFebruaryFees() {
           min="0"
           name="utilized" 
           id="junOver"
-          value={(data.feb19_21-data.jun04_21)-6000}   
+          value={(data.jun04_21-data.feb19_21)-6000}   
           label="galOver" 
           readOnly>
         </input>;
