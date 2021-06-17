@@ -120,7 +120,7 @@ class Layout extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem>
                     <Link target='_blank' href='/consumer.pdf'>
-                        <a onClick={this.toggleCollapse}>Consumer Confidence</a>
+                        <a onClick={this.toggleCollapse}>Consumer Confidence 2020</a>
                       </Link>
                     </MDBDropdownItem>                     
                   </MDBDropdownMenu>
