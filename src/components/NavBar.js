@@ -134,6 +134,11 @@ class Layout extends React.Component {
                   </motion.div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
+                  <MDBDropdownItem>
+                    <Link target='blank' href='/minutes061221.pdf'>
+                        <a onClick={this.toggleCollapse}>2021</a>
+                      </Link>
+                    </MDBDropdownItem> 
                     <MDBDropdownItem>
                     <Link target='blank' href='/2020Minutes.pdf'>
                         <a onClick={this.toggleCollapse}>2020</a>
