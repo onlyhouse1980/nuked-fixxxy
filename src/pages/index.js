@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
-import { bgWrap, bgText } from '../styles/styles.module.css'
+import { styles, bgWrap, bgText } from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
+import LoginButton from '../components/LoginButton'
 
 const index = () => (
   
@@ -107,6 +108,7 @@ const index = () => (
     </h2>
     
     </motion.div>
+  <LoginButton  />
     </div>
 )
 
