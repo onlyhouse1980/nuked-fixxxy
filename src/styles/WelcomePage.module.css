@@ -17,19 +17,17 @@
     color: white;
 }
 .footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    left: 50%;
+    left: auto;
+    right: auto;
     justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items:stretch;
     width: 100vw;
-    padding-left: auto;
-    padding-right: auto;
     color: white;
     background-color: #3f51b5;
     z-index: 99;
+    text-align: center;
 }
 
 .logo {
@@ -38,7 +36,7 @@
 }
 
 .footerLogo {
-    position: sticky;
+    position:static;
     left: 0;
     bottom: 0;
     height: 56px;
