@@ -6,10 +6,6 @@ import Zoom from 'react-reveal/Zoom';
 
 import { MDBBtn } from 'mdbreact';
 
-
-
-
-
 <div suppressHydrationWarning={true}>
     { process.browser }
     </div>
