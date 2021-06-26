@@ -3,26 +3,9 @@ import useSWR from 'swr'
 import styles from '../person/[meter_serialNum].module.css'
 import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
-import * as React from 'react';
+
 import { MDBBtn } from 'mdbreact';
-import { Component } from 'react';
 
-
-class App extends Component {
-  state = {
-    data: [meter_serialNum
-      // ...
-    ]
-  };
-
-  render () {
-    return (
-      <LiveBarChart
-        data={this.state.data}
-      />
-    )
-  }
-}
 
 
 
@@ -47,7 +30,8 @@ const fetcher = async (url) => {
   return data 
 }
 
-export default function Person() {
+export default function person() {
+  
   const { query } = useRouter()
   const { data, error } = useSWR(
     () => query.meter_serialNum && `/api/people/${query.meter_serialNum}`,
@@ -55,18 +39,7 @@ export default function Person() {
   )
   if (error) return <div><p>Serial number not found. Please review <a href="/howtoreadmeter.pdf"><b>How to read your meter</b></a></p></div>
   if (!data) return <div>Loading...</div>
-  
-  
-    class FlipExample extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = { show: false };
-      this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick() {
-      this.setState({ show: !this.state.show });
-    }}
-    
+
     function sayHi() {
               
       let info1 = parseInt(document.getElementById("info1").value);
@@ -78,11 +51,12 @@ export default function Person() {
       let info1 = parseInt(document.getElementById("info1").value);
       let info2 = parseInt(document.getElementById("info2").value);
       var Answer = document.getElementById("Percent");
-        Answer.value = (((info1 - info2) / 6000 ) * 100).toFixed(0)+"%";
+        Answer.value = ((info1 - info2) / 6000 ).toFixed(2);
       }
-    
+        
     
   return ( 
+    
   <>
     <Zoom top cascade>
     
@@ -98,7 +72,8 @@ export default function Person() {
         
         <tr>
           <td className={styles.th}><p className={styles.p}>Enter reading from your meter in the box to the right.<br />(digits only - no, seperator eg. 1536987)<br /><br /> Then click the calculate button below that.*</p></td>
-          <td className={styles.thInput}><input type="text" id="info1" label="your reading" placeholder="Enter Your Reading Here" name="uInput"></input><br /><MDBBtn gradient="blue" onClick={() => {
+          <td className={styles.thInput}><input style={{
+            backgroundColor: bgColors.Cyan }} type="text" id="info1" label="your reading" placeholder="Enter Your Reading" name="uInput"></input><br /><MDBBtn gradient="blue" onClick={() => {
             sayHi()
             moreInfo()
           }}
@@ -108,20 +83,20 @@ export default function Person() {
         <tr>
           <td className={styles.td3}>
           <p className={styles.p}></p>
-          <p className={styles.p}>Last reading by Vendor - April 5th, 2021</p>
+          <p className={styles.p}>Last reading by Vendor - June 4th, 2021</p>
           </td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}} 
               type="text" 
               id="info2" 
-              label="April 5th, 2021" 
-              value={data.apr05_21} 
+              label="June 4th, 2021" 
+              value={data.jun04_21} 
               readOnly />
             </td>
         </tr>
         <tr>
-        <td className={styles.td3}><p className={styles.p}>Gallons used since April 5th.</p></td>
+        <td className={styles.td3}><p className={styles.p}>Gallons used since June 4th 2021.</p></td>
         <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -149,7 +124,7 @@ export default function Person() {
         </tr>
         
         <tr>
-          <td className={styles.td3} function Person>
+          <td className={styles.td3} function person>
           
           <p className={styles.p}>Percentage of two months allotment (6,000 gallons) used.<br /></p>
           </td>  
@@ -169,14 +144,17 @@ export default function Person() {
         </tr>
         <tr>
           <td className={styles.h5head}>
-          <h5>*If you are having problems with the<br />form, we recommend reading <a href="/howtoreadmeter.pdf">How to read your meter?</a> </h5>
-          <h5>*</h5>
+          <h5>*If you are having problems with the<br />form, we recommend reading "<a href="/howtoreadmeter.pdf">How to read your meter?</a>" </h5>
+          
           </td>
-          <td className={styles.td6}></td>
+          <td className={styles.td0}>
+          
+          </td>
         </tr>
       </tbody>
     </table>
     
+
     </Zoom>
 
 <VideoBg />
@@ -188,7 +166,7 @@ export default function Person() {
 <style jsx>{`
         
         a {
-          color: blue;
+          color: teal;
         }
       `}</style>
       </>
