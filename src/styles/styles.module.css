@@ -43,8 +43,10 @@
   }
   
   .bgText {
+    position: relative;
     color: white;
     margin: 0;
+    margin-bottom: ;
     font-size: 2rem;
     line-height: 3rem;
     text-align: center;
