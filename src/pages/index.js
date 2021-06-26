@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { styles, bgWrap, bgText } from '../styles/styles.module.css'
+import styles from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
 
@@ -19,7 +19,7 @@ const index = () => (
         repeat: Infinity,
         repeatDelay: 0
       }} 
-      className={bgWrap}>
+      className={styles.bgWrap}>
       <Image
         alt="Orchard Beach"
         src="/Images/WebPFiles/hero-bg.webp"
@@ -37,7 +37,7 @@ const index = () => (
         repeat: Infinity,
         repeatDelay: 0
       }} 
-      className={bgWrap}>
+      className={styles.bgWrap}>
       <Image
         alt="Sunrise"
         src="/Images/WebPFiles/sunrise.webp"
@@ -55,7 +55,7 @@ const index = () => (
         repeat: Infinity,
         repeatDelay: 0
       }} 
-      className={bgWrap}>
+      className={styles.bgWrap}>
       <Image
         alt="Droplets"
         src="/Images/WebPFiles/boat.webp"
@@ -73,7 +73,7 @@ const index = () => (
         repeat: Infinity,
         repeatDelay: 0
       }} 
-      className={bgWrap}>
+      className={styles.bgWrap}>
       <Image
         alt="Droplets"
         src="/Images/WebPFiles/whale.webp"
@@ -91,7 +91,7 @@ const index = () => (
         repeat: Infinity,
         repeatDelay: 0
       }} 
-      className={bgWrap}>
+      className={styles.bgWrap}>
       <Image
         alt="Water Droplets"
         src="/Images/WebPFiles/glass_droplets.webp"
@@ -101,7 +101,7 @@ const index = () => (
         quality={100}
       />
     </motion.div>
-    <h2 className={bgText}>
+    <h2 className={styles.bgText}>
       <b>Orchard Beach</b>
       <br />
       <b>Community Group</b>
