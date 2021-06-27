@@ -18,10 +18,10 @@
 }
 
 .table, .th, .td {
+    position: relative;
     border: 1px solid black;
     font-weight: 900;
-    margin-bottom: 40;
-    margin-top: 40;
+    margin-bottom: 400;
   }
 
 .th1 {
