@@ -20,7 +20,8 @@
 .table, .th, .td {
     border: 1px solid black;
     font-weight: 900;
-    margin-bottom: auto;
+    margin-bottom: 40;
+    margin-top: 40;
   }
 
 .th1 {
