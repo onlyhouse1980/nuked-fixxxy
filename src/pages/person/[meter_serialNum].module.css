@@ -18,7 +18,7 @@
 }
 
 .table, .th, .td {
-    position: relative;
+    position:static; 
     border: 1px solid black;
     font-weight: 900;
     margin-bottom: 400;
