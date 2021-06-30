@@ -3,12 +3,11 @@
 }
 
 .table {
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color:rgba(255,255,255,0.5);
+    position: flex;
+    margin-bottom: 70px;
     color: white;
     width: fit-content;
+    height: fit-content;
     font-weight: 900;
     font-size: 16px;
 }
@@ -21,10 +20,10 @@
 }
 
 .table, .th, .td {
-    position:static; 
+    
     border: 1px solid black;
     font-weight: 900;
-    margin-bottom: 400;
+    
   }
 
 .th1 {
@@ -57,13 +56,9 @@
   border-style:inset;
   border-color:rgb(92, 92, 92);
   width: -webkit-fit-content;
-  margin-top: 10px;
   margin-right: auto;
-  margin-left: auto;
   padding-right: 10px;
-  padding-left: 10px;
   padding-top: auto;
-  padding-bottom: auto;
 }
 
 .th a {
@@ -71,7 +66,6 @@
   font-weight: 900;
   width: -webkit-fit-content;
   padding-left: 10px;
-  padding-right: 10px;
 }
 
 
@@ -119,6 +113,6 @@
     top: 0;
     left: 0;
     width: 100vw;
-
+    height: 100vh;
     z-index: -20;
 }
