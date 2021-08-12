@@ -87,7 +87,7 @@ export default function person() {
               type="text" 
               id="info2" 
               label="August 4th, 2021" 
-              value={data.Aug04_21} 
+              value={data.aug04_21} 
               readOnly />
             </td>
         </tr>
