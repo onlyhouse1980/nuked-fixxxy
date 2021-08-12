@@ -79,20 +79,20 @@ export default function person() {
         <tr>
           <td className={styles.td3}>
           <p className={styles.p}></p>
-          <p className={styles.p}>Last reading by Vendor - June 4th, 2021</p>
+          <p className={styles.p}>Last reading by Vendor - August 4th, 2021</p>
           </td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}} 
               type="text" 
               id="info2" 
-              label="June 4th, 2021" 
-              value={data.jun04_21} 
+              label="August 4th, 2021" 
+              value={data.Aug04_21} 
               readOnly />
             </td>
         </tr>
         <tr>
-        <td className={styles.td3}><p className={styles.p}>Gallons used since June 4th 2021.</p></td>
+        <td className={styles.td3}><p className={styles.p}>Gallons used since August 4th 2021.</p></td>
         <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
