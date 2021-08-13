@@ -30,7 +30,7 @@ const Example = () => (
       <MDBAnimation type="flash" infinite>
       <a className={styles.a} href="/howtoreadmeter.pdf">How to read your meter?</a>
         </MDBAnimation>
-        <MDBCard>
+        <MDBCard className={styles.mdbkard}>
           <MDBCardImage
             className='img-fluid'
             src='../../Images/meter1.jpg'
