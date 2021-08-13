@@ -33,7 +33,7 @@
     "simple-tween": "^1.0.0",
     "sitemap": "^7.0.0",
     "swr": "^0.5.0",
-    "webpack": "^5.32.0"
+    "webpack": "^5.50.0"
   },
   "devDependencies": {
     "typescript": "^4.2.4"
