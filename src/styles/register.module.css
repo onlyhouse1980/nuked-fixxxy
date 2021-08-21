@@ -1,22 +1,10 @@
 #lnk {
     color: white;
 }
-
- .greyText {
-     background-color: #3f51b5;
- }
-
- .view {
-     left: 1vh !important;
-     width: 0%!important;
- }
-
- .cardBody {
-     position:-webkit-sticky;
-     margin-top: 0!important;
-     padding-bottom: 40px !important;
-     height: 70% !important;
-     overflow:scroll;
- }
-
- 
+.a {
+    color: red;
+}
+.mdbkard {
+    padding: 10px 50px 200px 50px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
