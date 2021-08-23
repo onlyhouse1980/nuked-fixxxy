@@ -85,7 +85,7 @@ export const LastNames = [
      },
      {
           meter_serialNum: '22667347',
-          last_name: 'Emtman',
+          last_name: 'Emtman_1',
           oct02_18: '58248',
           nov02_18: '58377',
           dec04_18: '58770',
@@ -703,7 +703,7 @@ export const LastNames = [
           meter_serialNum: '22667337',
           last_name: 'Frandle',
           oct02_18: '39632',
-          nov02_18: '40821',
+          nov02_18: '40821', 
           dec04_18: '41943',
           jan01_19: '42957',
           feb01_19: '43982',
