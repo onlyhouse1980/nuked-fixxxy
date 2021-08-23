@@ -1,10 +1,9 @@
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import styles from '../person/[meter_serialNum].module.css'
-import VideoBg from '../../components/VideoBg1'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
-import VideoBg1 from '../../components/VideoBg1';
+import VideoBg from '../../components/VideoBg';
 
 var bgColors = { "Default": "#81b71a",
 "Blue": "#00B1E1",
@@ -564,7 +563,7 @@ function galOverFebruaryFees() {
                 readOnly>
             </input>}}
 
-<VideoBg1 />
+
     
 
     //function daysInCycle() {
