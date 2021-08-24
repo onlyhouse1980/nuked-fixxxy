@@ -112,7 +112,7 @@ export default function person() {
             type="text" 
             name="utilized" 
             id="lastYear"
-            value={data.jun10_20-data.apr05_20} 
+            value={data. aug10_20-data.oct07_20} 
             label="answers" 
             readOnly>
           </input>
