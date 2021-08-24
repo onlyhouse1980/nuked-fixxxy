@@ -28,19 +28,19 @@ export default function Over() {
     () => query.last_name && `/api/overuse/${query.last_name}`,
     fetcher
   )
-  if (error) return <div><p>Last Name not found. </p></div>
+  if (error) return <div>Last Name not found. </div>
   if (!data) return <div>Loading...</div>
   
   
   
     
      
-    // function moreInfo(props) {
-    //   let info1 = parseInt(document.getElementById("info1").value);
-    //   let info2 = parseInt(document.getElementById("info2").value);
-    //   var Answer = document.getElementById("Percent");
-    //     Answer.value = (((info1 - info2) / 6000 ) * 1).toFixed(2);
-    //   }
+    function moreInfo(props) {
+      let info1 = parseInt(document.getElementById("info1").value);
+      let info2 = parseInt(document.getElementById("info2").value);
+      var Answer = document.getElementById("Percent");
+        Answer.value = (((info1 - info2) / 6000 ) * 1).toFixed(2);
+      }
     function galOverApril() {
       if ((data.jun10_20-data.apr05_20)>6000) {
         return <input style={{
@@ -566,13 +566,13 @@ function galOverFebruaryFees() {
 
     
 
-    //function daysInCycle() {
-      //let now = new Date();
-      //let acquired = new Date(this.dateAqquired);
-      //let elapsed = now - acquired; //elapsed time in milliseconds
-      //let daysSinceAcquired = Math.floor(elapsed / (1000 * 3600 * 24));
-     // return daysSinceAcquired;
-    //}
+    function daysInCycle() {
+      let now = new Date();
+      let acquired = new Date(this.dateAqquired);
+      let elapsed = now - acquired; //elapsed time in milliseconds
+      let daysSinceAcquired = Math.floor(elapsed / (1000 * 3600 * 24));
+     return daysSinceAcquired;
+    }
     
   return ( 
   <>
@@ -580,16 +580,14 @@ function galOverFebruaryFees() {
     
     <table className={styles.table}>
       <thead>
-       <tr className={styles.th2}><h4><span>{data.last_name}</span><br /></h4>
+       <tr className={styles.th2}>{data.last_name}<br />
+        
+        <td />
+        <td />
+          
         
         <td>
-          <p></p>
-        </td>
-        <td>
-          <h4></h4>
-        </td>
-        <td>
-          <th className={styles.th2}><h4><span>#{data.meter_serialNum}</span></h4></th>
+          <th className={styles.th2}>#{data.meter_serialNum}</th>
         </td>
        </tr>
         <tr className={styles.th2}>
@@ -622,7 +620,7 @@ function galOverFebruaryFees() {
             {galOverJune()}
           </td>
           <td className={styles.td3}>
-            ${galOverJuneFees20()}
+            {galOverJuneFees20()}
           </td>
         </tr>
         <tr>
@@ -644,7 +642,7 @@ function galOverFebruaryFees() {
             {galOverAugust()}
           </td>
           <td className={styles.td3}>
-            ${galOverAugustFees()}
+            {galOverAugustFees()}
           </td>
         </tr>
         <tr>
@@ -665,7 +663,7 @@ function galOverFebruaryFees() {
             {galOverOctober()}
           </td>
           <td className={styles.td3}>
-            ${galOverOctoberFees()}           
+            {galOverOctoberFees()}           
           </td>
         </tr>
         <tr>
@@ -686,7 +684,7 @@ function galOverFebruaryFees() {
             {galOverDecember()}
           </td>
           <td className={styles.td3}>
-          ${galOverDecemberFees()}
+          {galOverDecemberFees()}
           </td>
         </tr>
         <tr>
@@ -708,7 +706,7 @@ function galOverFebruaryFees() {
             {galOverFebruary()}
           </td>
           <td className={styles.td3}>
-            ${galOverFebruaryFees()}
+            {galOverFebruaryFees()}
           </td>
         </tr>
         
@@ -731,7 +729,7 @@ function galOverFebruaryFees() {
             {galOverApril21()}
           </td>
           <td className={styles.td3}>
-            ${galOverAprilFees21()}
+            {galOverAprilFees21()}
           </td>
         </tr>
 
@@ -754,7 +752,7 @@ function galOverFebruaryFees() {
             {galOverJune21()}
           </td>
           <td className={styles.td3}>
-            ${galOverJuneFees21()}
+            {galOverJuneFees21()}
           </td>
         </tr>
         
