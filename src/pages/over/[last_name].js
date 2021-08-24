@@ -169,15 +169,15 @@ export default function Over() {
         </input>}}
 
 function galOverAugust() {
-  if ((data.aug10_20-data.jun10_20)>6000) {
+  if ((data.oct07_20-data.aug10_20)>6000) {
     return <input style={{
       backgroundColor: bgColors.Blue}}
       type="text" 
       min="0"
       name="utilized" 
-      id="augOver"
+      id="augOver1"
       value={(data.oct07_20-data.aug10_20) - 6000}   
-      label="galOver" 
+      label="galOver1" 
       readOnly>
     </input>;
   } else {
@@ -186,9 +186,9 @@ function galOverAugust() {
       type="text" 
       min="0"
       name="utilized" 
-      id="augOver"
+      id="augOver2"
       value="0"   
-      label="galOver" 
+      label="galOver2" 
       readOnly>
     </input>}}
 
@@ -582,7 +582,6 @@ function galOverFebruaryFees() {
       <thead>
        <tr className={styles.th2}>
         <td>
-          <th className={styles.th2}><h4><span>{data.last_name}</span><br /></h4></th>
         </td>
         <td>
           <p></p>
@@ -605,29 +604,7 @@ function galOverFebruaryFees() {
       <tbody>
         
         
-        <tr>
-          <td className={styles.td3}><p className={styles.p}>April 2020</p>
-          <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(4/5/20-6/10/20)</p>
-          </td>
-          <td className={styles.td3}>
-            <input style={{
-              backgroundColor: bgColors.Blue}}
-              type="number"
-              min="0" 
-              name="utilized" 
-              id="april20201"
-              value={data.jun10_20-data.apr05_20}
-              label="answers" 
-              readOnly>
-            </input>
-          </td>
-          <td className={styles.td3}>
-            {galOverApril()}
-          </td>
-          <td className={styles.td3}>
-            ${galOverAprilFees()}           
-          </td>
-        </tr>
+        
         <tr>  
           <td className={styles.td3}><p className={styles.p}>June 2020</p>
           <p style={{fontSize:10, color:'white', margin:0, padding:0, position: 'relative' }}>(6/11/20-8/10/20)</p></td>
