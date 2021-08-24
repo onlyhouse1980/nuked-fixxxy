@@ -580,9 +580,8 @@ function galOverFebruaryFees() {
     
     <table className={styles.table}>
       <thead>
-       <tr className={styles.th2}>
-        <td>
-        </td>
+       <tr className={styles.th2}><h4><span>{data.last_name}</span><br /></h4>
+        
         <td>
           <p></p>
         </td>
