@@ -29,8 +29,14 @@ const Contact = () => (
     >
     <div className={styles.content}>
     <motion.p variants={item}><h2 className='textCenter'>Orchard Beach Established 1954</h2></motion.p>
-    <motion.p variants={item}><Image src="/Images/WebPFiles/fullsmall.webp"
-     loading="lazy" height="50vh" position="fill" width="140%" sizes="90vw" srcSet="/Images/WebPFiles/fullsmall-p-500.webp 500w, /Images/WebPFiles/fullsmall-p-800.webp 800w, /Images/WebPFiles/fullsmall-p-1080.webp 1080w, /Images/WebPFiles/fullsmall-p-1600.webp 1600w, /Images/WebPFiles/fullsmall.webp 1920w" alt="upload of Orchard Beach" /></motion.p>
+    <motion.p variants={item}><Image className={styles.resizers}   src="/Images/WebPFiles/fullsmall.webp"
+      alt="upload of Orchard Beach" 
+      minwidth="90vw" 
+      minheight="auto"
+      width="800"
+      height="auto" 
+      />
+      </motion.p>
       <div className={styles.textCenter}>
       <motion.p variants={item}><h3>OBCG</h3></motion.p>
       <motion.p variants={item}>
