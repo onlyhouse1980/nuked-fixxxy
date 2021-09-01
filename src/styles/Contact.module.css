@@ -1,16 +1,41 @@
 .content {
-    display:inline-block;
-    background-color: rgba(0, 0, 0, 0.749);
-    box-shadow: 2px 2px 8px rgb(60, 60, 60);
-    padding: 100px 20px 80px 10px ;
-    color: white;
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.749);
+  box-shadow: 2px 2px 8px rgb(60, 60, 60);
+  padding: 10px 10px 10px 10px;
+  top: 85px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .content .Image {
-    width: 100%!important;
-    height: "auto"!important;
+  width: 90vw !important;
+
+  height: 100% !important;
 }
 .textCenter {
-    width: 100%!important;
-    height: "auto"!important;
+  width: 100% !important;
+  height: "auto" !important;
+}
+.blackbox {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+}
+.resizers {
+  position: static !important;
+
+  width: 70vw !important;
+  height: 100% !important;
+}
+.bottomliner {
+  position: absolute !important;
+  bottom: -410px !important;
+  left: 20px !important;
+  width: 100% !important;
+  height: 100% !important;
 }
