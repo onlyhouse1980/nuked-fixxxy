@@ -1,4 +1,4 @@
-.content {
+.blackbox {
   position: fixed !important;
   background-color: rgba(0, 0, 0, 0.749);
   box-shadow: 2px 2px 8px rgb(60, 60, 60);
@@ -9,33 +9,70 @@
   right: 0;
   color: white;
   width: 100%;
-  height: 100%;
-}
-
-.content .Image {
-  width: 90vw !important;
-
-  height: 100% !important;
+  height: 80vh;
 }
 .textCenter {
   width: 100% !important;
   height: "auto" !important;
 }
-.blackbox {
+.headliner {
   position: relative !important;
   width: auto !important;
   height: auto !important;
+  padding-top: 25px;
 }
-.resizers {
-  position: static !important;
-
-  width: 70vw !important;
-  height: 100% !important;
+.mapImage {
+  position: relative;
 }
 .bottomliner {
-  position: absolute !important;
-  bottom: -410px !important;
-  left: 20px !important;
-  width: 100% !important;
-  height: 100% !important;
+  position: relative;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .headliner {
+    margin-bottom: 50px;
+  }
+  .mapImage {
+    max-width: 100%;
+    padding-top: 50px;
+  }
+  .bottomliner {
+    top: -50px;
+    left: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .headliner {
+    margin-bottom: -50px;
+  }
+
+  .mapImage {
+    padding: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mapImage {
+    position: relative;
+    padding: 50px;
+  }
+  .bottomliner {
+    top: -75px;
+    left: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mapImage {
+    position: relative;
+    padding: 50px;
+  }
 }

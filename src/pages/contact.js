@@ -22,19 +22,19 @@ const item = {
 const Contact = () => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     <VideoBg1 />
-    <motion.container className={styles.blackbox}
+    <motion.container className={styles.content}
     variants={container}
     initial="hidden"
     animate="show"
     >
-    <div className={styles.content}>
-    <motion.div variants={item}><h2 className='headliner'>Orchard Beach Established 1954</h2></motion.div>
-    <motion.div variants={item}><Image className={styles.resizers}   src="/Images/WebPFiles/fullsmall.webp"
+    <div className={styles.blackbox}>
+    <motion.div variants={item}><h2 className={styles.headliner}>Orchard Beach Established 1954</h2></motion.div>
+    <motion.div variants={item}><Image className={styles.mapImage}   src="/Images/WebPFiles/fullsmall.webp"
       alt="upload of Orchard Beach" 
       minwidth="90vw" 
       minheight="100%"
-      width="800"
-      height="auto" 
+      width="1920"
+      height="714" 
       />
       </motion.div>
       <div className={styles.bottomliner}>
