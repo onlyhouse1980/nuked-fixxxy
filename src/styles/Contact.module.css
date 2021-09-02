@@ -1,5 +1,6 @@
 .blackbox {
-  position: fixed !important;
+  position: static;
+  display: grid;
   background-color: rgba(0, 0, 0, 0.749);
   box-shadow: 2px 2px 8px rgb(60, 60, 60);
   padding: 10px 10px 10px 10px;
@@ -9,7 +10,7 @@
   right: 0;
   color: white;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 .textCenter {
   width: 100% !important;
@@ -37,7 +38,7 @@
     margin-bottom: 50px;
   }
   .mapImage {
-    max-width: 100%;
+    max-width: 90% !important;
     padding-top: 50px;
   }
   .bottomliner {
@@ -53,18 +54,19 @@
   }
 
   .mapImage {
-    padding: 20px;
+    max-width: 70 !important;
+    padding-top: 50px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .mapImage {
-    position: relative;
-    padding: 50px;
+    max-width: 70 !important;
+    padding-top: 50px;
   }
   .bottomliner {
-    top: -75px;
+    top: -200px;
     left: 20px;
   }
 }
@@ -72,7 +74,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .mapImage {
-    position: relative;
+    max-width: 70;
     padding: 50px;
   }
 }
