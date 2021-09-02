@@ -19,15 +19,15 @@
   width: auto !important;
   height: auto !important;
 }
-.resizers {
-  position: static !important;
+.mapImage {
+  position: absolute;
 
   width: 70vw !important;
   height: 100% !important;
 }
 .bottomliner {
   position: absolute !important;
-  bottom: -410px !important;
+  //bottom: -410px !important;
   left: 20px !important;
   width: 100% !important;
   height: 100% !important;
