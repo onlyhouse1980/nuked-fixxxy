@@ -18,6 +18,7 @@
   position: relative !important;
   width: auto !important;
   height: auto !important;
+  overflow: screen;
 }
 .mapImage {
   position: absolute;

@@ -3,6 +3,8 @@ import styles from '../styles/Contact.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import MailToButton from '../components/MailToButton'
+import { ButtonMailto } from '../components/ButtonMailto'
 
 const container = {
   hidden: { opacity: 0 },
@@ -43,8 +45,8 @@ const Contact = () => (
       Orchard Beach<br /> 
       Grapeview, WA 98546 <br />
       Email: 
-      <button className="btn btn-primary">orchardwater@yahoo.com</button>
-        </motion.div>
+      
+      <button label="Write me an E-Mail"><a href = "mailto:orchardwater@yahoo.com?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></motion.div>
       </div>
     </div>
     </motion.container>
