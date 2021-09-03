@@ -3,8 +3,6 @@ import styles from '../styles/Contact.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import MailToButton from '../components/MailToButton'
-import { ButtonMailto } from '../components/ButtonMailto'
 
 const container = {
   hidden: { opacity: 0 },
