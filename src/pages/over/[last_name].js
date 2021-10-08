@@ -810,7 +810,7 @@ function galOverAugFees21() {
     const router = useRouter();
 
   return ( 
- <main style={{position:'absolute', top:'0', left:'0',marginTop:'-110px',marginLeft:'-65px', width: '100%', height: '100vh', width: '100%', overage:'hidden'}}>
+ <main style={{position:'absolute', top:'0', left:'0',marginTop:'50px',marginLeft:'5px', width: '100%', height: '100vh', width: '100%', overage:'hidden'}}>
   <><>
         <Zoom top cascade>
           {/* <div classname={styles.title}>
