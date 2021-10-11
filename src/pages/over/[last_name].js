@@ -824,7 +824,7 @@ function galOverAugustFees21() {
 
   
     
- <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'-50px', paddingBottom: '50px'}}>
+ <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
   
       
         <Zoom top cascade>

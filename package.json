@@ -21,6 +21,7 @@
     "core-js": "^3.12.1",
     "framer-motion": "^4.1.16",
     "fs": "^0.0.1-security",
+    "lint": "^0.7.0",
     "mdbreact": "^5.0.2",
     "next": "^11.1.2",
     "next-compose-plugins": "^2.2.1",
