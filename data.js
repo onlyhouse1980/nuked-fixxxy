@@ -929,7 +929,7 @@ export const people = [
         },
         {
             meter_serialNum: '22667351',
-            last_name: 'Cowen_Beam',
+            last_name: 'Cowan_Beam',
             oct02_18: '30280',
             nov02_18: '30293',
             dec04_18: '30293',
