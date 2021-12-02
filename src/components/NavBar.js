@@ -122,6 +122,11 @@ class Layout extends React.Component {
                     <Link target='_blank' href='/consumer.pdf'>
                         <a onClick={this.toggleCollapse}>Consumer Confidence 2020</a>
                       </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>
+                    <Link target='_blank' href='/masCountyFranchisePermit.pdf'>
+                        <a onClick={this.toggleCollapse}>Mason County Franchise Permit</a>
+                      </Link>
                     </MDBDropdownItem>                     
                   </MDBDropdownMenu>
                 </MDBDropdown>
