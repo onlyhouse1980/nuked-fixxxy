@@ -1052,6 +1052,32 @@ function galOverAugustFees21() {
                 </td>
               </tr>
 
+              <tr>
+                <td className={styles.td3}><p className={styles.p}>October 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(08/04-10/03)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="August2021"
+                    value={data.dec03_21 - data.oct03_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverAugust21()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverAugustFees21()}
+                </td>
+              </tr>
+
 
               <tr>
                 <td className={styles.td3}><p className={styles.p}>Annual Fees</p>
