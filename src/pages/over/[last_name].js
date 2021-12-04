@@ -805,12 +805,98 @@ function galOverAugustFees21() {
         readOnly>
     </input>}}
 
+function galOverOctober21() {
+  if ((data.dec03_21 - data.oct03_21)>6000) {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="octOver"
+      value={(data.dec03_21 - data.oct03_21)-6000}   
+      label="galOver" 
+      readOnly>
+    </input>;
+  } else {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="octOver"
+      value="0"   
+      label="galOver" 
+      readOnly>
+    </input>}}
+
+function galOverOctoberFees21() {
+  let x = data.dec03_21 - data.oct03_21
+    if (x>6000 && x<10000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+        type="text"
+        name="greaterThan" 
+        id="gTOctober2021"
+        value= {"$" + (((x)-6000)*.005).toFixed(2)} 
+        label="results" 
+        readOnly>
+      </input>;
+    } else if (x>10000 && x<20000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+          type="text" 
+          name="greaterThan" 
+          id="gTOctober0321t1"
+          value={"$" + (((x-10000)*.01)+19.99).toFixed(2)}
+          label="results" 
+          readOnly>
+      </input>;
+      } else if (x>20000) {
+        return <input style={{
+          backgroundColor: bgColors.Blue,
+          margin: '0 10px 0 10px',
+          width: '75px',
+        }}
+            type="text" 
+            name="greaterThan" 
+            id="gTOctober0321t2"
+            value={"$" + (((x-20000)*.025)+19.99+99.98).toFixed(2)}
+            label="results" 
+            readOnly>
+        </input>;
+  } else {
+    <input style={{
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }}
+        type="text" 
+        name="greaterThan" 
+        id="gTOctober2021"
+        value="$0"
+        label="results" 
+        readOnly>
+    </input>}}
+
+
 
 
     
     const router = useRouter();
     
-    function findTotal(){
+    /* function findTotal(){
       let arr = document.getElementsByName('greaterThan');
       var tot=0;
       for(var i=0;i<arr.length;i++){
@@ -819,7 +905,7 @@ function galOverAugustFees21() {
       }
       var anual = document.getElementById('anual');
       anual.value = tot;
-    }
+    } */
   return ( 
 
   
@@ -1054,7 +1140,7 @@ function galOverAugustFees21() {
 
               <tr>
                 <td className={styles.td3}><p className={styles.p}>October 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(08/04-10/03)</p></td>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/03-12/03)</p></td>
                 <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
@@ -1063,7 +1149,7 @@ function galOverAugustFees21() {
                   }}
                     type="text"
                     name="utilized"
-                    id="August2021"
+                    id="October2021"
                     value={data.dec03_21 - data.oct03_21}
                     label="answers"
                     readOnly
@@ -1071,10 +1157,10 @@ function galOverAugustFees21() {
                   </input>
                 </td>
                 <td className={styles.td3}>
-                  {galOverAugust21()}
+                  {galOverOctober21()}
                 </td>
                 <td className={styles.td3}>
-                  {galOverAugustFees21()}
+                  {galOverOctoberFees21()}
                 </td>
               </tr>
 
