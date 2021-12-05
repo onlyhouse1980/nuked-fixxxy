@@ -1240,7 +1240,7 @@ function galOverOctoberFees21() {
 
       
 
-   <VideoBg />
+   <VideoBg /> 
       
 </main>
 
