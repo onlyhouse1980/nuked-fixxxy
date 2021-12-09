@@ -47,7 +47,7 @@ export default function person() {
       let info1 = parseInt(document.getElementById("info1").value);
       let info2 = parseInt(document.getElementById("info2").value);
       var Answer = document.getElementById("Percent");
-        Answer.value = ((info1 - info2) / 6000 ).toFixed(2);
+        Answer.value = '%' + (((info1 - info2) / 6000 )*100).toFixed(2);
       }
         
     
