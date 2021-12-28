@@ -7,12 +7,22 @@
 
 .navbar ul li {
     position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
     text-align: center;
     top: 0;
 }
 
+.ddf {
+    vertical-align: sub;
+    font-size: .6rem;
+    text-align:left;
+    margin-left: -8px;
+}
 .navbar ul ul {
     position: absolute;
+    display: flex;
+    flex-wrap: nowrap ;
     text-align: center;
     width: 100%;
 }

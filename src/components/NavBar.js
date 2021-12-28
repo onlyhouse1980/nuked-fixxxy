@@ -92,9 +92,9 @@ class Layout extends React.Component {
               <MDBNavItem>
                 <MDBDropdown>
                 
-                  <MDBDropdownToggle nav caret>
+                  <MDBDropdownToggle nav>
                   <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Documents</span>
+                    <span className='mr-2'>Documents</span><span className={styles.ddf}>◿</span>
                     </motion.div>
                   </MDBDropdownToggle>
                  
@@ -134,9 +134,9 @@ class Layout extends React.Component {
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
+                  <MDBDropdownToggle nav>
                   <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Minutes</span>
+                    <span className='mr-2'>Minutes</span><span className={styles.ddf}>◿</span>
                   </motion.div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
