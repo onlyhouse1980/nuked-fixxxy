@@ -25,6 +25,7 @@
 
 .content a {
     color: #0202de;
+    font-weight: 900;
 }
 
 .contentNameplate {
@@ -39,6 +40,7 @@
 .content p {
     padding-left: 20px;
     background-color: white;
+    font-weight: 700;
 }
 
 .clink {
