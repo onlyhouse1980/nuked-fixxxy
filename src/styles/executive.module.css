@@ -45,3 +45,13 @@
     font-size: smaller;
     font: #020247!important;
 }
+
+@media screen and (max-width: 992px) {
+    .content {
+        max-width: -webkit-fill-available ;
+    }
+
+    .Image5 {
+        max-width: -webkit-fill-available;
+    }
+}
