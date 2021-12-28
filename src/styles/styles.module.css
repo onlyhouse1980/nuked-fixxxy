@@ -46,16 +46,39 @@
     z-index: -1;
   }
   
+  .mainName {
+    position: absolute;
+    top:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
   .bgText {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
     color: white;
-    margin: 0;
-    margin-bottom: auto;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: center;
-    padding-top: 40vh;
-    padding-bottom: 40vh;
+    font-size: 6rem;
+    line-height: 6rem;
     text-shadow: 1px 1px 1px black;
   }
   
+  @media screen and (max-width: 992px) {
+    .bgText {
+      word-wrap: normal;
+      font-size: 3em;
+      line-height: 1em;
+      justify-content: flex-start;
+    }
+
+    .mainName {
+      position: absolute;
+      top:30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

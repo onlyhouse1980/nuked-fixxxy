@@ -95,17 +95,20 @@ const index = () => (
       <Image
         alt="Water Droplets"
         src="/Images/WebPFiles/glass_droplets.webp"
-        filter="blur"
+        /*filter="blur"*/
         layout="fill"
         objectFit="cover"
         quality={100}
       />
     </motion.div>
+    <div className={styles.mainName}>
     <h2 className={styles.bgText}>
       <b>Orchard Beach</b>
-      <br />
+    </h2>
+    <h2 className={styles.bgText}>
       <b>Community Group</b>
     </h2>
+    </div>
     
     </motion.div>
 

@@ -1,0 +1,23 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+.h2 {
+    font-size: 12rem;
+}
+.content {
+    background-color: rgba(255, 255, 255, 0.749);
+    box-shadow: 2px 2px 8px rgb(60, 60, 60);
+    padding: 15px 20px 150px 25px;
+
+}
+
+.bgcontainer {
+    display: absolute;
+    top: 0;
+    left: 0;    
+    width: auto;
+    height: 100vh;
+}
