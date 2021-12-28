@@ -13,6 +13,7 @@ import {
 } from 'mdbreact';
 import { motion } from 'framer-motion'
 import React from 'react'
+import styles from '../styles/NavBar.module.css'
 
 class Layout extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <MDBNavbar color='indigo' dark expand='md'>
+        <MDBNavbar color='indigo' z-index='1' dark expand='md'>
         <motion.div whileHover= {{ scale: 1.5 }} >
           <MDBNavbarBrand>
             <a 

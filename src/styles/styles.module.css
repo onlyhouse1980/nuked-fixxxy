@@ -69,16 +69,20 @@
   
   @media screen and (max-width: 992px) {
     .bgText {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       word-wrap: normal;
       font-size: 3em;
-      line-height: 1em;
-      justify-content: flex-start;
+      line-height: 1.3em;
+      
     }
 
     .mainName {
-      position: absolute;
-      top:30%;
-      margin-left: auto;
-      margin-right: auto;
+      position: unset;
+      display: flex;
+      flex-direction: column;
+justify-content: flex-end;
+      margin-bottom: 75px;
     }
   }
