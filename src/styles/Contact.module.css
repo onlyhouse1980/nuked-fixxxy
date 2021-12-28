@@ -13,6 +13,10 @@
   height: 100vh;
 }
 
+.body {
+  background-color: turquoise;
+}
+
 .content {
   display: flex;
   position: relative !important;
@@ -28,8 +32,7 @@
 }
 .bottomliner {
   position: absolute !important;
-  //bottom: -410px !important;
   left: 20px !important;
-  width: 100% !important;
-  height: 100% !important;
+  
 }
+

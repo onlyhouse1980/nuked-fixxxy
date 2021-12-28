@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const container = {
+const div = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -20,10 +20,10 @@ const item = {
 }
 
 const Contact = () => (
-  <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+  <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }} className={styles.body}>
     <VideoBg1 />
-    <motion.container className={styles.content}
-    variants={container}
+    <motion.div className={styles.content}
+    variants={div}
     initial="hidden"
     animate="show"
     >
@@ -33,8 +33,8 @@ const Contact = () => (
       alt="upload of Orchard Beach" 
       minwidth="90vw" 
       minheight="100%"
-      width="1920"
-      height="714" 
+      width="1920px"
+      height="714px" 
       />
       </motion.div>
       <div className={styles.bottomliner}>
@@ -47,7 +47,7 @@ const Contact = () => (
       <button label="Write me an E-Mail"><a href = "mailto:orchardwater@yahoo.com?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></motion.div>
       </div>
     </div>
-    </motion.container>
+    </motion.div>
   </motion.div>
 );
 
