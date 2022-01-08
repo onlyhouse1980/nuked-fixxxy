@@ -9,7 +9,7 @@ const Archive = props => (
     <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
         <VideoBg1 />
         <Zoom top>
-        <motion.div className={styles.content}
+        <motion.div className={styles.stuff}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -27,8 +27,7 @@ const Archive = props => (
         <button><a target='_blank' href='/2014.pdf'>2009</a></button>
         <button><a target='_blank' href='/2014.pdf'>2008</a></button>
         <button><a target='_blank' href='/2014.pdf'>2007</a></button>
-        </div>
-        <div className={styles.indDates}>
+        
         <button><a target='_blank' href='/2014.pdf'>2006</a></button>
         <button><a target='_blank' href='/2014.pdf'>2005</a></button>
         <button><a target='_blank' href='/2014.pdf'>2004</a></button>
@@ -37,8 +36,7 @@ const Archive = props => (
         <button><a target='_blank' href='/2014.pdf'>2001</a></button>
         <button><a target='_blank' href='/2014.pdf'>2000</a></button>
         <button><a target='_blank' href='/2014.pdf'>1999</a></button>
-        </div>
-        <div className={styles.indDates}>
+        
         <button><a target='_blank' href='/2014.pdf'>1998</a></button>
         <button><a target='_blank' href='/2014.pdf'>1997</a></button>
         <button><a target='_blank' href='/2014.pdf'>1996</a></button>
@@ -47,8 +45,7 @@ const Archive = props => (
         <button><a target='_blank' href='/2014.pdf'>1993</a></button>
         <button><a target='_blank' href='/2014.pdf'>1992</a></button>
         <button><a target='_blank' href='/2014.pdf'>1991</a></button>
-        </div>
-        <div className={styles.indDates}>
+        
         <button><a target='_blank' href='/2014.pdf'>1990</a></button>
         <button><a target='_blank' href='/2014.pdf'>1989</a></button>
         <button><a target='_blank' href='/2014.pdf'>1987</a></button>
@@ -57,9 +54,8 @@ const Archive = props => (
         <button><a target='_blank' href='/2014.pdf'>1984</a></button>
         <button><a target='_blank' href='/2014.pdf'>1983</a></button>
         <button><a target='_blank' href='/2014.pdf'>1982</a></button>
-        </div>
-        </div>
-        <div className={styles.indDates}>
+        
+        
         <button><a target='_blank' href='/2014.pdf'>1981</a></button>    
         <button><a target='_blank' href='/2014.pdf'>1980</a></button>    
         <button><a target='_blank' href='/2014.pdf'>1979</a></button>    
@@ -68,6 +64,7 @@ const Archive = props => (
         <button><a target='_blank' href='/2014.pdf'>1976</a></button>    
         <button><a target='_blank' href='/2014.pdf'>1975</a></button>    
         <button><a target='_blank' href='/2014.pdf'>1974</a></button>    
+        </div>
         </div>
         </div>
         </motion.div>
