@@ -1,24 +1,42 @@
-import VideoBg1 from '../components/VideoBg1'
-import styles from '../styles/archives.module.css'
-import { motion } from 'framer-motion'
-import Zoom from 'react-reveal/Zoom'
 
-
-
-const Archive = props => (
-    <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-        <VideoBg1 />
-        <Zoom top>
-        <motion.div className={styles.stuff}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
             
-        <div className={styles.dates}>
-        <div className={styles.clms}>
-        <h1 className={styles.h1}>Archived Minutes</h1>
+        
+        import VideoBg from '../components/VideoBg';
+        import styles from '../styles/archive.module.css';
+        import Link from 'next/link';
+        import { motion } from 'framer-motion'
+        
+        const container = {
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.5
+            }
+          }
+        }
+        
+        const item = {
+          hidden: { opacity: 0 },
+          show: { opacity: 1 }
+        }
+        
+        const Archive = () => (
+          <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+            <VideoBg /> 
+            <motion.container className={styles.bgcontainer}
+            variants={container}
+            initial="hidden"
+            animate="show" className={styles.textbox}>
+            <h2 className='text-center'><b>OBCG</b><br /><b>Minutes Archive</b></h2>
+            <p></p>
+            <div className={styles.divBlock}>
+            
+        
         <div className={styles.indDates}>
+        
+        
+        
         <button><a target='_blank' href='/2014.pdf'>2014</a></button>
         <button><a target='_blank' href='/2014.pdf'>2013</a></button>
         <button><a target='_blank' href='/2014.pdf'>2012</a></button>
@@ -66,11 +84,9 @@ const Archive = props => (
         <button><a target='_blank' href='/2014.pdf'>1974</a></button>    
         </div>
         </div>
-        </div>
+        
+        </motion.container>
         </motion.div>
-        </Zoom>
-      </motion.div>
-    
-    );
-    
-    export default Archive;
+        );
+        
+        export default Archive;
