@@ -53,3 +53,9 @@
 .content img {
     width: 100%!important;
 }
+
+.indDates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
