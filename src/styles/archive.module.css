@@ -60,6 +60,6 @@
     justify-content: space-between;
 }
 
-#button {
-    border-radius: 200px;
+.button {
+    border-radius: 20px;
 }
