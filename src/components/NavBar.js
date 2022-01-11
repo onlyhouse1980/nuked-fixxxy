@@ -175,11 +175,11 @@ class Layout extends React.Component {
                         <a onClick={this.toggleCollapse}>2015</a>
                       </Link>
                     </MDBDropdownItem>
-                    {/* <MDBDropdownItem>
+                     <MDBDropdownItem>
                     <Link target='_blank' href='/archive'>
                         <a onClick={this.toggleCollapse}>Archive</a>
                       </Link>
-                    </MDBDropdownItem>  */}                   
+                    </MDBDropdownItem>                  
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
