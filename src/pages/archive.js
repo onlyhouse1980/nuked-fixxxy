@@ -39,8 +39,7 @@
         
         <button className={styles.button}><a  href='/archive/2013.pdf'>2013</a></button>
         <button className={styles.button}><a  href='/archive/2010.pdf'>2010</a></button>
-        <button className={styles.button}><a  href='/archive/2008.pdf'>2008</a></button>
-       <button className={styles.button}><a  href='/archive/20041016.pdf'>2004</a></button>
+        <button className={styles.button}><a  href='/archive/20041016.pdf'>2004</a></button>
         <button className={styles.button}><a  href='/archive/2003.pdf'>2003</a></button>
         <button className={styles.button}><a  href='/archive/2002.pdf'>2002</a></button>
         <button className={styles.button}><a  href='/archive/2000.pdf'>2000</a></button>
@@ -62,7 +61,7 @@
         <button className={styles.button}><a  href='/archive/1985.pdf'>1985</a></button>
         <button className={styles.button}><a  href='/archive/1984.pdf'>1984</a></button>
         <button className={styles.button}><a  href='/archive/1983.pdf'>1983</a></button>
-        <button className={styles.button}><a  href='/archive/19822.pdf'>19822</a></button>
+        <button className={styles.button}><a  href='/archive/19822.pdf'>1982-2</a></button>
         <button className={styles.button}><a  href='/archive/1982.pdf'>1982</a></button>
         
         
