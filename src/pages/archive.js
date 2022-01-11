@@ -40,16 +40,10 @@
         <button className={styles.button}><a target='_blank' href='/archive/2013.pdf'>2013</a></button>
         <button className={styles.button}><a target='_blank' href='/archive/2010.pdf'>2010</a></button>
         <button className={styles.button}><a target='_blank' href='/archive/2008.pdf'>2008</a></button>
-        <button className={styles.button}><a target='_blank' href='/archive/2007.pdf'>2007</a></button>
-        
-        <button className={styles.button}><a target='_blank' href='/archive/2006.pdf'>2006</a></button>
-        <button className={styles.button}><a target='_blank' href='/archive/2005.pdf'>2005</a></button>
-        <button className={styles.button}><a target='_blank' href='/archive/20041016.pdf'>2004</a></button>
+       <button className={styles.button}><a target='_blank' href='/archive/20041016.pdf'>2004</a></button>
         <button className={styles.button}><a target='_blank' href='/archive/2003.pdf'>2003</a></button>
         <button className={styles.button}><a target='_blank' href='/archive/2002.pdf'>2002</a></button>
-        <button className={styles.button}><a target='_blank' href='/archive/2001.pdf'>2001</a></button>
         <button className={styles.button}><a target='_blank' href='/archive/2000.pdf'>2000</a></button>
-        <button className={styles.button}><a target='_blank' href='/archive/1999.pdf'>1999</a></button>
         
         <button className={styles.button}><a target='_blank' href='/archive/1998.pdf'>1998</a></button>
         <button className={styles.button}><a target='_blank' href='/archive/1997.pdf'>1997</a></button>
