@@ -2,7 +2,6 @@ import VideoBg from '../components/VideoBg';
 import styles from '../styles/executive.module.css';
 import Link from 'next/link';
 import { motion } from 'framer-motion'
-import Zoom from 'react-reveal/Zoom';
 
 const container = {
   hidden: { opacity: 0 },
@@ -25,7 +24,7 @@ const Executive = () => (
     <motion.container className={styles.bgcontainer}
     variants={container}
     initial="hidden"
-    animate="show" className={styles.textbox}>
+    animate="show">
     <h2 className='text-center'><b>OBCG</b><br /><b>Executive Board</b></h2>
     <p></p>
     <div className={styles.divBlock}>

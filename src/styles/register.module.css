@@ -14,3 +14,7 @@
     margin-bottom: 150px;
     padding: 0;
 }
+
+.md-form>label {
+    color: black !important;
+}

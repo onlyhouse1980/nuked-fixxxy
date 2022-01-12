@@ -26,7 +26,7 @@ const fetcher = async (url) => {
   return data 
 }
 
-export default function person() {
+export default function Person() {
   
   const { query } = useRouter()
   const { data, error } = useSWR(

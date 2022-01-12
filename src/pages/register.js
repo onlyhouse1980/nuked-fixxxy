@@ -14,8 +14,8 @@ import Zoom from 'react-reveal/Zoom';
 import { motion } from 'framer-motion'
 import React from 'react'
 import { MDBAnimation } from "mdbreact";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+/* import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content' */
 
 
 
