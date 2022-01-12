@@ -23,15 +23,17 @@ function Layout(props) {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width: 100%; height: "auto";
+          width: 100%; 
+          
           
 
           
-        },
+        }
       .Image .resizer {
         width: 100%; height:"auto"
       }
-      `}</style>      
+      `}
+      </style>      
     </>
   );
 }
