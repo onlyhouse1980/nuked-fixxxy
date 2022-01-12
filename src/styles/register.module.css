@@ -5,6 +5,12 @@
     color: red;
 }
 .mdbkard {
-    padding: 10px 50px 200px 50px;
+    padding: 0;
+    margin-bottom: 150px;
     background-color: rgba(255, 255, 255, 0.7)
+}
+
+.card {
+    margin-bottom: 150px;
+    padding: 0;
 }
