@@ -20,10 +20,10 @@ import withReactContent from 'sweetalert2-react-content' */
 
 
 
-const newLocal = <script src="../../script.js" />;
+
 <div suppressHydrationWarning={true}>
     { process.browser }
-    <Head>{newLocal}</Head>
+    
     </div>
 
 const Example = () => (

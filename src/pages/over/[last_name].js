@@ -894,7 +894,7 @@ function galOverOctoberFees21() {
 
 
     
-    const router = useRouter();
+    
     
     /* function findTotal(){
       let arr = document.getElementsByName('greaterThan');
@@ -914,7 +914,7 @@ function galOverOctoberFees21() {
   
       
         <Zoom top cascade>
-          <div classname={styles.title}>
+          <div className={styles.title}>
           <h1 className={styles.pageheader}>👤 <em>{router.query.name} {data.last_name}</em></h1>
           </div>
           <table className={styles.table}>
