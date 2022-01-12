@@ -27,7 +27,7 @@
             <motion.container className={styles.bgcontainer}
             variants={container}
             initial="hidden"
-            animate="show" className={styles.textbox}>
+            animate="show" >
             <h2 className='text-center'><b>OBCG</b><br /><b>Minutes Archive</b></h2>
             <p></p>
             <div className={styles.divBlock}>
