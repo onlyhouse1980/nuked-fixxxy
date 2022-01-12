@@ -14,10 +14,16 @@ import Zoom from 'react-reveal/Zoom';
 import { motion } from 'framer-motion'
 import React from 'react'
 import { MDBAnimation } from "mdbreact";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
+
+
+
+const newLocal = <script src="../../script.js" />;
 <div suppressHydrationWarning={true}>
     { process.browser }
-    <Head><script src="../../script.js" /></Head>
+    <Head>{newLocal}</Head>
     </div>
 
 const Example = () => (
@@ -41,11 +47,12 @@ const Example = () => (
               <a href="" id="lnk"></a> 
               <div className='grey-text'>
               
-                <MDBInput
+                <MDBInput className={styles.userInput}
                   id='userInput'
                   label='Serial Number'
                   icon='user'
                   type='text'
+                  
                 />
               </div>
               <div className='text-center'>                
