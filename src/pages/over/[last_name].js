@@ -896,16 +896,7 @@ function galOverOctoberFees21() {
     
     
     
-    /* function findTotal(){
-      let arr = document.getElementsByName('greaterThan');
-      var tot=0;
-      for(var i=0;i<arr.length;i++){
-        if(parseInt(arr[i].value))
-          tot += parseInt(arr[i].value);
-      }
-      var anual = document.getElementById('anual');
-      anual.value = tot;
-    } */
+    
   return ( 
 
   
@@ -915,7 +906,7 @@ function galOverOctoberFees21() {
       
         <Zoom top cascade>
           <div className={styles.title}>
-          <h1 className={styles.pageheader}>👤 <em>{router.query.name} {data.last_name}</em></h1>
+          <h1 className={styles.pageheader}>👤 <em>{data.last_name}</em></h1>
           </div>
           <table className={styles.table}>
             <thead>
