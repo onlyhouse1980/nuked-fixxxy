@@ -1,10 +1,6 @@
-
-            
-        
-        import VideoBg from '../components/VideoBg';
-        import styles from '../styles/archive.module.css';
-        import Link from 'next/link';
-        import { motion } from 'framer-motion'
+import VideoBg from '../components/VideoBg';
+import styles from '../styles/archive.module.css';
+import { motion } from 'framer-motion'
         
         const container = {
           hidden: { opacity: 0 },
@@ -37,6 +33,8 @@
         
         
         
+        <button className={styles.button}><a  href='/archive/20140621.pdf'>2014 06/21</a></button>
+        <button className={styles.button}><a  href='/archive/2014.pdf'>2014 01/26</a></button>
         <button className={styles.button}><a  href='/archive/2013.pdf'>2013</a></button>
         <button className={styles.button}><a  href='/archive/2012.pdf'>2012</a></button>
         <button className={styles.button}><a  href='/archive/2010.pdf'>2010</a></button>
@@ -63,8 +61,8 @@
         <button className={styles.button}><a  href='/archive/1985.pdf'>1985</a></button>
         <button className={styles.button}><a  href='/archive/1984.pdf'>1984</a></button>
         <button className={styles.button}><a  href='/archive/1983.pdf'>1983</a></button>
-        <button className={styles.button}><a  href='/archive/19822.pdf'>1982-2</a></button>
-        <button className={styles.button}><a  href='/archive/1982.pdf'>1982</a></button>
+        <button className={styles.button}><a  href='/archive/19822.pdf'>1982 05/22</a></button>
+        <button className={styles.button}><a  href='/archive/1982.pdf'>1982 07/11</a></button>
         
         
         <button className={styles.button}><a  href='/archive/1981.pdf'>1981</a></button>    

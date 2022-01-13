@@ -60,5 +60,13 @@
 }
 
 .button {
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 5em;
+    height: 5em;
+    color: black;
+    margin: 5px;
 }
