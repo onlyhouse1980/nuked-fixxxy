@@ -2,8 +2,7 @@ import { Component } from "react"
 import TextareaAutosize from "react-autosize-textarea"
 import { sendContactMail } from "../networking/mail-api"
 import React from 'react'
-import { AnimationWrapper } from 'react-hover-animation'
-import styles from '../../styles/contactcopy.module.scss'
+
 
 //[1]
 
