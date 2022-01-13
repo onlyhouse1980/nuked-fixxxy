@@ -1,6 +1,7 @@
 import VideoBg from '../components/VideoBg';
 import styles from '../styles/archive.module.css';
 import { motion } from 'framer-motion'
+
         
         const container = {
           hidden: { opacity: 0 },

@@ -69,4 +69,13 @@
     height: 5em;
     color: black;
     margin: 5px;
+    font-weight: 900;
 }
+
+
+
+.button a {
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+}
+
