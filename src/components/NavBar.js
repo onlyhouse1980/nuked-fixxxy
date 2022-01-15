@@ -105,16 +105,6 @@ class Layout extends React.Component {
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                      <Link target='_blank' href='/FAQ.pdf'>
-                        <a onClick={this.toggleCollapse}>Misc.</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/Bylaws.pdf'>
-                        <a onClick={this.toggleCollapse}>Current Bylaws</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
                     <Link target='_blank' href='/Sysplan.pdf'>
                         <a onClick={this.toggleCollapse}>Water System Plan</a>
                       </Link>
@@ -125,8 +115,18 @@ class Layout extends React.Component {
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
+                    <Link target='_blank' href='/Bylaws.pdf'>
+                        <a onClick={this.toggleCollapse}>Current Bylaws</a>
+                      </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>
                     <Link target='_blank' href='/masCountyFranchisePermit.pdf'>
                         <a onClick={this.toggleCollapse}>Mason County Franchise Permit</a>
+                      </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>                   
+                      <Link target='_blank' href='/FAQ.pdf'>
+                        <a onClick={this.toggleCollapse}>FAQs</a>
                       </Link>
                     </MDBDropdownItem>                     
                   </MDBDropdownMenu>
