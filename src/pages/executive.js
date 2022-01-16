@@ -29,13 +29,13 @@ const Executive = () => (
     <p></p>
     <div className={styles.divBlock}>
       <motion.div variants={item} className= {styles.content}><motion.img src="/Images/WebPFiles/team-1.webp" loading="lazy" width="300" alt="Member Photo" className={styles.Image5} />
-        <div className={styles.contentNameplate}><p>President<br />Jim Farrell<br /><a className={styles.clink}><Link href="/contactus1" passHref>Contact</Link></a></p></div>
+        <div className={styles.contentNameplate}><p>President<br />Jim Farrell<br /><a className={styles.clink}><Link href="/contactus1" passHref >Contact</Link></a></p></div>
       </motion.div>
       <motion.div variants={item} className= {styles.content}><motion.img src="/Images/WebPFiles/team-2.webp" loading="lazy" width="300" alt="Member Photo" className={styles.Image5} />
-        <div className={styles.contentNameplate}><p>Vice President<br />Erika Aust<br /><a className={styles.clink}><Link href="/contactus" passHref>Contact</Link></a></p></div>
+        <div className={styles.contentNameplate}><p>Vice President<br />Erika Aust<br /><a className={styles.clink}><Link href="/contactus" passHref >Contact</Link></a></p></div>
       </motion.div>
       <motion.div variants={item} className= {styles.content}><motion.img src="/Images/WebPFiles/team-3.webp" loading="lazy" width="300" alt="Member Photo" className={styles.Image5} />
-        <div className={styles.contentNameplate}><p>Secretary/Treasurer<br />James Loder<br /><a className={styles.clink}><Link href="/contactus3" passHref>Contact</Link></a></p></div>
+        <div className={styles.contentNameplate}><p>Secretary/Treasurer<br />James Loder<br /><a className={styles.clink}><Link href="/contactus3" passHref >Contact</Link></a></p></div>
       </motion.div>
       </div>
       </motion.container>
