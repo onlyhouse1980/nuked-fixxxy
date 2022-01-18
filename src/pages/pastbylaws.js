@@ -1,5 +1,5 @@
 import VideoBg from '../components/VideoBg';
-import styles from '../styles/archive.module.css';
+import styles from '../styles/pastbylaws.module.css';
 import { motion } from 'framer-motion'
 
         
