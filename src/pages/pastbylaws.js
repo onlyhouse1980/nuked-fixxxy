@@ -19,14 +19,13 @@ import { motion } from 'framer-motion'
         }
         
         const PreviousBylaws = () => (
-          <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+          <motion.div className={styles.bigBox} exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
             <VideoBg /> 
             <motion.container className={styles.bgcontainer}
             variants={container}
             initial="hidden"
             animate="show" >
-            <h2 className='text-center'><b>OBCG</b><br /><b>Previous Bylaws</b></h2>
-            <p></p>
+            
             <div className={styles.divBlock}>
             
         
@@ -34,7 +33,8 @@ import { motion } from 'framer-motion'
         
         
         
-        
+        <h2>OBCG</h2><br /><h2>Previous Bylaws</h2><br />
+        <div className={styles.buttines}>
         
         <button className={styles.button}><a  href='/archive/2010bl.pdf'>2010</a></button>
         <button className={styles.button}><a  href='/archive/1991bl.pdf'>1991</a></button>
@@ -42,6 +42,7 @@ import { motion } from 'framer-motion'
         <button className={styles.button}><a  href='/archive/1982bl.pdf'>1982</a></button>  
         <button className={styles.button}><a  href='/archive/1977bl.pdf'>1977</a></button>    
         <button className={styles.button}><a  href='/archive/1975bl.pdf'>1975</a></button>    
+        </div>
         </div>
         </div>
         

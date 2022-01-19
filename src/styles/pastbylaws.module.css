@@ -67,7 +67,7 @@
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .button {
@@ -90,3 +90,22 @@
     font-weight: 900;
 }
 
+.text-center {
+    position: relative;
+}
+
+.bgcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bigBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttines {
+    display: flex;
+    flex-direction: row;
+}
