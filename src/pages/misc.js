@@ -37,7 +37,7 @@ import { motion } from 'framer-motion'
         <button className={styles.button1}><a  href='/misc/1982_Water_line_replacement.pdf'>1982 Water line replacement</a></button>
         <button className={styles.button1}><a  href='/misc/Legal_property.pdf'>Legal property</a></button>
         <button className={styles.button1}><a  href='/misc/Map_Master_Water_Line_Connections.pdf'>Map Master Water Line Connections</a></button>
-        <button className={styles.button1}><a  href='/misc/Park_Madings_Orchard_Beac.pdf'>Park Madings Orchard Beac </a></button>
+        <button className={styles.button1}><a  href='/misc/Park_Madings_Orchard_Beac.pdf'>Park Madings Orchard Beach </a></button>
         </div>
         </div>
         
