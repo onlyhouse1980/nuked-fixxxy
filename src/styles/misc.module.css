@@ -1,0 +1,92 @@
+.dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    margin-top: -300px;
+    margin-right: 20px;
+    margin-top: -450px;
+    margin-bottom: 100px;
+
+}
+
+.indDates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-bottom: 100px;
+    
+
+}
+
+.indDates a {
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.clms {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.749);
+    box-shadow: 2px 2px 8px rgb(60, 60, 60);
+    padding: 10px;
+    margin-bottom: 40vh;
+}
+
+.content img {
+    width: 100%!important;
+}
+
+.indDates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 5em;
+    height: 5em;
+    color: black;
+    margin: 5px;
+    font-weight: 900;
+}
+
+
+
+.button a {
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.bgcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
