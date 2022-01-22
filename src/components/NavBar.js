@@ -133,7 +133,13 @@ class Layout extends React.Component {
                       <Link target='_blank' href='/FAQ.pdf'>
                         <a onClick={this.toggleCollapse}>FAQs</a>
                       </Link>
-                    </MDBDropdownItem>                     
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>                   
+                      <Link target='_blank' href='/misc'>
+                        <a onClick={this.toggleCollapse}>Misc. Files</a>
+                      </Link>
+                    </MDBDropdownItem> 
+                                        
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
