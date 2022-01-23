@@ -1,22 +1,35 @@
-import VideoBg from '../components/VideoBg';
-import styles from '../styles/misc.module.css';
-import { motion } from 'framer-motion'
 
-        
-        
-        
-        
-        
-        const Misc = () => (
-          <div>
-            <VideoBg /> 
-            <div className={styles.bgcontainer}>
-            <h2 className='text-center'><b>OBCG</b><br /><b>Historical Documents</b></h2>
-            
-            <div className={styles.divBlock}>
-            
-        
-        <div className={styles.indDates}>
+import styles from '../styles/misc.module.css'
+import VideoBg1 from '../components/VideoBg1'
+import { motion } from 'framer-motion';
+
+
+const div = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5
+    }
+  }
+}
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 }
+}
+
+const Misc = props => (
+  <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+    <VideoBg1 /> 
+    <motion.div className={styles.bgcontainer}
+    variants={div}
+    initial="hidden"
+    animate="show"
+    >
+    <div className={styles.content}>
+    <motion.h2 variants={item} className='text-center'>Historical Documents</motion.h2><br /><br />
+    <div className={styles.indDates}>
         
         
         
@@ -27,8 +40,9 @@ import { motion } from 'framer-motion'
         </div>
         </div>
         
-        </div>
-        </div>
-        );
         
-        export default Misc;
+    </motion.div>
+  </motion.div>
+);
+
+export default Misc;
