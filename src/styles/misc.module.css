@@ -40,10 +40,19 @@
     justify-content: center;
 }
 .content {
-    position: relative;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    margin-top:100px;
+    padding-top: 100px;
     background-color: rgba(255, 255, 255, 0.749);
     box-shadow: 2px 2px 8px rgb(60, 60, 60);
     padding: 10px;
+    z-index: -1;
 }
 
 .indDates button {
@@ -53,6 +62,12 @@
 
 .content img {
     width: 100%!important;
+    display: flex;
+    position:fixed;
+    top: 60px;
+    bottom:0;
+    left: 0;
+    right: 0;
 }
 
 .indDates {
@@ -82,14 +97,3 @@
     text-align: center;
 }
 
-.bgcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left:0;
-    right:0;
-}

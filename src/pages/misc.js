@@ -22,12 +22,7 @@ const item = {
 const Misc = props => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     <VideoBg1 /> 
-    <motion.div className={styles.bgcontainer}
-    variants={div}
-    initial="hidden"
-    animate="show"
-    >
-    <div className={styles.content}>
+        <div className={styles.content}>
     <motion.h2 variants={item} className='text-center'>Historical Documents</motion.h2><br /><br />
     <div className={styles.indDates}>
         
@@ -42,7 +37,7 @@ const Misc = props => (
         
         
     </motion.div>
-  </motion.div>
+
 );
 
 export default Misc;
