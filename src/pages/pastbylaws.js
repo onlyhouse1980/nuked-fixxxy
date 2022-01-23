@@ -3,15 +3,7 @@ import styles from '../styles/pastbylaws.module.css';
 import { motion } from 'framer-motion'
 
         
-        const container = {
-          hidden: { opacity: 0 },
-          show: {
-            opacity: 1,
-            transition: {
-              staggerChildren: 0.5
-            }
-          }
-        }
+        
         
         const item = {
           hidden: { opacity: 0 },
@@ -19,12 +11,8 @@ import { motion } from 'framer-motion'
         }
         
         const PreviousBylaws = () => (
-          <motion.div className={styles.bigBox} exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+            <div className={styles.body}>
             <VideoBg /> 
-            <motion.container className={styles.bgcontainer}
-            variants={container}
-            initial="hidden"
-            animate="show" >
             
             <div className={styles.divBlock}>
             
@@ -43,10 +31,10 @@ import { motion } from 'framer-motion'
         <button className={styles.button}><a  href='/archive/1975bl.pdf'>1975</a></button>    
         </div>
         </div>
-        </div>
         
-        </motion.container>
-        </motion.div>
+        
+        </div>
+        </div>
         );
         
         export default PreviousBylaws;
