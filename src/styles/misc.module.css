@@ -34,6 +34,13 @@
 .clms {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#__next {
+    min-height: unset;
 }
 
 .h1 {
@@ -47,6 +54,10 @@
     box-shadow: 2px 2px 8px rgb(60, 60, 60);
     padding: 10px;
     margin-bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content img {
