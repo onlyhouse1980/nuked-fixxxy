@@ -1,4 +1,4 @@
-import VideoBg from '../components/VideoBg';
+/* import VideoBg from '../components/VideoBg';
 import styles from '../styles/pastbylaws.module.css';
 import { motion } from 'framer-motion'
 
@@ -14,7 +14,7 @@ import { motion } from 'framer-motion'
             <div className={styles.body}>
             <VideoBg /> 
             
-            <div className={styles.divBlock}>
+            
             
         
         <div className={styles.indDates}>
@@ -34,7 +34,7 @@ import { motion } from 'framer-motion'
         
         
         </div>
-        </div>
+        
         );
         
-        export default PreviousBylaws;
+        export default PreviousBylaws; */
