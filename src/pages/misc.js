@@ -21,22 +21,18 @@ const item = {
 
 const Misc = props => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-    <VideoBg1 /> 
-        <div className={styles.content}>
-    <motion.h2 variants={item} className='text-center'>Historical Documents</motion.h2><br /><br />
+    <VideoBg1 />
+    <div className={styles.header}>
+      <h2 className='text-center'>Historical Documents</h2><br /><br />
+    </div>
     <div className={styles.indDates}>
-        
-        
-        
         <button className={styles.button1}><a  href='/misc/1982_Water_line_replacement.pdf'>1982 Water line replacement</a></button>
         <button className={styles.button1}><a  href='/misc/Legal_property.pdf'>Legal property</a></button>
         <button className={styles.button1}><a  href='/misc/Map_Master_Water_Line_Connections.pdf'>Map Water Line</a></button>
         <button className={styles.button1}><a  href='/misc/Park_Madings_Orchard_Beach.pdf'>Park Madings Orchard Beach </a></button>
-        </div>
-        </div>
-        
-        
-    </motion.div>
+    </div>
+
+  </motion.div>
 
 );
 

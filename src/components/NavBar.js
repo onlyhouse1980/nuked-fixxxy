@@ -30,7 +30,7 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <MDBNavbar color='indigo' z-index='1' dark expand='md'>
+        <MDBNavbar color='indigo' z-index='10' dark expand='md'>
         <motion.div whileHover= {{ scale: 1.5 }} >
           <MDBNavbarBrand>
             <a 
