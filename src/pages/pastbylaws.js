@@ -25,7 +25,7 @@ import { motion } from 'framer-motion'
             variants={container}
             initial="hidden"
             animate="show" >
-            <h2 className='text-center'><b>OBCG</b><br /><b>Historical Documents</b></h2>
+            <h2 className='text-center'><b>OBCG</b><br /><b>Previous Bylaws</b></h2>
             <p></p>
             <div className={styles.divBlock}>
             
