@@ -30,7 +30,7 @@ import { motion } from 'framer-motion'
                   <button className={styles.button}><a  href='/misc/Legal_property.pdf'>Legal property</a></button>
                   <button className={styles.button}><a  href='/misc/Map_Master_Water_Line_Connections.pdf'>Map Water Line</a></button>
                   <button className={styles.button}><a  href='/misc/Park_Madings_Orchard_Beach.pdf'>Park Madings Orchard Beach </a></button>
-                  <button className={styles.button}><a  href='/misc/assorted_documents.pdf'>Assorted Documents</a></button>
+                  <button className={styles.button}><a  href='/misc/Historical_Meetings_Notices_Letters.pdf'>Assorted Documents</a></button>
                 </div>
               </div>
             </motion.container>
