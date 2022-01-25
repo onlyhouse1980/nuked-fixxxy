@@ -42,3 +42,4 @@ src/pages/test/image-app/public/vercel.png
 src/pages/test/image-app/README.md
 src/pages/test/image-app/styles.module.css
 src/pages/test/image-app/yarn.lock
+.vscode/settings.json
