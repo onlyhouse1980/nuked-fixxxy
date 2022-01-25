@@ -39,9 +39,7 @@
 
 }
 
-#__next {
-    height: 100px!important;
-}
+
 
 .h1 {
     color: white;
@@ -66,8 +64,9 @@
 
 .indDates {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
 }
 
 .button {
@@ -94,3 +93,9 @@
     font-weight: 900;
 }
 
+.bgcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
