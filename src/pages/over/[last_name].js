@@ -891,6 +891,92 @@ function galOverOctoberFees21() {
     </input>}}
 
 
+function galOverDecember21() {
+  if ((data.feb04_22 - data.dec03_21)>6000) {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="dec21Over"
+      value={(data.feb04_22 - data.dec03_21)-6000}   
+      label="galOver" 
+      readOnly>
+    </input>;
+  } else {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="dec21Over"
+      value="0"   
+      label="galOver" 
+      readOnly>
+    </input>}}
+
+function galOverDecemberFees21() {
+  let x = data.feb04_22 - data.dec03_21
+    if (x>6000 && x<10000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+        type="text"
+        name="greaterThan" 
+        id="gTDecember2021"
+        value= {"$" + (((x)-6000)*.005).toFixed(2)} 
+        label="results" 
+        readOnly>
+      </input>;
+    } else if (x>10000 && x<20000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+          type="text" 
+          name="greaterThan" 
+          id="gTDecember2021"
+          /*chech this one for error*/
+          value={"$" + (((x-10000)*.01)+19.99).toFixed(2)}
+          label="results" 
+          readOnly>
+      </input>;
+      } else if (x>20000) {
+        return <input style={{
+          backgroundColor: bgColors.Blue,
+          margin: '0 10px 0 10px',
+          width: '75px',
+        }}
+            type="text" 
+            name="greaterThan" 
+            id="gTDecember2021"
+            value={"$" + (((x-20000)*.025)+19.99+99.98).toFixed(2)}
+            label="results" 
+            readOnly>
+        </input>;
+  } else {
+    <input style={{
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }}
+        type="text" 
+        name="greaterThan" 
+        id="gTDecember2021"
+        value="$0"
+        label="results" 
+        readOnly>
+    </input>}}
+
 
 
     
@@ -1152,6 +1238,31 @@ function galOverOctoberFees21() {
                 </td>
                 <td className={styles.td3}>
                   {galOverOctoberFees21()}
+                </td>
+              </tr>
+              <tr>
+                <td className={styles.td3}><p className={styles.p}>December 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/03-02/04)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="December2021"
+                    value={data.feb04_22 - data.dec03_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverDecember21()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverDecemberFees21()}
                 </td>
               </tr>
 
