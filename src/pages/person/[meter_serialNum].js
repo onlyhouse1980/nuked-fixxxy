@@ -79,20 +79,20 @@ export default function Person() {
         <tr>
           <td className={styles.td3}>
           <p className={styles.p}></p>
-          <p className={styles.p}>Last reading by Vendor - December 3rd, 2021</p>
+          <p className={styles.p}>Last reading by Vendor - February 4th, 2022</p>
           </td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}} 
               type="text" 
               id="info2" 
-              label="December 3rd, 2021" 
-              value={data.dec03_21} 
+              label="February 4th, 2022" 
+              value={data.feb04_22} 
               readOnly />
             </td>
         </tr>
         <tr>
-        <td className={styles.td3}><p className={styles.p}>Gallons used since December 3rd 2021.</p></td>
+        <td className={styles.td3}><p className={styles.p}>Gallons used since February 4th 2022.</p></td>
         <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -112,7 +112,7 @@ export default function Person() {
             type="text" 
             name="utilized" 
             id="lastYear"
-            value={data.dec10_20-data.oct07_20} 
+            value={data.feb19_21-data.dec10_20} 
             label="answers" 
             readOnly>
           </input>
