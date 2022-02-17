@@ -986,6 +986,7 @@ function galOverDecemberFees21() {
   return ( 
 
   
+  
     
  <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
   
@@ -996,13 +997,15 @@ function galOverDecemberFees21() {
           </div>
           <table className={styles.table}>
             <thead>
-              <tr style={{ fontWeight:'900', fontSize:'30' }} className={styles.th2}><br />
-                <td />
+              <tr style={{ fontWeight:'900', fontSize:'30' }} className={styles.th2}>
                 <td>
-                  <th style={{ fontWeight:'900' }} className={styles.th2}>Meter Serial</th>                
+                <p style={{ fontWeight:'900' }} className={styles.th2}>Meter Serial</p> 
                 </td>
                 <td>
-                <th style={{ fontWeight:'900' }} className={styles.th2}>#{data.meter_serialNum}</th>
+                <p style={{ fontWeight:'900' }} className={styles.th2}>#{data.meter_serialNum}</p>
+                </td>
+                <td>
+                
                 </td>
               </tr>
               <tr className={styles.th2}>
@@ -1038,7 +1041,7 @@ function galOverDecemberFees21() {
                 </td>
               </tr>
               <tr>
-                <td className={styles.td3}><p className={styles.p}>August 2020</p><br />
+                <td className={styles.td3}><p className={styles.p}>August 2020</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-40px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
                 </td>
                 <td className={styles.td3}>
@@ -1158,7 +1161,7 @@ function galOverDecemberFees21() {
                 <td className={styles.td3}>
                   {galOverApril21()}
                 </td>
-                <td className={styles.td3}>
+                <td className={styles.td3} name='fees'>
                   {galOverAprilFees21()}
                 </td>
               </tr>
@@ -1318,7 +1321,7 @@ function galOverDecemberFees21() {
                 </td>
               </tr>
              {/*  <tr style={{position: 'relative', height: '100px', margin: '3px 3px 3px 0', alignItems:'stretch',}}>
-                <BuyButton style={{display: 'flex'}}/><br />
+                <BuyButton style={{display: 'flex'}}/>
                 <p style={{display: 'inline', fontSize: '24', fontWeight: '900', color:'black',  margin: '10px 10px 10px 10px', padding: 0 }}>Total Due</p>
                 
                 <input style={{display: 'inline', 
