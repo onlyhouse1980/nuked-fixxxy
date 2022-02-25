@@ -1345,7 +1345,7 @@ function galOverDecemberFees21() {
 
       
 
-   <VideoBg /> 
+   {/* <VideoBg />  */}
       
 </main>
 

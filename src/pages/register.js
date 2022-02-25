@@ -28,7 +28,7 @@ import withReactContent from 'sweetalert2-react-content' */
 
 const Example = () => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-  <VideoBg />
+  {/* <VideoBg /> */}
   <React.Fragment>
   <Zoom>
     <MDBRow className='mt-5'>

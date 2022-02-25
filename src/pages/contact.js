@@ -21,7 +21,7 @@ const item = {
 
 const Contact = () => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }} className={styles.body}>
-    <VideoBg1 />
+    {/* <VideoBg1 /> */}
     <motion.div className={styles.content}
     variants={div}
     initial="hidden"

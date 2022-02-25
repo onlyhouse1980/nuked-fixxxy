@@ -6,7 +6,7 @@ import Zoom from 'react-reveal/Zoom'
 
 const About = props => (
 <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-    <VideoBg1 />
+    {/* <VideoBg1 /> */}
     <Zoom top>
     <motion.div className={styles.content}
       initial={{ opacity: 0 }}

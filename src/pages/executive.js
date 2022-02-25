@@ -20,7 +20,7 @@ const item = {
 
 const Executive = () => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-    <VideoBg /> 
+    {/* <VideoBg />  */}
     <motion.container className={styles.bgcontainer}
     variants={container}
     initial="hidden"
