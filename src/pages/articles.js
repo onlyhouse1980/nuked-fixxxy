@@ -1,6 +1,6 @@
 
 import styles from '../styles/Articles.module.css'
-import VideoBg1 from '../components/VideoBg1'
+// import VideoBg1 from '../components/VideoBg1'
 import { motion } from 'framer-motion';
 
 const container = {
@@ -20,7 +20,7 @@ const item = {
 
 const Articles = props => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-    <VideoBg1 /> 
+    {/* <VideoBg1 />  */}
     <motion.container className={styles.bgcontainer}
     variants={container}
     initial="hidden"
