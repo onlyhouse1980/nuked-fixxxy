@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
-import styles from '../over/[last_name].module.css'
+// import styles from '../over/[last_name].module.css'
+import styles from '../../styles/globals.css'
 import Zoom from 'react-reveal/Zoom';
 import * as React from 'react';
-import VideoBg from '../../components/VideoBg';
+import BGBlack from '../../components/BGBlack';
 
 var bgColors = { "Default": "#81b71a",
 "Blue": "#00B1E1",
@@ -988,7 +989,7 @@ function galOverDecemberFees21() {
   
   
     
- <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
+ <main style={{background: 'blue', width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
   
       
         <Zoom top cascade>
@@ -1345,7 +1346,7 @@ function galOverDecemberFees21() {
 
       
 
-   {/* <VideoBg />  */}
+   <BGBlack /> 
       
 </main>
 
