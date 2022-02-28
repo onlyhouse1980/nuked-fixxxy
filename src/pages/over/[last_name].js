@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
-// import styles from '../over/[last_name].module.css'
-import styles from '../../styles/globals.css'
-import Zoom from 'react-reveal/Zoom';
+import styles from '../over/[last_name].module.css'
+// import styles from '../../styles/globals.css'
+// import Zoom from 'react-reveal';
 import * as React from 'react';
 import BGBlack from '../../components/BGBlack';
 
@@ -992,7 +992,7 @@ function galOverDecemberFees21() {
  <main style={{background: 'blue', width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
   
       
-        <Zoom top cascade>
+        {/* <Zoom top cascade> */}
           <div className={styles.title}>
           <h1 className={styles.pageheader}>👤 <em>{data.last_name}</em></h1>
           </div>
@@ -1342,7 +1342,7 @@ function galOverDecemberFees21() {
           </table>
 
 
-        </Zoom>
+        {/* </Zoom> */}
 
       
 
