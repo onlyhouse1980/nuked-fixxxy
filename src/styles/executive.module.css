@@ -49,6 +49,12 @@
     font: #020247!important;
 }
 
+.divBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media screen and (max-width: 1000px) {
     .content {
         max-width: -webkit-fill-available ;
