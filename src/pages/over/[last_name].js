@@ -989,7 +989,7 @@ function galOverDecemberFees21() {
   
   
     
- <main style={{background: 'blue', width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
+ <main style={{background: 'grey', width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
   
       
         {/* <Zoom top cascade> */}
@@ -1043,7 +1043,7 @@ function galOverDecemberFees21() {
               </tr>
               <tr>
                 <td className={styles.td3}><p className={styles.p}>August 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-40px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
                 </td>
                 <td className={styles.td3}>
                 <input style={{
