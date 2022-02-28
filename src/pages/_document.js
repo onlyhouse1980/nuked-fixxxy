@@ -13,6 +13,13 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <style jsx global>{`
+            /* Other global styles such as 'html, body' etc... */
+
+            #__next {
+              background-color: gray;
+            }
+          `}</style>
         </body>
       </Html>
     )

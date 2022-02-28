@@ -1,6 +1,6 @@
-.p{
+/* .p{
   color: white;
-}
+} */
 
 /* .title {
   padding: 150px 0;
@@ -157,3 +157,7 @@
 .div5 {
   margin-top: 5px;
 } */
+
+#__next {
+  background-color: gray!important;
+}
