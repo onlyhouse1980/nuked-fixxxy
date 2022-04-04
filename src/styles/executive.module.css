@@ -34,7 +34,7 @@
 }
 
 .contentNameplate {
-    background-image: url('https://obcg.org/Images/metal-plate.jpeg') ;
+    background-image: url('../../public/Images/metal-plate') ;
     background-size: cover;
     box-shadow: 2px 2px 8px rgb(60, 60, 60);
     margin-left: 20px;
