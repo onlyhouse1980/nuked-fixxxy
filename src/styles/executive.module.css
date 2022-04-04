@@ -34,17 +34,20 @@
 }
 
 .contentNameplate {
-    background-color: white;
+    background-image: url(../../public/Images/metal-plate.jpeg) ;
+    background-size: cover;
     box-shadow: 2px 2px 8px rgb(60, 60, 60);
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .content p {
-    padding-left: 20px;
-    background-color: white;
+    padding-right: 20px;
+    padding-top: 20px;
     font-weight: 700;
 }
 
