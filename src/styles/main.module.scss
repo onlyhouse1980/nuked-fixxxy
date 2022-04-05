@@ -26,11 +26,12 @@
     width: 100%;
     overflow: hidden;
     z-index: -100;
+    color: gray;
 }
 
 .h1 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 3rem;
     text-shadow: 2px 2px 5px #000;
 
@@ -38,13 +39,13 @@
 
 p.subtitle {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px #000;
 }
 
 #contactContainer{
-    color: white;
+    color: black;
     width: 80vw;
     height: 70vh;
     border-radius: 15px;
@@ -61,7 +62,7 @@ p.subtitle {
         flex: 0 1 40%;
         border-radius: 15px;
         padding: 40px;
-        color: white;
+        color: black;
         display: flex;
         flex-direction: column;
         h4{
@@ -87,21 +88,21 @@ p.subtitle {
             flex: 0 1 100%;
             padding-right: 40px;
             .label{
-                color: white;
+                color: gray;
                 font-size: .9rem;
                 margin-bottom: 1rem;
             }
             input[type="text"], input[type="email"], input[type="tel"], textarea {
-                //background: rgba(255,255,255, 0.2);
+                background: rgb(166, 166, 166);
                 cursor: pointer;
                 outline: none;
                 padding: 5px;
                 font-size: 0.8rem;
                 font-weight: 300;
-                color: white;
-                //border-bottom: 2px solid rgba(255,255,255,0.4);
-                background: transparent;
-                border: none;
+                color: black;
+                border-bottom: 2px solid rgba(255,255,255,0.4);
+                
+                border: 1px solid gray;
                 outline: none;
                 border-bottom: 2px solid rgb(255,255,255,.2);
                 margin-bottom: 2rem;

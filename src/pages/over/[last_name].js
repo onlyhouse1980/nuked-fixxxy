@@ -4,7 +4,10 @@ import styles from '../over/[last_name].module.css'
 // import styles from '../../styles/globals.css'
 // import Zoom from 'react-reveal';
 import * as React from 'react';
+
 import BGBlack from '../../components/BGBlack';
+
+
 
 var bgColors = { "Default": "#81b71a",
 "Blue": "#00B1E1",
@@ -23,7 +26,10 @@ const fetcher = async (url) => {
   return data 
 }
 
+
 export default function Over() {
+  const { useState } = React;
+  const [myArray, setMyArray] = useState([]);
   const { query } = useRouter()
   const { data, error } = useSWR(
     () => query.last_name && `/api/overuse/${query.last_name}`,
@@ -979,8 +985,14 @@ function galOverDecemberFees21() {
     </input>}}
 
 
+    /* function sumTotals(){
+      const array = document.getElementsByName('greaterThan');
+      let total = 0;
+      for (i = 0; i < array.length; i++)
+      total += total + i;
+      document.getElementById('totals')
 
-    
+    } */
     
     
     
@@ -1321,10 +1333,12 @@ function galOverDecemberFees21() {
                   </input>
                 </td>
               </tr>
-             {/*  <tr style={{position: 'relative', height: '100px', margin: '3px 3px 3px 0', alignItems:'stretch',}}>
-                <BuyButton style={{display: 'flex'}}/>
+             {<tr style={{position: 'relative', height: '100px', margin: '3px 3px 3px 0', alignItems:'stretch',}}>
+                <td><button onClick={null}  style={{display: 'flex'}}/></td>
+                <td>
                 <p style={{display: 'inline', fontSize: '24', fontWeight: '900', color:'black',  margin: '10px 10px 10px 10px', padding: 0 }}>Total Due</p>
-                
+                </td>
+                <td>
                 <input style={{display: 'inline', 
                   backgroundColor: 'bgColors.Blue', 
                   padding:'6px', 
@@ -1335,8 +1349,9 @@ function galOverDecemberFees21() {
                     id="anual"
                     
                     label="answers"
-                    readOnly/>  
-          </tr> */}
+                    readOnly/>
+                    </td>  
+          </tr>}
           
             </tbody>
           </table>

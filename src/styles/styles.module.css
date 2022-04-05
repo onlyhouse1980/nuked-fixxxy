@@ -4,6 +4,7 @@
 
 .container {
     padding: 4rem 1rem;
+   
   }
   
   .container p {
@@ -38,6 +39,7 @@
   
   .bgWrap {
     position: fixed;
+    white-space: normal;
     left: 0;
     top: 0;
     height: 100vh;
@@ -47,6 +49,7 @@
   }
   
   .mainName {
+    white-space: normal;
     position: absolute;
     top:50%;
     margin-left: auto;
@@ -86,3 +89,4 @@ justify-content: flex-end;
       margin-bottom:150px;
     }
   }
+

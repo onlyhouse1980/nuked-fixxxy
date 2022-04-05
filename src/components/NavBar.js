@@ -30,14 +30,15 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <MDBNavbar color='indigo' z-index='10' dark expand='md'>
+        <MDBNavbar color='indigo' z-index='10' dark expand='md' height='50px!important'>
         <motion.div whileHover= {{ scale: 1.5 }} >
           <MDBNavbarBrand>
             <a 
               href="https://obcg.org"><img 
               src="../../Images/WebPFiles/obcglogo-p-500.webp" 
               alt="logo" 
-              width={60} 
+              width={60}
+              className={styles.logoimg} 
               height={60} />
             </a>
           </MDBNavbarBrand>
