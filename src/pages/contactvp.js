@@ -9,7 +9,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />        
       </Head>
-      <img src='../../pugetcr.png' className={styles.fullscreenbg} />
+      <img src='../../pugetcr.png' className={styles.fullscreenbg} alt='Puget Cr' />
       <h1 className={styles.h1}>Contact Erika Aust</h1>
       <p className={styles.subtitle}>Vice President, OBCG</p>
       <div id={styles.contactContainer}>
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.col}>
-            <div className={styles.formGroup, styles.solo, styles.right}>
+            <div className={styles.solo}>
               <button className="primary">Send Message</button>
             </div>
           </div>
