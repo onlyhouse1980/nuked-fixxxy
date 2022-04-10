@@ -20,6 +20,7 @@
   background-color: blue;
   width: 100%;
   height: fit-content;
+  overflow: scroll;
 }
 
 .th1 {
@@ -158,6 +159,3 @@
   margin-top: 5px;
 } */
 
-#__next {
-  background-color: gray!important;
-}
