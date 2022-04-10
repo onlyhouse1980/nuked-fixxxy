@@ -1110,8 +1110,8 @@ function galOverFebruaryFees22() {
               </tr>
               <tr className={styles.th2}>
                 <td>Billing Period</td>
-                <td>Gallons Used</td>
-                <td>Gallons Over</td>
+                <td>Gal Used</td>
+                <td>Gal Over</td>
                 <td>Charge/Fee</td>
               </tr>
             </thead>
