@@ -985,7 +985,7 @@ function galOverDecemberFees21() {
     </input>}}
 
 function galOverFebruary22() {
-  if ((data.feb04_22 - data.dec03_21)>6000) {
+  if ((data.apr07_22 - data.feb06_22)>6000) {
     return <input style={{
             backgroundColor: bgColors.Blue,
             margin: '0 10px 0 10px',
