@@ -1088,7 +1088,7 @@ function galOverFebruaryFees22() {
   
   
     
- <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', paddingBottom: '50px'}}>
+ <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
   
       
         {/* <Zoom top cascade> */}
@@ -1115,31 +1115,7 @@ function galOverFebruaryFees22() {
                 <td>Charge/Fee</td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>June 2020</p>
-                  <p style={{ fontSize: 9, width:'75px', color: 'white', margin: '-20px 0 0 10px', padding: 0, position: 'relative' }}>(6/11/20-8/10/20)</p></td>
-                <td className={styles.td3}>
-                  <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="June2020"
-                    value={data.aug10_20 - data.jun10_20}
-                    label="answers"
-                    readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverJune()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverJuneFees20()}
-                </td>
-              </tr>
+            <tbody className={styles.tbody}>
               <tr>
                 <td className={styles.td3}><p className={styles.p}>August 2020</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
@@ -1368,7 +1344,6 @@ function galOverFebruaryFees22() {
                   {galOverDecemberFees21()}
                 </td>
               </tr>
-
               <tr>
                 <td className={styles.td3}><p className={styles.p}>February 2022</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/05-4/07)</p></td>
