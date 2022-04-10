@@ -5,7 +5,7 @@ import 'mdbreact/dist/css/mdb.css';
 import Layout from '../components/Layout';
 import { AnimatePresence } from "framer-motion";
 import Head from 'next/head';
-
+import '../styles/globals.css'
 
 
 
