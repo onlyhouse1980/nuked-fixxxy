@@ -43,3 +43,8 @@ src/pages/test/image-app/README.md
 src/pages/test/image-app/styles.module.css
 src/pages/test/image-app/yarn.lock
 .vscode/settings.json
+public/obcgmapneedspostedonweb.zip
+public/obcgmapneedspostedonweb/fullsmall-P-1080.png
+public/obcgmapneedspostedonweb/fullsmall-P-1600.png
+public/obcgmapneedspostedonweb/fullsmall-P-500.png
+public/obcgmapneedspostedonweb/fullsmall-P-800.png
