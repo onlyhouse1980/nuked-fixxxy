@@ -15,7 +15,7 @@
       return [
         {
           source: '/erin',
-          destination: 'https://storage.googleapis.com/obcg.org/Erin%20Elizabeth%20copy.mp4',
+          destination: 'https://storage.googleapis.com/obcg.org/erin23.mp4',
           permanent: true,
         },
       ]
