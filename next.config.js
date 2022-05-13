@@ -15,7 +15,7 @@
       return [
         {
           source: '/erin',
-          destination: 'https://drive.google.com/file/d/10Y7Tm8f8d0csnq7EXWw6hForRgQroQ-D/view?ts=6272d6ba',
+          destination: 'https://storage.googleapis.com/obcg.org/Erin%20Elizabeth%20copy.mp4',
           permanent: true,
         },
       ]
