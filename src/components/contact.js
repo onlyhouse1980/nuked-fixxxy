@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer"
 
-const emailPass = "yourPassword"
-
+const Contact = () => {
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -12,7 +11,9 @@ const transporter = nodemailer.createTransport({
 })
 //[1]
 
-export default async (req, res) => {
+Contact = () => {
+
+async (req, res) => {
     const { senderMail, name, tel, content, recipientMail } = req.body
 //[2]
 
@@ -46,3 +47,6 @@ const mailer = ({ senderMail, name, text, recipientMail }) => {
     })
 //[6]
 }
+}}
+
+export default Contact;

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/ContactErika.module.scss'
+import Image from 'next/image'
 
 const ContactErika = () => {
     return (
@@ -8,7 +9,7 @@ const ContactErika = () => {
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />        
           </Head>
-    <img src='../../pugetcr.png' className={styles.fullscreenbg} />
+    <Image src='../../pugetcr.png' width='50px' height='50px' className={styles.fullscreenbg} alt='photo of the vice president'/>
       <h1 className={styles.h1}>Contact Erika Aust</h1>
       <p className={styles.subtitle}>Vice President, OBCG</p>
       <div id={styles.contactContainer}>
@@ -44,14 +45,17 @@ const ContactErika = () => {
             </div>
           </div>
           <div className={styles.col}>
-            <div className={styles.formGroup, styles.solo, styles.right}>
+            <div className={styles.formGroup}>
               <button className="primary">Send Message</button>
             </div>
+            </div>
+            </form>
           </div>
-        </form>
-      </div>
-    </div>
-)
+          </div>
+        
+    );
+    
+
 }
 
 export default ContactErika

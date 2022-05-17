@@ -1,6 +1,5 @@
 import nodemailer from "nodemailer"
-
-const emailPass = "yourPassword"
+import { ContextReplacementPlugin } from "webpack"
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -12,7 +11,9 @@ const transporter = nodemailer.createTransport({
 })
 //[1]
 
-export default async (req, res) => {
+export default Contact().then(() => { 
+
+async (req, res) => {
     const { senderMail, name, tel, content, recipientMail } = req.body
 //[2]
 
@@ -45,4 +46,5 @@ const mailer = ({ senderMail, name, text, recipientMail }) => {
         )
     })
 //[6]
-}
+}}
+)

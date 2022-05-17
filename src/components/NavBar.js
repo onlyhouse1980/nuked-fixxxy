@@ -35,7 +35,7 @@ class Layout extends React.Component {
           <MDBNavbarBrand>
             <a 
               href="https://obcg.org"><img 
-              src="../../Images/WebPFiles/obcglogo-p-500.webp" 
+              src="../../Images/WebPFiles/obcglogo.webp" 
               alt="logo" 
               width={60}
               className={styles.logoimg} 
