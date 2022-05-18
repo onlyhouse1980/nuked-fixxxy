@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10 !important;
+    z-index: 10!important;
     height: 50px;
     width: 100%;
     display: flex;
@@ -50,4 +50,12 @@
     position: fixed;
     left: 5px;
     top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        z-index: 100!important;
+    }
+
+    
 }

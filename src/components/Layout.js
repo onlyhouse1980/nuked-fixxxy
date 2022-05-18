@@ -1,5 +1,5 @@
 import { MDBContainer } from 'mdbreact';
-import NavBar from './NavBar';
+import Navbar from './NavBar';
 import Footer from './Footer';
 import Head from 'next/head';
 import React from 'react'
@@ -12,7 +12,7 @@ function Layout(props) {
       <meta name="description" content="Orchard Beach Community Group Water Management"></meta>
     </Head>
     
-      <NavBar />
+      <Navbar style='z-index:10!important'/>
       <MDBContainer>{props.children}</MDBContainer>
       
       <Footer />

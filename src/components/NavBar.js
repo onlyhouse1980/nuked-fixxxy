@@ -15,7 +15,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import styles from '../styles/NavBar.module.css'
 
-class Layout extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,8 +30,8 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <MDBNavbar color='indigo' z-index='10' dark expand='md' height='50px!important'>
-        <motion.div whileHover= {{ scale: 1.5 }} >
+        <MDBNavbar color='indigo' z-index='10!important' dark expand='md' height='50px!important'>
+        <motion.div whileHover= {{ scale: 2 }} >
           <MDBNavbarBrand>
             <a 
               href="https://obcg.org"><img 
@@ -113,6 +113,11 @@ class Layout extends React.Component {
                     <MDBDropdownItem>
                     <Link target='_blank' href='/consumer.pdf'>
                         <a onClick={this.toggleCollapse}>Consumer Confidence 2020</a>
+                      </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>
+                    <Link target='_blank' href='/CCR_April_2022_reporting_year_2021.pdf'>
+                        <a onClick={this.toggleCollapse}>Consumer Confidence 2021</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
@@ -212,4 +217,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout;
+export default Navbar;

@@ -6,7 +6,15 @@ import { motion } from "framer-motion";
 
 
 const index = () => (
-  
+  <div>
+     <div className={styles.mainName}>
+    <h2 className={styles.bgText}>
+      <b>Orchard Beach</b>
+    </h2>
+    <h2 className={styles.bgText}>
+      <b>Community Group</b>
+    </h2>
+    </div>
   <div>
     <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     <motion.div animate={{
@@ -101,17 +109,11 @@ const index = () => (
         quality={100}
       />
     </motion.div>
-    <div className={styles.mainName}>
-    <h2 className={styles.bgText}>
-      <b>Orchard Beach</b>
-    </h2>
-    <h2 className={styles.bgText}>
-      <b>Community Group</b>
-    </h2>
-    </div>
+   
     
     </motion.div>
 
+    </div>
     </div>
 )
 

@@ -45,7 +45,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    z-index: -1;
+    z-index: 10;
   }
   
   .mainName {
@@ -54,6 +54,7 @@
     top:50%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 98!important;
   }
   
 
@@ -68,6 +69,7 @@
     font-size: 6rem;
     line-height: 6rem;
     text-shadow: 1px 1px 1px black;
+    z-index: 99!important;
   }
   
   @media screen and (max-width: 992px) {
