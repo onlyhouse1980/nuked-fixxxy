@@ -57,5 +57,13 @@
         z-index: 100!important;
     }
 
+    .dropdownNav {
+        padding-top: 10px!important;
+    }
+
+    .nav-link {
+        padding-top: 1rem;
+    }
+
     
 }
