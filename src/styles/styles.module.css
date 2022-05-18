@@ -69,7 +69,7 @@
     font-size: 6rem;
     line-height: 6rem;
     text-shadow: 1px 1px 1px black;
-    z-index: 99!important;
+    z-index: 50!important;
   }
   
   @media screen and (max-width: 992px) {
