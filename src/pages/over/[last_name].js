@@ -984,6 +984,10 @@ function galOverDecemberFees21() {
         readOnly>
     </input>}}
 
+
+// ****FEBRUARY****** 
+
+
 function galOverFebruary22() {
   if ((data.apr07_22 - data.feb06_22)>6000) {
     return <input style={{
@@ -1069,7 +1073,95 @@ function galOverFebruaryFees22() {
         label="results" 
         readOnly>
     </input>}}
-  
+
+
+    // ******APRIL******
+    
+function galOverApril22() {
+  if ((data.jun07_22 - apr07_22)>6000) {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="apr22Over"
+      value={(data.jun07_22 - apr07_22)-6000}   
+      label="galOver" 
+      readOnly>
+    </input>;
+  } else {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="apr22Over"
+      value="0"   
+      label="galOver" 
+      readOnly>
+    </input>}}
+
+function galOverAprilFees22() {
+  let x = data.jun07_22 - apr07_22
+    if (x>6000 && x<10000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+        type="text"
+        name="greaterThan" 
+        id="gTApril2022"
+        value= {"$" + (((x)-6000)*.005).toFixed(2)} 
+        label="results" 
+        readOnly>
+      </input>;
+    } else if (x>10000 && x<20000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+          type="text" 
+          name="greaterThan" 
+          id="gTApril2022"
+          /*chech this one for error*/
+          value={"$" + (((x-10000)*.01)+19.99).toFixed(2)}
+          label="results" 
+          readOnly>
+      </input>;
+      } else if (x>20000) {
+        return <input style={{
+          backgroundColor: bgColors.Blue,
+          margin: '0 10px 0 10px',
+          width: '75px',
+        }}
+            type="text" 
+            name="greaterThan" 
+            id="gTApril2022"
+            value={"$" + (((x-20000)*.025)+19.99+99.98).toFixed(2)}
+            label="results" 
+            readOnly>
+        </input>;
+  } else {
+    <input style={{
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }}
+        type="text" 
+        name="greaterThan" 
+        id="gTApril2022"
+        value="$0"
+        label="results" 
+        readOnly>
+    </input>}}
 
 
     /* function sumTotals(){
@@ -1370,6 +1462,32 @@ function galOverFebruaryFees22() {
                 </td>
               </tr>
 
+              <tr>
+                <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/03)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="April2022"
+                    value={data.jun07_22 - data.apr07_22}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverFebruary22()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverFebruaryFees22()}
+                </td>
+              </tr>
+              
 
               {/* <tr>
                 <td className={styles.td3}><p className={styles.p}>Annual Fees</p>
