@@ -1464,7 +1464,7 @@ function galOverAprilFees22() {
 
               <tr>
                 <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/03)</p></td>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/07)</p></td>
                 <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
