@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import styles from '../person/[meter_serialNum].module.css'
-import VideoBg from '../../components/VideoBg'
 import Zoom from 'react-reveal/Zoom';
 
 import { MDBBtn } from 'mdbreact';
@@ -153,7 +152,7 @@ export default function Person() {
 
     </Zoom>
 
-<VideoBg />
+
 
 
   
