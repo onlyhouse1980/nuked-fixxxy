@@ -989,7 +989,7 @@ function galOverDecemberFees21() {
 
 
 function galOverFebruary22() {
-  if ((data.apr07_22 - data.feb06_22)>6000) {
+  if ((data.apr07_22 - data.feb04_22)>6000) {
     return <input style={{
             backgroundColor: bgColors.Blue,
             margin: '0 10px 0 10px',
@@ -1078,7 +1078,7 @@ function galOverFebruaryFees22() {
     // ******APRIL******
     
 function galOverApril22() {
-  if ((data.jun07_22 - apr07_22)>6000) {
+  if ((data.jun07_22 - data.apr07_22)>6000) {
     return <input style={{
             backgroundColor: bgColors.Blue,
             margin: '0 10px 0 10px',
@@ -1088,7 +1088,7 @@ function galOverApril22() {
       
       name="utilized" 
       id="apr22Over"
-      value={(data.jun07_22 - apr07_22)-6000}   
+      value={(data.jun07_22 - data.apr07_22)-6000}   
       label="galOver" 
       readOnly>
     </input>;
@@ -1108,7 +1108,7 @@ function galOverApril22() {
     </input>}}
 
 function galOverAprilFees22() {
-  let x = data.jun07_22 - apr07_22
+  let x = data.jun07_22 - data.apr07_22
     if (x>6000 && x<10000) {
       return <input style={{
         backgroundColor: bgColors.Blue,
@@ -1145,7 +1145,7 @@ function galOverAprilFees22() {
             type="text" 
             name="greaterThan" 
             id="gTApril2022"
-            value={"$" + (((x-20000)*.025)+19.99+99.98).toFixed(2)}
+            value={"$" + (((x-20000)*.025) +19.99 +99.98 ).toFixed(2)}
             label="results" 
             readOnly>
         </input>;
@@ -1423,7 +1423,7 @@ function galOverAprilFees22() {
                     type="text"
                     name="utilized"
                     id="December2021"
-                    value={data.feb04_22 - data.dec03_21}
+                    value={data.apr07_22 - data.feb04_22}
                     label="answers"
                     readOnly
                   >
@@ -1481,10 +1481,10 @@ function galOverAprilFees22() {
                   </input>
                 </td>
                 <td className={styles.td3}>
-                  {galOverFebruary22()}
+                  {galOverApril22()}
                 </td>
                 <td className={styles.td3}>
-                  {galOverFebruaryFees22()}
+                  {galOverAprilFees22()}
                 </td>
               </tr>
               
