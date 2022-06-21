@@ -29,7 +29,7 @@ const fetcher = async (url) => {
 
 export default function Over() {
   const { useState } = React;
-  const [myArray, setMyArray] = useState([]);
+  
   const { query } = useRouter()
   const { data, error } = useSWR(
     () => query.last_name && `/api/overuse/${query.last_name}`,
@@ -47,173 +47,6 @@ export default function Over() {
       var Answer = document.getElementById("Percent");
         Answer.value = (((info1 - info2) / 6000 ) * 1).toFixed(2);
       }
-
-    
-      
-    function galOverApril() {
-      if ((data.jun10_20-data.apr05_20)>6000) {
-        return <input style={{
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px',
-        }}
-          type="text"
-          width="5" 
-          name="aprilUsed" 
-          id="aprOver"
-          value={(data.jun10_20-data.apr05_20)-6000}    
-          readOnly>
-        </input>;
-      } else {
-        return <input style={{
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px',
-        }}
-          type="text" 
-          name="aprilUsed" 
-          id="aprOver"
-          value="0"    
-          readOnly>
-        </input>}}
-
-    function galOverAprilFees() {
-      let x = data.jun10_20-data.apr05_20
-        if (x>6000 && x<10000) {
-          return <input style={{
-            backgroundColor: bgColors.Blue,
-            margin: '0 10px 0 10px',
-            width: '75px',
-          }}
-            type="text"
-            name="greaterThan" 
-            id="gTApril2020"
-            value= {(((x)-6000)*.005).toFixed(2)}
-            label="results" 
-            readOnly>
-          </input>;
-        } else if (x>10000 && x<20000) {
-          return <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-              type="text" 
-              name="greaterThan" 
-              id="gTApril2020t1"
-              value={(((x-10000)*.01)+19.99).toFixed(2)}
-              label="results" 
-              readOnly>
-          </input>;
-          } else if (x>20000) {
-            return <input style={{
-              backgroundColor: bgColors.Blue,
-              margin: '0 10px 0 10px',
-              width: '75px',
-            }}
-                type="text" 
-                name="greaterThan" 
-                id="gTApril2020t2"
-                value={(((x-20000)*.025)+19.99+99.98).toFixed(2)}
-                label="results" 
-     >
-                   readOnly    </input>;
-      } else {
-        <input style={{
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px',
-        }}
-            type="text" 
-            name="aprGOver" 
-            id="gTApril2020"
-            value="0" 
-            readOnly>
-        </input>}}
-      
-      function galOverJune() {
-        if ((data.aug10_20-data.jun10_20)>6000) {
-          return <input style={{
-            backgroundColor: bgColors.Blue,
-            margin: '0 10px 0 10px',
-            width: '75px',
-          }}
-            type="text" 
-            
-            name="utilized" 
-            id="junOver"
-            value={(data.aug10_20-data.jun10_20)-6000}   
-            label="galOver" 
-            readOnly>
-          </input>;
-        } else {
-          return <input style={{
-            backgroundColor: bgColors.Blue,
-            margin: '0 10px 0 10px',
-            width: '75px',
-          }}
-            type="text" 
-            
-            name="utilized" 
-            id="junOver"
-            value="0"   
-            label="galOver" 
-            readOnly>
-          </input>}}
-  
-      function galOverJuneFees20() {
-        let x = data.aug10_20-data.jun10_20
-        if (x>6000 && x<10000) {
-          return <input style={{
-            backgroundColor: bgColors.Blue,
-            margin: '0 10px 0 10px',
-            width: '75px',
-          }}
-            type="text"
-            name="greaterThan" 
-            id="gTJune2020"
-            value= {"$" + (((x)-6000)*.005).toFixed(2)}
-            label="results" 
-            readOnly>
-          </input>;
-        } else if (x>10000 && x<20000) {
-          return <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-              type="text" 
-              name="greaterThan" 
-              id="gTJune2020t1"
-              value={"$" + (((x-10000)*.01)+19.99).toFixed(2)}
-              label="results" 
-              readOnly>
-          </input>;
-          } else if (x>20000) {
-            return <input style={{
-              backgroundColor: bgColors.Blue,
-              margin: '0 10px 0 10px',
-              width: '75px',
-            }}
-                type="text" 
-                name="greaterThan" 
-                id="gTJune2020t2"
-                value={"$" + (((x-20000)*.025)+19.99+99.98).toFixed(2)}
-                label="results" 
-                readOnly>
-            </input>;
-      } else {
-        <input style={{
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px',
-        }}
-            type="text" 
-            name="junGOver" 
-            id="gTJune2020"
-            value="0" 
-            readOnly>
-        </input>}}
 
 function galOverAugust() {
   if ((data.oct07_20-data.aug10_20)>6000) {
@@ -996,7 +829,6 @@ function galOverFebruary22() {
             width: '75px',
           }}
       type="text" 
-      
       name="utilized" 
       id="feb22Over"
       value={(data.apr07_22 - data.feb04_22)-6000}   
@@ -1010,7 +842,6 @@ function galOverFebruary22() {
             width: '75px',
           }}
       type="text" 
-      
       name="utilized" 
       id="feb22Over"
       value="0"   
@@ -1423,7 +1254,7 @@ function galOverAprilFees22() {
                     type="text"
                     name="utilized"
                     id="December2021"
-                    value={data.apr07_22 - data.feb04_22}
+                    value={data.feb04_22 - data.dec03_21}
                     label="answers"
                     readOnly
                   >
@@ -1570,5 +1401,4 @@ function galOverAprilFees22() {
    <BGBlack /> 
       
 </main>
-
-                )}
+)}
