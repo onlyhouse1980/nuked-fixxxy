@@ -14,7 +14,7 @@ const Video = () => (
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}>
       <video className='fixed z-\[-1\]' controls muted loop style={{ width: '100%', height: '100%' }}
-         src="/whale1.mov" />
+         src="/whale1.mp4" />
 		 
     </motion.div>
     </Zoom>
