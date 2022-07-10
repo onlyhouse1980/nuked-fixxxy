@@ -1,8 +1,6 @@
-import VideoBg1 from '../components/VideoBg1';
 import styles from '../styles/Contact.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const div = {
   hidden: { opacity: 0 },

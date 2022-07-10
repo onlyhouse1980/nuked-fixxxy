@@ -1,4 +1,4 @@
-import VideoBg from '../components/VideoBg';
+
 import styles from '../styles/misc.module.css';
 import { motion } from 'framer-motion'
 
@@ -17,7 +17,7 @@ import { motion } from 'framer-motion'
         }
         const Misc = () => (
           <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-            <VideoBg />
+           
             <motion.container className={styles.bgcontainer}
             variants={container}
             initial="hidden"

@@ -9,7 +9,6 @@ import {
 } from 'mdbreact';
 import Head from 'next/head'
 import styles from '../styles/register.module.css'
-import VideoBg from '../components/VideoBg';
 import Zoom from 'react-reveal/Zoom';
 import { motion } from 'framer-motion'
 import React from 'react'
@@ -28,7 +27,6 @@ import withReactContent from 'sweetalert2-react-content' */
 
 const Example = () => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-  {/* <VideoBg /> */}
   <React.Fragment>
   <Zoom>
     <MDBRow className='mt-5'>
