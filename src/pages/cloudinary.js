@@ -66,7 +66,7 @@ console.log('data', data);
         </h1>
 
         <p className={styles.description}>
-          Upload your image to Cloudinary!
+          Upload your image to OBCG!
         </p>
 
         <form className={styles.form} method="post" onChange={handleOnChange} onSubmit={handleOnSubmit}>
