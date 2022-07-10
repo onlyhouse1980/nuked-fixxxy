@@ -88,9 +88,7 @@ console.log('data', data);
         </form>
       </main>
 
-      <footer className={styles.footer}>
-        <p>Find the tutorial on <a href="https://spacejelly.dev/">spacejelly.dev</a>!</p>
-      </footer>
+     
     </div>
   )
 }
