@@ -1,3 +1,4 @@
+
 const Home = () => {
     const media_urls = [
       {
@@ -46,8 +47,9 @@ const Home = () => {
                   <div className='card-body'>
                     <h4 className='card-title'>{media.title}</h4>
                     <video
-                      width='320'
-                      height='240'
+                      width='100%'
+                      height='auto'
+                      padding-bottom='10px'
                       controls
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
