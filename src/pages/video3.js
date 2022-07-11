@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom'
 
 
 
-const Video2 = () => (
+const Video3 = () => (
 <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
    
     <Zoom top>
@@ -22,4 +22,4 @@ const Video2 = () => (
 
 );
 
-export default Video2;
+export default Video3;
