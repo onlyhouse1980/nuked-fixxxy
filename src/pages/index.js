@@ -57,7 +57,7 @@ const index = () => (
         src="/Images/WebPFiles/sunrise.webp"
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={50}
       />
     </motion.div>
     <motion.div animate={{
