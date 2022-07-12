@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 
-const fourthParades = () => {
+const Parades = () => {
   
     const media_urls = [
       {
@@ -57,8 +57,7 @@ const fourthParades = () => {
                   <h4 className={styles.cardTitle}> {media.title}</h4>
                     <video
                       width='100%'
-                      height='10
-                      0%'
+                      height='100%'
                       padding-bottom='10px'
                       controls
                       onMouseEnter={handleMouseEnter}
@@ -77,5 +76,5 @@ const fourthParades = () => {
     )
   }
   
-  export default fourthParades
+  export default Parades
   
