@@ -18,7 +18,13 @@ const item = {
   show: { opacity: 1 }
 }
 
-const Articles = props => (
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
+const Articles = () => (
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     {/* <VideoBg1 />  */}
     <motion.container className={styles.bgcontainer}

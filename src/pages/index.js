@@ -4,6 +4,12 @@ import styles from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 
 const index = () => (
   <div>

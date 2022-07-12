@@ -3,6 +3,12 @@ import styles from '../styles/executive.module.css';
 import Link from 'next/link';
 import { motion } from 'framer-motion'
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 const container = {
   hidden: { opacity: 0 },
   show: {

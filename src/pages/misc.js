@@ -2,6 +2,12 @@
 import styles from '../styles/misc.module.css';
 import { motion } from 'framer-motion'
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
         const container = {
           hidden: { opacity: 0 },
           show: {

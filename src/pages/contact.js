@@ -2,6 +2,12 @@ import styles from '../styles/Contact.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 const div = {
   hidden: { opacity: 0 },
   show: {
