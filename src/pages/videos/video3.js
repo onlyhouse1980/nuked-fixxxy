@@ -14,7 +14,7 @@ const Video3 = () => (
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}>
       <video className='fixed z-\[-1\]' controls muted loop style={{ width: '100%', height: '100%' }}
-         src="/whale3.mp4" />
+         src="https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale3_ziwwhq.mp4" />
 		 
     </motion.div>
     </Zoom>
