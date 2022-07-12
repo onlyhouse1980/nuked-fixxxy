@@ -4,8 +4,13 @@ import { motion } from 'framer-motion'
 import Zoom from 'react-reveal/Zoom'
 
 
-
-const About = () => (
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+  const About  = () => (
+  
 <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     {/* <VideoBg1 /> */}
     <Zoom top>
@@ -19,6 +24,6 @@ const About = () => (
     </Zoom>
   </motion.div>
 
-);
+  );
+  export default About
 
-export default About;
