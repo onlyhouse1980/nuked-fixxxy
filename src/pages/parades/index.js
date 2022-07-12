@@ -56,6 +56,7 @@ const Parades = () => {
                   <div className={styles.cardBody}>
                   <h4 className={styles.cardTitle}> {media.title}</h4>
                     <video
+                      preload="metadata"
                       width='100%'
                       height='100%'
                       padding-bottom='10px'
