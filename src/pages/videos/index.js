@@ -11,21 +11,21 @@ const Whales = () => {
         title: 'Whales 1/3',
         url: 'videos/video1',
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501529/obcg/whale1_iyc5yc.mp4',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501529/obcg/whale1_iyc5yc.mp4#t=0.001',
       },
       {
         id: 2,
         title: 'Whales 2/3',
         url: 'videos/video2',        
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale2_haymfa.mp4',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale2_haymfa.mp4#t=0.001',
       },
       {
         id: 3,
         title: 'Whales 3/3',
         url: 'videos/video3',
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale3_ziwwhq.mp4',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale3_ziwwhq.mp4#t=0.001',
       },
     ]
   
