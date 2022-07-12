@@ -1,21 +1,29 @@
+import styles from '../../styles/Whales.module.css'
+import Link from 'next/link'
 
-const Home = () => {
+
+
+const Whales = () => {
+  
     const media_urls = [
       {
         id: 1,
-        title: 'Video One',
+        title: 'Whales 1/3',
+        url: 'videos/video1',
         video_url:
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501529/obcg/whale1_iyc5yc.mp4',
       },
       {
         id: 2,
-        title: 'Video Two',
+        title: 'Whales 2/3',
+        url: 'videos/video2',        
         video_url:
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale2_haymfa.mp4',
       },
       {
         id: 3,
-        title: 'Video Three',
+        title: 'Whales 3/3',
+        url: 'videos/video3',
         video_url:
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale3_ziwwhq.mp4',
       },
@@ -43,9 +51,10 @@ const Home = () => {
           <div className='row'>
             {media_urls.map((media) => (
               <div key={media.id} className='col-lg-4 col-sm-6 mb-4'>
-                <div className='card h-100'>
-                  <div className='card-body'>
-                    <h4 className='card-title'>{media.title}</h4>
+                <Link href={media.url}>
+                <div className='card h-100 bg-indigo-500'>
+                  <div className={styles.cardBody}>
+                  <h4 className={styles.cardTitle}> {media.title}</h4>
                     <video
                       width='100%'
                       height='auto'
@@ -58,6 +67,7 @@ const Home = () => {
                     </video>
                   </div>
                 </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -66,5 +76,5 @@ const Home = () => {
     )
   }
   
-  export default Home
+  export default Whales
   
