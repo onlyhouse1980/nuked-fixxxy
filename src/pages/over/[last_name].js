@@ -994,6 +994,96 @@ function galOverAprilFees22() {
         readOnly>
     </input>}}
 
+// ******JUNE******
+
+function galOverJune22() {
+  if ((data.aug05_22 - data.jun07_22 )>8000) {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="apr22Over"
+      value={(data.aug05_22 - data.jun07_22 )-8000}   
+      label="galOver" 
+      readOnly>
+    </input>;
+  } else {
+    return <input style={{
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }}
+      type="text" 
+      
+      name="utilized" 
+      id="apr22Over"
+      value="0"   
+      label="galOver" 
+      readOnly>
+    </input>}}
+
+function galOverJuneFees22() {
+  let x = data.aug05_22 - data.jun07_22 
+    if (x>8000 && x<10000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+        type="text"
+        name="greaterThan" 
+        id="gTJune2022"
+        value= {"$" + (((x)-8000)*.005).toFixed(2)} 
+        label="results" 
+        readOnly>
+      </input>;
+    } else if (x>10000 && x<20000) {
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+          type="text" 
+          name="greaterThan" 
+          id="gTJune2022"
+          /*chech this one for error*/
+          value={"$" + (((x-10000)*.01)+19.99).toFixed(2)}
+          label="results" 
+          readOnly>
+      </input>;
+      } else if (x>20000) {
+        return <input style={{
+          backgroundColor: bgColors.Blue,
+          margin: '0 10px 0 10px',
+          width: '75px',
+        }}
+            type="text" 
+            name="greaterThan" 
+            id="gTJune2022"
+            value={"$" + (((x-20000)*.025) +19.99 +99.98 ).toFixed(2)}
+            label="results" 
+            readOnly>
+        </input>;
+  } else {
+    <input style={{
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }}
+        type="text" 
+        name="greaterThan" 
+        id="gTJune2022"
+        value="$0"
+        label="results" 
+        readOnly>
+    </input>}}
+
+
+
 
     /* function sumTotals(){
       const array = document.getElementsByName('greaterThan');
@@ -1318,43 +1408,9 @@ function galOverAprilFees22() {
                   {galOverAprilFees22()}
                 </td>
               </tr>
-              
-
-              {/* <tr>
-                <td className={styles.td3}><p className={styles.p}>Annual Fees</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>Membership</p></td>
-                <td className={styles.td3}>
-                <div style={{
-                    display: 'hidden',
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="Annual"
-                    value={0}
-                    label="answers"
-                    readOnly
-                  >
-                  </div>
-                </td>
-                <td className={styles.td3}>
-                <div style={{
-                    display: 'hidden',
-                    backgroundColor: 'transparent',
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                    
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="Annual"
-                    value={0}
-                    label="answers"
-                    readOnly>
-                  </div>
-                </td>
+              <tr>
+                <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
                 <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
@@ -1363,42 +1419,33 @@ function galOverAprilFees22() {
                   }}
                     type="text"
                     name="utilized"
-                    id="Annual"
-                    value={"$" + "500" + "." + "00"}
+                    id="June2022"
+                    value={data.aug05_22 - data.jun07_22 }
                     label="answers"
-                    readOnly>
+                    readOnly
+                  >
                   </input>
                 </td>
-              </tr>
-             {<tr style={{position: 'relative', height: '100px', margin: '3px 3px 3px 0', alignItems:'stretch',}}>
-                <td><button onClick={null}  style={{display: 'flex'}}/></td>
-                <td>
-                <p style={{display: 'inline', fontSize: '24', fontWeight: '900', color:'black',  margin: '10px 10px 10px 10px', padding: 0 }}>Total Due</p>
+                <td className={styles.td3}>
+                  {galOverJune22()}
                 </td>
-                <td>
-                <input style={{display: 'inline', 
-                  backgroundColor: 'bgColors.Blue', 
-                  padding:'6px', 
-                  margin:'0 20px 5px 10px', 
-                  width: '75px'}}
-                    type='text'
-                    name="utilized"
-                    id="anual"
-                    
-                    label="answers"
-                    readOnly/>
-                    </td>  
-          </tr>} */}
+                <td className={styles.td3}>
+                  {galOverJuneFees22()}
+                </td>
+              </tr>
+              
+
+              {}
           
             </tbody>
           </table>
 
 
-        {/* </Zoom> */}
+        {
 
       
 
    <BGBlack /> 
       
-</main>
+        }</main>
 )}
