@@ -1026,78 +1026,94 @@ function galOverJune22() {
       readOnly>
     </input>}}
 
-function galOverJuneFees22() {
-  let x = data.aug05_22 - data.jun07_22 
-    if (x>8000 && x<10000) {
-      return <input style={{
-        backgroundColor: bgColors.Blue,
-        margin: '0 10px 0 10px',
-        width: '75px',
-      }}
-        type="text"
-        name="greaterThan" 
-        id="gTJune2022"
-        value= {"$" + (((x)-8000)*.005).toFixed(2)} 
-        label="results" 
-        readOnly>
-      </input>;
-    } else if (x>10000 && x<20000) {
+function remainingJune22() {
+  let a = data.aug05_22 - data.jun07_22 
+    let rmn = (48000-a)
+    if (rmn < 0) {
+
+      
+    return <input style={{
+      color:'red',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }}
+type="number" 
+
+name="utilized" 
+id="jun22Over"
+value={"-" + (data.aug05_22 - data.jun07_22 )-8000}   
+label="galOver" 
+readOnly>
+</input>;
+       } else {
+         
+        return <input style={{
+          color:'black',
+          backgroundColor: bgColors.Blue,
+          margin: '0 10px 0 10px',
+          width: '75px',
+        }}
+    type="text" 
+    
+    name="utilized" 
+    id="jun22Over"
+    value={(48000-(data.aug05_22 - data.jun07_22 ))}   
+    label="galOver" 
+    readOnly>
+  </input>
+       }}
+
+  
+   function galOverFees22() {
+    let a = data.aug05_22 - data.jun07_22 
+    let rmn = (48000-a)
+  
+    if(rmn < 0) {
+      
       return <input style={{
         backgroundColor: bgColors.Blue,
         margin: '0 10px 0 10px',
         width: '75px',
       }}
           type="text" 
+          display="none"
           name="greaterThan" 
           id="gTJune2022"
           /*chech this one for error*/
-          value={"$" + (((x-10000)*.01)+19.99).toFixed(2)}
+          value={(rmn*-1)*0.025}
           label="results" 
           readOnly>
       </input>;
-      } else if (x>20000) {
-        return <input style={{
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px',
-        }}
-            type="text" 
-            name="greaterThan" 
-            id="gTJune2022"
-            value={"$" + (((x-20000)*.025) +19.99 +99.98 ).toFixed(2)}
-            label="results" 
-            readOnly>
-        </input>;
-  } else {
-    <input style={{
-      backgroundColor: bgColors.Blue,
-      margin: '0 10px 0 10px',
-      width: '75px',
-    }}
-        type="text" 
-        name="greaterThan" 
-        id="gTJune2022"
-        value="$0"
-        label="results" 
-        readOnly>
-    </input>}}
+      
+   } else {
+      
+      return <input style={{
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }}
+          type="text" 
+          display="none"
+          name="greaterThan" 
+          id="gTJune2022"
+          /*chech this one for error*/
+          value={0}
+          label="results" 
+          readOnly>
+      </input>;
+      } 
+   }
+  
 
-
-
-
-    /* function sumTotals(){
-      const array = document.getElementsByName('greaterThan');
-      let total = 0;
-      for (i = 0; i < array.length; i++)
-      total += total + i;
-      document.getElementById('totals')
-
-    } */
+    
+      
     
     
-    
-  return ( 
 
+    
+     
+return (
   
   
     
@@ -1407,7 +1423,31 @@ function galOverJuneFees22() {
                 <td className={styles.td3}>
                   {galOverAprilFees22()}
                 </td>
+                </tr>
+                </tbody>
+                </table>
+                <br>
+                </br>
+                <br>
+                </br>
+                <table className={styles.table}>
+                  <thead>
+                  <tr>
+                
+                <td className={styles.td3}>
+                  <p>New Fee Structure</p>
+                </td>
               </tr>
+                  <tr className={styles.th2}>
+                <td>Billing Period</td>
+                <td>Gal Used</td>
+                <td>Remaining<br></br>(of 48,000)</td>
+                
+              </tr>
+            </thead>
+                  <tbody>
+
+                
               <tr>
                 <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
@@ -1427,25 +1467,36 @@ function galOverJuneFees22() {
                   </input>
                 </td>
                 <td className={styles.td3}>
-                  {galOverJune22()}
+                  {remainingJune22()}
+                </td>
+                </tr>
+                <br></br>
+
+                <tr>
+                
+                <td className={styles.td3}><p className={styles.p}>Charges/Fees</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/22 - 4/23)</p>
+
                 </td>
                 <td className={styles.td3}>
-                  {galOverJuneFees22()}
+                  {galOverFees22()}
                 </td>
+                
               </tr>
               
 
-              {}
+              
           
             </tbody>
           </table>
 
 
-        {
+        
 
       
 
    <BGBlack /> 
       
-        }</main>
-)}
+        </main>
+)
+                }
