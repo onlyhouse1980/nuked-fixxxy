@@ -1058,7 +1058,7 @@ readOnly>
     
     name="utilized" 
     id="jun22Over"
-    value={(48000-(data.aug05_22 - data.jun07_22 ))}   
+    value={(48000-(data.aug05_22 - data.jun07_22 ).toFixed(2))}   
     label="galOver" 
     readOnly>
   </input>
@@ -1081,7 +1081,7 @@ readOnly>
           name="greaterThan" 
           id="gTJune2022"
           /*chech this one for error*/
-          value={(rmn*-1)*0.025}
+          value={"$" + ((rmn*-1)*0.025).toFixed(2)}
           label="results" 
           readOnly>
       </input>;
