@@ -1433,7 +1433,7 @@ return (
                   <tr>
                 
                 <td className={styles.td3}>
-                  <p>New Fee Structure</p>
+                  <p className={styles.newFee}>New Fee Structure</p>
                 </td>
               </tr>
                   <tr className={styles.th2}>
