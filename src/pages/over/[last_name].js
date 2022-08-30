@@ -1027,24 +1027,22 @@ function galOverJune22() {
     </input>}}
 
 function remainingJune22() {
-  let a = data.aug05_22 - data.jun07_22 
-    let rmn = (48000-a)
-    if (rmn < 0) {
-
-      
-    return <input style={{
-      color:'red',
-      backgroundColor: bgColors.Blue,
-      margin: '0 10px 0 10px',
-      width: '75px',
-    }}
-type="number" 
-
-name="utilized" 
-id="jun22Over"
-value={"-" + (data.aug05_22 - data.jun07_22 )-8000}   
-label="galOver" 
-readOnly>
+    let a = data.aug05_22 - data.jun07_22 
+    let costFree = 48000;
+    let rmn = ( costFree - a )
+      if (rmn < 0) {
+        return <input style={{
+          color:'red',
+          fontWeight: 600,
+          backgroundColor: bgColors.Blue,
+          margin: '0 10px 0 10px',
+          width: '75px', }}
+            type="number" 
+            name="utilized" 
+            id="jun22Over"
+            value={ costFree - a  }   
+            label="galOver" 
+      readOnly>
 </input>;
        } else {
          
@@ -1081,7 +1079,7 @@ readOnly>
           name="greaterThan" 
           id="gTJune2022"
           /*chech this one for error*/
-          value={"$" + ((rmn*-1)*0.025).toFixed(2)}
+          value={"$" + (((rmn)*-1)*0.025).toFixed(2)}
           label="results" 
           readOnly>
       </input>;
