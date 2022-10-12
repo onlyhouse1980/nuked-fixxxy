@@ -6,6 +6,8 @@ import styles from '../over/[last_name].module.css'
 import * as React from 'react';
 
 import BGBlack from '../../components/BGBlack';
+import { data } from 'jquery';
+import { array } from 'prop-types';
 
 
 
@@ -27,6 +29,8 @@ const fetcher = async (url) => {
 }
 
 
+
+
 export default function Over() {
   const { useState } = React;
   
@@ -39,8 +43,12 @@ export default function Over() {
   if (error) return <div>Last Name not found. </div>
   if (!data) return <div>Loading...</div>
 
+  
+  const arr =[ data ]
+console.log(arr.length)
 
-    
+
+
     function moreInfo(props) {
       let info1 = parseInt(document.getElementById("info1").value);
       let info2 = parseInt(document.getElementById("info2").value);
@@ -1026,46 +1034,75 @@ function galOverJune22() {
       readOnly>
     </input>}}
 
-function remainingJune22() {
-    let a = data.aug05_22 - data.jun07_22 
+function yearlyIncluded() {
+    let a = data.aug05_22 - data.jun07_22
+    let b = data.oct07_22 - data.aug05_22
+     
     let costFree = 48000;
     let rmn = ( costFree - a )
-      if (rmn < 0) {
+      
         return <input style={{
-          color:'red',
+          color:'black',
           fontWeight: 600,
           backgroundColor: bgColors.Blue,
           margin: '0 10px 0 10px',
           width: '75px', }}
             type="number" 
             name="utilized" 
-            id="jun22Over"
-            value={ costFree - a  }   
+            id="yearOver"
+            value={ rmn }   
             label="galOver" 
       readOnly>
 </input>;
-       } else {
-         
-        return <input style={{
-          color:'black',
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px',
-        }}
-    type="text" 
-    
-    name="utilized" 
-    id="jun22Over"
-    value={(48000-(data.aug05_22 - data.jun07_22 ).toFixed(2))}   
-    label="galOver" 
-    readOnly>
-  </input>
-       }}
+       
+       }
+
+       function afterAugust() {
+        let a = data.aug05_22 - data.jun07_22
+        let b = data.oct07_22 - data.aug05_22
+        let total2 = a + b 
+        let costFree = 48000;
+        let rmn = ( costFree - total2 )
+
+        if(rmn < 0) {
+      
+          return <input style={{
+            color: 'red',
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }} 
+                type="number" 
+                name="utilized" 
+                id="yearOver"
+                value={ rmn }   
+                label="galOver" 
+          readOnly>
+    </input>
+
+        } else {
+          return <input style={{
+            color: 'black',
+            backgroundColor: bgColors.Blue,
+            margin: '0 10px 0 10px',
+            width: '75px',
+          }} 
+                type="number" 
+                name="utilized" 
+                id="yearOver"
+                value={ rmn }   
+                label="galOver" 
+          readOnly>
+    </input>
+        }
+           }
 
   
    function galOverFees22() {
     let a = data.aug05_22 - data.jun07_22 
-    let rmn = (48000-a)
+    let b = data.oct07_22 - data.aug05_22
+    let totalYearUsed = a + b
+    let rmn = (48000-totalYearUsed)
   
     if(rmn < 0) {
       
@@ -1101,17 +1138,9 @@ function remainingJune22() {
           readOnly>
       </input>;
       } 
-   }
-  
-
+    }
     
-      
-    
-    
-
-    
-     
-return (
+     return (
   
   
     
@@ -1461,11 +1490,34 @@ return (
                   </input>
                 </td>
                 <td className={styles.td3}>
-                  {remainingJune22()}
+                  {yearlyIncluded()}
                 </td>
                 </tr>
-                <br></br>
+                
+          {/* OCTOBER 2022 */}
 
+          <tr>
+                <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/05-10/07)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="August2022"
+                    value={data.oct07_22 - data.aug05_22 }
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {afterAugust()}
+                </td>
+                </tr>
                 <tr>
                 
                 <td className={styles.td3}><p className={styles.p}>Charges/Fees</p>
@@ -1491,6 +1543,4 @@ return (
 
    <BGBlack /> 
       
-        </main>
-)
-                }
+        </main> )}
