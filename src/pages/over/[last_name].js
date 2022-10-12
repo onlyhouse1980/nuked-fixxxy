@@ -6,8 +6,6 @@ import styles from '../over/[last_name].module.css'
 import * as React from 'react';
 
 import BGBlack from '../../components/BGBlack';
-import { data } from 'jquery';
-import { array } from 'prop-types';
 
 
 
