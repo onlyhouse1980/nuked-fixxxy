@@ -1039,19 +1039,35 @@ function yearlyIncluded() {
     let costFree = 48000;
     let rmn = ( costFree - a )
       
-        return <input style={{
-          color:'black',
-          fontWeight: 600,
-          backgroundColor: bgColors.Blue,
-          margin: '0 10px 0 10px',
-          width: '75px', }}
+    if(rmn < 0) {
+      
+      return <input style={{
+        color: 'red',
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }} 
             type="number" 
             name="utilized" 
             id="yearOver"
             value={ rmn }   
             label="galOver" 
       readOnly>
-</input>;
+</input>
+} else {
+  return <input style={{
+    color: 'black',
+    backgroundColor: bgColors.Blue,
+    margin: '0 10px 0 10px',
+    width: '75px',
+  }} 
+  type="number" 
+            name="utilized" 
+            id="yearOver"
+            value={ rmn }   
+            label="galOver" 
+      readOnly>
+</input>}
        
        }
 
