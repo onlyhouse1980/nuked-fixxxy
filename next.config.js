@@ -21,3 +21,21 @@
       ]
     },
   }
+
+  module.exports = {
+    async redirects() {
+      return [
+        {
+          source: '/over/annualusage',
+          destination: 'https://docs.google.com/spreadsheets/d/1OhxihK26J9XkgRTpVDEzDpdGlxoeQO8mbJZ0vCDykKI/edit?usp=sharing',
+          permanent: true,
+        },
+      ]
+    },
+  }
+
+
+
+
+
+  
