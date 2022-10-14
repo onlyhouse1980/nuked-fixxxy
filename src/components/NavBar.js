@@ -228,6 +228,32 @@ class Navbar extends React.Component {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
+              <MDBNavItem>
+                <MDBDropdown>
+                
+                  <MDBDropdownToggle nav>
+                  <motion.div whileHover={{ scale: 1.15 }} >
+                    <span className='mr-2'>Media</span><span className={styles.ddf}>◿</span>
+                    </motion.div>
+                  </MDBDropdownToggle>
+                 
+                  <MDBDropdownMenu>
+                    
+                    <MDBDropdownItem>
+                    <Link target='_blank' href='/videos'>
+                        <a onClick={this.toggleCollapse}>Whale Vidoes</a>
+                      </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>
+                    <Link target='_blank' href='/parades'>
+                        <a onClick={this.toggleCollapse}>Parade</a>
+                      </Link>
+                    </MDBDropdownItem>
+                    
+                                        
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
               <motion.div whileHover={{ scale: 1.15 }} >
               <MDBNavItem>
                 <Link href='/contact'>
