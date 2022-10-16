@@ -11,14 +11,14 @@ const Parades = () => {
         title: '2018 First Parade',
         url: 'parades/parade1',
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657276658/obcg/OBCG_2018_First_4th_of_July_Parade.mp4#t=0.005',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657634720/obcg/OBCG_2018__4th_July_Parade_p8kgjw.mp4',
       },
       {
         id: 2,
         title: '2019 Parade',
         url: 'parades/parade2',        
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657809309/obcg/obcg2019_ejkbwn.mov',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657276660/obcg/2019_4thOfJuly_Parade.mp4 ',
       },
       {
         id: 3,
