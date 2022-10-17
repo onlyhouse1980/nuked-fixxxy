@@ -18,7 +18,7 @@ const Parades = () => {
         title: '2019 Parade',
         url: 'parades/parade2',        
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657276660/obcg/2019_4thOfJuly_Parade.mp4 ',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1666014062/obcg/favicon_lfowpy.mp4',
       },
       {
         id: 3,
