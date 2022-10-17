@@ -13,7 +13,7 @@ const Parade2 = () => (
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}>
       <video className='fixed z-\[-1\]' controls muted loop style={{ width: '100%', height: '100%' }}
-         src="https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657809309/obcg/obcg2019_ejkbwn.mov" />
+         src="https://res.cloudinary.com/dfnaxhqqq/video/upload/v1666014062/obcg/favicon_lfowpy.mp4" />
 		 
     </motion.div>
     </Zoom>
