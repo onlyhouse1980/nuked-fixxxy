@@ -58,8 +58,8 @@ export default function Person() {
     <table className={styles.table}>
       <thead>
         <tr>
-          <th className={styles.th2}><h4><span>Meter Serial # </span><br /></h4></th>
-          <th className={styles.th2}><h4><span>{data.meter_serialNum}</span></h4></th>
+          <th className={styles.th2}><h4><span> Meter Serial # : {data.meter_serialNum}</span><br /></h4></th>
+          <th className={styles.th2}><h4><span>{data.last_name} </span></h4></th>
         </tr>
         
       </thead>
@@ -78,20 +78,20 @@ export default function Person() {
         <tr>
           <td className={styles.td3}>
           <p className={styles.p}></p>
-          <p className={styles.p}>Last reading by Vendor - June 7th, 2022</p>
+          <p className={styles.p}>Last reading by Vendor - October 7th, 2022</p>
           </td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}} 
               type="text" 
               id="info2" 
-              label="June 7th, 2022" 
-              value={data.jun07_22} 
+              label="October 7th, 2022" 
+              value={data.oct07_22} 
               readOnly />
             </td>
         </tr>
         <tr>
-        <td className={styles.td3}><p className={styles.p}>Gallons used since June 7th 2022.</p></td>
+        <td className={styles.td3}><p className={styles.p}>Gallons used since October 7th 2022.</p></td>
         <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -111,7 +111,7 @@ export default function Person() {
             type="text" 
             name="utilized" 
             id="lastYear"
-            value={data.feb19_21-data.dec10_20} 
+            value={data.dec03_21-data.oct03_21} 
             label="answers" 
             readOnly>
           </input>

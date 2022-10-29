@@ -15,19 +15,25 @@ import React from 'react'
 import { MDBAnimation } from "mdbreact";
 /* import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content' */
+import { RmoveLabel } from '../components/removeLabel'
+import useSWR from 'swr'
 
 
 
 
 
-<div suppressHydrationWarning={true}>
-    { process.browser }
-    
-    </div>
+
 
 const Example = () => (
+
+  
+
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
   <React.Fragment>
+  <div suppressHydrationWarning={true}>
+    { process.browser }
+    
+</div>
   <Zoom>
     <MDBRow className='mt-5'>
       <MDBCol md='6' className='mx-auto'>
@@ -39,12 +45,12 @@ const Example = () => (
             className='img-fluid'
             src='../../Images/meter1.jpg'
           />
-          <MDBCardBody>
+          <MDBCardBody className={styles.cardBody}>
             <form>
               <p className='h5 text-center mb-4'>Check Your Usage</p>
               <a href="" id="lnk"></a> 
               <div className='grey-text'>
-              
+              <label for="one" className="remove">
                 <MDBInput className={styles.userInput}
                   id='userInput'
                   label='Serial Number'
@@ -52,14 +58,15 @@ const Example = () => (
                   type='text'
                   
                 />
+                </label>
               </div>
               <div className='text-center'>                
-                <input type='button' onClick={function changeText2(){
+                <input className={styles.button} type='button' onClick={function changeText2(){
                   var userInput = document.getElementById('userInput').value;
     var lnk = document.getElementById('lnk');
-    lnk.href = "https://obcg.org/person/"+userInput;
+    lnk.href = "./person/"+userInput;
     lnk.innerHTML = lnk.href;
-    window.location = "https://obcg.org/person/"+userInput;
+    window.location = "./person/"+userInput;
 }}
                    value='search'/>
                 
