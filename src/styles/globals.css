@@ -7,11 +7,17 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
+Link {
+  color: white!important;
   text-decoration: none;
 }
 
+.md-form label {
+  margin-left: 3.5rem!important;
+  margin-bottom: 3.5rem!important;
+  padding-bottom: 10px!important;
+  color: black!important;
+}
 /* * {
   box-sizing: border-box;
 } */
@@ -22,6 +28,10 @@ a {
 
 .bgText {
   z-index: 10!important;
+}
+card-body {
+  background-color: gray!important;
+  padding: 0;
 }
 
 @media screen and (max-width: 992px) {
