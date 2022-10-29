@@ -15,6 +15,53 @@
     padding: 0;
 }
 
+.label {
+    position:relative;
+}
+
+.input:focus ~ span {
+  display:none;
+}
+
+.span {
+    position:absolute;
+    top:3px;
+    left:3px;
+}
+
 .md-form>label {
     color: black !important;
+}
+
+.userInput {
+    background-color: white!important;
+    color: black;
+    
+    margin-right: 10px;
+}
+
+.label {
+    color: black!important;
+    
+}
+
+.md-form .label {
+    color: black!important;
+   
+}
+
+.md-form .prefix label {
+    color: black!important;
+    margin-left: 3.5rem!important;
+}
+
+.button {
+    background-color: skyblue;
+}
+
+.cardBody {
+    background-color: gray!important;
+    padding: 50px;
+    padding-right: 90px;
+
 }
