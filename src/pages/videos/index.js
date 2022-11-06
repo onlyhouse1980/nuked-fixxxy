@@ -46,7 +46,9 @@ const Whales = () => {
   
     return (
       <>
-        <h1 className='text-center'>Our visitors from the deep end.</h1>
+      <div className={styles.headline}>
+        <h1 className='text-center'>Pickering Passage, July 2022</h1>
+      </div>  
         <div className='container'>
           <div className='row'>
             {media_urls.map((media) => (
@@ -75,6 +77,7 @@ const Whales = () => {
         </div>
       </>
     )
+  
   }
   
   export default Whales
