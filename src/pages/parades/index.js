@@ -23,7 +23,7 @@ const Parades = () => {
       {
         id: 3,
         title: '2021 Parade',
-        url: 'parades/parade2',        
+        url: 'parades/parade4',        
         video_url:
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1667839970/obcg/2021_Parade_duelvg.mp4#t=0.001',
       },
