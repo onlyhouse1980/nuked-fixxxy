@@ -238,7 +238,7 @@ class Navbar extends React.Component {
                 
                   <MDBDropdownToggle nav>
                   <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Media</span><span className={styles.ddf}>◿</span>
+                    <span className='mr-2'>Community</span><span className={styles.ddf}>◿</span>
                     </motion.div>
                   </MDBDropdownToggle>
                  
