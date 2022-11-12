@@ -22,13 +22,20 @@ const Parades = () => {
       },
       {
         id: 3,
+        title: '2020 Parade',
+        url: 'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1668240698/obcg/My_video_qngaun.mp4#t=0.001',        
+        video_url:
+          '/2020parade.jpeg',
+      },
+      {
+        id: 4,
         title: '2021 Parade',
         url: 'parades/parade4',        
         video_url:
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1667839970/obcg/2021_Parade_duelvg.mp4#t=0.001',
       },
           {
-        id: 4,
+        id: 5,
         title: '2022 Parade',
         url: 'parades/parade3',
         video_url:
