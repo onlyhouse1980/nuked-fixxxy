@@ -43,7 +43,7 @@ const Example = () => (
         <MDBCard className={styles.mdbkard}>
           <MDBCardImage
             className='img-fluid'
-            src='../../Images/meter1.jpg'
+            src='../../Images/meter1.webp'
           />
           <MDBCardBody className={styles.cardBody}>
             <form>
