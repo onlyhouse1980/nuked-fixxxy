@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from 'next/app';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import Layout from '../components/Layout';
@@ -8,21 +7,19 @@ import '../styles/globals.css'
 
 
 
-export default class MyApp extends App {
-  
-
-  render() {
-    const { Component, pageProps } = this.props;
-
+export default function App ({
+  Component,
+  pageProps: { session, ...pageProps },
+  }) {
     return (
       
       <Layout>
 
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
         <Component {...pageProps} />
         </AnimatePresence>
       </Layout>
       
     );
   }
-}
+
