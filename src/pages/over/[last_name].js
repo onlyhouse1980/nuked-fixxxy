@@ -1158,7 +1158,7 @@ function yearlyIncluded() {
   
   
     
-    <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
+ <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
   
       
         {/* <Zoom top cascade> */}
@@ -1186,235 +1186,56 @@ function yearlyIncluded() {
               </tr>
             </thead>
             <tbody className={styles.tbody}>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Aug 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
-                </td>
+              
+
+
+
+
+
+              
+              
+              
+
+              
+
+              
+
+              
+
+              
+              
+              
+              
+
+
+
+
+
+            <tr>
+                <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/07)</p></td>
                 <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
+                  <input style={{
+                      backgroundColor: bgColors.Blue,
+                      margin: '0 10px 0 10px',
+                      width: '75px',
+                      }}
                     type="text"
                     name="utilized"
-                    id="August2020"
-                    value={data.oct07_20 - data.aug10_20}
+                    id="April2022"
+                    value={data.jun07_22 - data.apr07_22}
                     label="answers"
                     readOnly>
                   </input>
                 </td>
                 <td className={styles.td3}>
-                  {galOverAugust()}
+                  {galOverApril22()}
                 </td>
                 <td className={styles.td3}>
-                  {galOverAugustFees()}
+                  {galOverAprilFees22()}
                 </td>
-              </tr>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Oct 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/10)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="October2020"
-                    value={data.dec10_20 - data.oct07_20}
-                    label="answers"
-                    readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverOctober()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverOctoberFees()}
-                </td>
-              </tr>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Dec 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/11-02/19)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="December2020"
-                    value={data.feb19_21 - data.dec10_20}
-                    label="answers"
-                    readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecember()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecemberFees()}
-                </td>
-              </tr>
-
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Feb 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/20-04/05)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="February2021"
-                    value={data.apr05_21 - data.feb19_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverFebruary()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverFebruaryFees()}
-                </td>
-              </tr>
-
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Apr 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/05-06/04)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="April2021"
-                    value={data.jun04_21 - data.apr05_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverApril21()}
-                </td>
-                <td className={styles.td3} name='fees'>
-                  {galOverAprilFees21()}
-                </td>
-              </tr>
-
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Jun 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(06/04-08/04)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="June2021"
-                    value={data.aug04_21 - data.jun04_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverJune21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverJuneFees21()}
-                </td>
-              </tr>
-
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Aug 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(08/04-10/03)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="August2021"
-                    value={data.oct03_21 - data.aug04_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverAugust21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverAugustFees21()}
-                </td>
-              </tr>
-
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Oct 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/03-12/03)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="October2021"
-                    value={data.dec03_21 - data.oct03_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverOctober21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverOctoberFees21()}
-                </td>
-              </tr>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Dec 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/03-02/04)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="December2021"
-                    value={data.feb04_22 - data.dec03_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecember21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecemberFees21()}
-                </td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                 <td className={styles.td3}><p className={styles.p}>Feb 2022</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/05-4/07)</p></td>
                 <td className={styles.td3}>
@@ -1439,30 +1260,230 @@ function yearlyIncluded() {
                   {galOverFebruaryFees22()}
                 </td>
               </tr>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/07)</p></td>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Dec 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/03-02/04)</p></td>
                 <td className={styles.td3}>
-                  <input style={{
-                      backgroundColor: bgColors.Blue,
-                      margin: '0 10px 0 10px',
-                      width: '75px',
-                      }}
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
                     type="text"
                     name="utilized"
-                    id="April2022"
-                    value={data.jun07_22 - data.apr07_22}
+                    id="December2021"
+                    value={data.feb04_22 - data.dec03_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverDecember21()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverDecemberFees21()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Oct 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/03-12/03)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="October2021"
+                    value={data.dec03_21 - data.oct03_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverOctober21()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverOctoberFees21()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Aug 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(08/04-10/03)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="August2021"
+                    value={data.oct03_21 - data.aug04_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverAugust21()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverAugustFees21()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Jun 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(06/04-08/04)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="June2021"
+                    value={data.aug04_21 - data.jun04_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverJune21()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverJuneFees21()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Apr 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/05-06/04)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="April2021"
+                    value={data.jun04_21 - data.apr05_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverApril21()}
+                </td>
+                <td className={styles.td3} name='fees'>
+                  {galOverAprilFees21()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Feb 2021</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/20-04/05)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="February2021"
+                    value={data.apr05_21 - data.feb19_21}
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverFebruary()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverFebruaryFees()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Dec 2020</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/11-02/19)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="December2020"
+                    value={data.feb19_21 - data.dec10_20}
                     label="answers"
                     readOnly>
                   </input>
                 </td>
                 <td className={styles.td3}>
-                  {galOverApril22()}
+                  {galOverDecember()}
                 </td>
                 <td className={styles.td3}>
-                  {galOverAprilFees22()}
+                  {galOverDecemberFees()}
                 </td>
-                </tr>
+              </tr>
+              
+              <tr>
+                <td className={styles.td3}><p className={styles.p}>Oct 2020</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/10)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="October2020"
+                    value={data.dec10_20 - data.oct07_20}
+                    label="answers"
+                    readOnly>
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverOctober()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverOctoberFees()}
+                </td>
+              </tr>
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Aug 2020</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
+                </td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="August2020"
+                    value={data.oct07_20 - data.aug10_20}
+                    label="answers"
+                    readOnly>
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {galOverAugust()}
+                </td>
+                <td className={styles.td3}>
+                  {galOverAugustFees()}
+                </td>
+              </tr>
                 </tbody>
                 </table>
                 <br>
@@ -1485,28 +1506,7 @@ function yearlyIncluded() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="June2022"
-                    value={data.aug05_22 - data.jun07_22 }
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {yearlyIncluded()}
-                </td>
-                </tr>
+              
                 
           {/* OCTOBER 2022 */}
 
@@ -1532,8 +1532,30 @@ function yearlyIncluded() {
                   {afterAugust()}
                 </td>
                 </tr>
-                <tr>
                 
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
+                <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="June2022"
+                    value={data.aug05_22 - data.jun07_22 }
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {yearlyIncluded()}
+                </td>
+                </tr>
+                <tr>
                 <td className={styles.td3}><p className={styles.p}>Charges/Fees</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/22 - 4/23)</p>
 
@@ -1542,8 +1564,19 @@ function yearlyIncluded() {
                   {galOverFees22()}
                 </td>
                 
-          </tr>
-        </tbody>
-      </table>
-      <BGBlack /> 
-    </main> )}
+              </tr>
+              
+
+              
+          
+            </tbody>
+          </table>
+
+
+        
+
+      
+
+   <BGBlack /> 
+      
+        </main> )}
