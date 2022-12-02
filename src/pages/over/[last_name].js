@@ -1158,7 +1158,7 @@ function yearlyIncluded() {
   
   
     
- <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
+    <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
   
       
         {/* <Zoom top cascade> */}
@@ -1542,19 +1542,8 @@ function yearlyIncluded() {
                   {galOverFees22()}
                 </td>
                 
-              </tr>
-              
-
-              
-          
-            </tbody>
-          </table>
-
-
-        
-
-      
-
-   <BGBlack /> 
-      
-        </main> )}
+          </tr>
+        </tbody>
+      </table>
+      <BGBlack /> 
+    </main> )}
