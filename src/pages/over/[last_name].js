@@ -1271,7 +1271,7 @@ function afterOctober() {
 
           <tr>
                 <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/05-10/07)</p></td>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/06-10/07)</p></td>
                 <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
