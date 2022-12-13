@@ -1071,6 +1071,8 @@ function yearlyIncluded() {
        
        }
 
+      // ******AUGUST*****
+
        function afterAugust() {
         let a = data.aug05_22 - data.jun07_22
         let b = data.oct07_22 - data.aug05_22
@@ -1110,6 +1112,50 @@ function yearlyIncluded() {
     </input>
         }
            }
+
+
+// ******OCTOBER******
+
+function afterOctober() {
+  let a = data.aug05_22 - data.jun07_22
+  let b = data.oct07_22 - data.aug05_22
+  let c = data.dec09_22 - data.oct07_22
+  let total2 = a + b + c
+  let costFree = 48000;
+  let rmn = ( costFree - total2 )
+
+  if(rmn < 0) {
+
+    return <input style={{
+      color: 'red',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }} 
+          type="number" 
+          name="utilized" 
+          id="yearOver"
+          value={ rmn }   
+          label="galOver" 
+    readOnly>
+</input>
+
+  } else {
+    return <input style={{
+      color: 'black',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }} 
+          type="number" 
+          name="utilized" 
+          id="yearOver"
+          value={ rmn }   
+          label="galOver" 
+    readOnly>
+</input>
+  }
+     }
 
   
    function galOverFees22() {
@@ -1193,7 +1239,33 @@ function yearlyIncluded() {
               </tr>
             </thead>
             <tbody>
-              
+
+
+          {/* NOVEMBER 2022 */}    
+
+          <tr>
+                <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/09)</p></td>
+                <td className={styles.td3}> 
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="October2022"
+                    value={data.dec09_22 - data.oct07_22 }  
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {afterOctober()}
+                </td>
+              </tr>
+
                 
           {/* OCTOBER 2022 */}
 
