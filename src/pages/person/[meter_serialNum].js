@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import styles from '../person/[meter_serialNum].module.css'
 import Zoom from 'react-reveal/Zoom';
+import React, { useState } from 'react';
 
 import { MDBBtn } from 'mdbreact';
 
@@ -36,17 +37,27 @@ export default function Person() {
   if (!data) return <div>Loading...</div>
 
     function sayHi() {
-              
+      
       let info1 = parseInt(document.getElementById("info1").value);
       let info2 = parseInt(document.getElementById("info2").value);
       var Answer = document.getElementById("Answer");
         Answer.value = info1 - info2;
       }
+    
+      function usedSofar(props) {
+        let info1 = parseInt(document.getElementById("info1").value);
+        let info2 = parseInt(document.getElementById("info2").value);
+        var Answer = document.getElementById("thisYear");
+          Answer.value =  Number(info1 - info2) + Number(Answer.value) ;
+        }
+
     function moreInfo(props) {
       let info1 = parseInt(document.getElementById("info1").value);
       let info2 = parseInt(document.getElementById("info2").value);
+      let info3 = parseInt(document.getElementById("thisYear").value);
       var Answer = document.getElementById("Percent");
-        Answer.value = '%' + (((info1 - info2) / 6000 )*100).toFixed(2);
+
+        Answer.value =  (((info1 - info2 + info3) / 48000 )*100).toFixed(0) + "%";
       }
         
     
@@ -70,6 +81,7 @@ export default function Person() {
           <td className={styles.thInput}><input style={{
             backgroundColor: bgColors.Cyan }} type="text" id="info1" label="your reading" placeholder="Enter Your Reading" name="uInput"></input><br /><MDBBtn gradient="blue" onClick={() => {
             sayHi()
+            usedSofar()
             moreInfo()
           }}
           
@@ -78,20 +90,20 @@ export default function Person() {
         <tr>
           <td className={styles.td3}>
           <p className={styles.p}></p>
-          <p className={styles.p}>Last reading by Vendor - October 7th, 2022</p>
+          <p className={styles.p}>Last reading by Vendor - December 9th, 2022</p>
           </td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}} 
               type="text" 
               id="info2" 
-              label="October 7th, 2022" 
-              value={data.oct07_22} 
+              label="December 9th, 2022" 
+              value={data.dec09_22} 
               readOnly />
             </td>
         </tr>
         <tr>
-        <td className={styles.td3}><p className={styles.p}>Gallons used since October 7th 2022.</p></td>
+        <td className={styles.td3}><p className={styles.p}>Gallons used since December 9th 2022.</p></td>
         <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
@@ -104,14 +116,14 @@ export default function Person() {
         </td>
         </tr>
         <tr>
-          <td className={styles.td3}><p className={styles.p}>Total gallons used this billing period, last year.</p></td>
+          <td className={styles.td3}><p className={styles.p}>Total gallons used this annual billing period (of 48,000)</p></td>
           <td className={styles.td3}>
           <input style={{
             backgroundColor: bgColors.Blue}}
             type="text" 
             name="utilized" 
-            id="lastYear"
-            value={data.dec03_21-data.oct03_21} 
+            id="thisYear"
+            value={data.year_total} 
             label="answers" 
             readOnly>
           </input>
@@ -121,7 +133,7 @@ export default function Person() {
         <tr>
           <td className={styles.td3} function person>
           
-          <p className={styles.p}>Percentage of two months allotment (6,000 gallons) used.<br /></p>
+          <p className={styles.p}>Percentage annual allotment (48,000 gallons) used.<br /></p>
           </td>  
           <td className={styles.td3}>
             
@@ -137,6 +149,27 @@ export default function Person() {
                  
           </td>
         </tr>
+
+        <tr>
+          <td className={styles.td3} function person>
+          
+          <p className={styles.p}>End of billing year.<br /></p>
+          </td>  
+          <td className={styles.td3}>
+            
+            
+          <input style={{
+            backgroundColor: bgColors.Blue}} type="text" id="yearEnd1" value={"June 2023"} label="answers"  readOnly
+            >
+              
+              </input> 
+          
+                  
+                 
+                 
+          </td>
+        </tr>
+
         <tr>
           <td className={styles.h5head}>
           <h5>*If you are having problems with the<br />form, we recommend reading &quot;<a href="/howtoreadmeter.pdf">How to read your meter?</a>&quot; </h5>
