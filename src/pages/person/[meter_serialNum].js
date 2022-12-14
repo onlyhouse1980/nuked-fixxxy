@@ -159,7 +159,7 @@ export default function Person() {
             
             
           <input style={{
-            backgroundColor: bgColors.Blue}} type="text" id="yearEnd1" value={"June 2023"} label="answers"  readOnly
+            backgroundColor: bgColors.Blue}} type="text" id="yearEnd1" value={data.billing_year_end} label="answers"  readOnly
             >
               
               </input> 
