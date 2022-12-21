@@ -45,7 +45,7 @@
     "react-spreadsheet-grid": "^2.0.0",
     "react-toastify": "^9.0.5",
     "resolve-url": "^0.2.1",
-    "sass": "^1.53.0",
+    "sass": "^1.53.0",  
     "simple-tween": "^1.0.0",
     "sitemap": "^7.1.1",
     "svg-react-loader": "^0.4.6",

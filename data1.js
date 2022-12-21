@@ -35,7 +35,7 @@ export const LastNames = [
        oct07_22: "21491061",
        dec09_22: "21569943",
        year_total: "512943",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "14310221",
@@ -73,7 +73,7 @@ export const LastNames = [
        oct07_22: "194845",
        dec09_22: "194846",
        year_total: "161",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667344",
@@ -111,7 +111,7 @@ export const LastNames = [
        oct07_22: "430168",
        dec09_22: "436126",
        year_total: "17280",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667347",
@@ -149,7 +149,7 @@ export const LastNames = [
        oct07_22: "105965",
        dec09_22: "106438",
        year_total: "3559",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667342",
@@ -187,7 +187,7 @@ export const LastNames = [
        oct07_22: "84002",
        dec09_22: "84397",
        year_total: "4728",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667346",
@@ -225,7 +225,7 @@ export const LastNames = [
        oct07_22: "62389",
        dec09_22: "63993",
        year_total: "7669",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "210637703",
@@ -263,7 +263,7 @@ export const LastNames = [
        oct07_22: "121",
        dec09_22: "121",
        year_total: "0",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667345",
@@ -301,7 +301,7 @@ export const LastNames = [
        oct07_22: "318608",
        dec09_22: "318608",
        year_total: "0",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667376",
@@ -339,7 +339,7 @@ export const LastNames = [
        oct07_22: "3",
        dec09_22: "3",
        year_total: "0",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "72845054",
@@ -377,7 +377,7 @@ export const LastNames = [
        oct07_22: "132858",
        dec09_22: "137109",
        year_total: "17714",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667375",
@@ -415,7 +415,7 @@ export const LastNames = [
        oct07_22: "174589",
        dec09_22: "176025",
        year_total: "10163",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667339",
@@ -453,7 +453,7 @@ export const LastNames = [
        oct07_22: "173232",
        dec09_22: "174729",
        year_total: "8768",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "SN199048",
@@ -491,7 +491,7 @@ export const LastNames = [
        oct07_22: "96960",
        dec09_22: "101417",
        year_total: "13832",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "10656114",
@@ -529,7 +529,7 @@ export const LastNames = [
        oct07_22: "532943",
        dec09_22: "533983",
        year_total: "95646",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667338",
@@ -567,7 +567,7 @@ export const LastNames = [
        oct07_22: "395676",
        dec09_22: "399213",
        year_total: "53252",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "77445947",
@@ -605,7 +605,7 @@ export const LastNames = [
        oct07_22: "277055",
        dec09_22: "277198",
        year_total: "36247",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667340",
@@ -643,7 +643,7 @@ export const LastNames = [
        oct07_22: "47894",
        dec09_22: "48037",
        year_total: "6115",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "10656201",
@@ -681,7 +681,7 @@ export const LastNames = [
        oct07_22: "136024",
        dec09_22: "140670",
        year_total: "15904",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667372",
@@ -719,7 +719,7 @@ export const LastNames = [
        oct07_22: "151689",
        dec09_22: "151796",
        year_total: "11994",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667341",
@@ -757,7 +757,7 @@ export const LastNames = [
        oct07_22: "107084",
        dec09_22: "108624",
        year_total: "8661",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667353",
@@ -795,7 +795,7 @@ export const LastNames = [
        oct07_22: "70340",
        dec09_22: "70362",
        year_total: "868",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667348",
@@ -833,7 +833,7 @@ export const LastNames = [
        oct07_22: "148871",
        dec09_22: "151761",
        year_total: "12563",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667349",
@@ -871,7 +871,7 @@ export const LastNames = [
        oct07_22: "522967",
        dec09_22: "528451",
        year_total: "21075",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667352",
@@ -909,7 +909,7 @@ export const LastNames = [
        oct07_22: "51427",
        dec09_22: "53127",
        year_total: "10868",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "10886593",
@@ -947,7 +947,7 @@ export const LastNames = [
        oct07_22: "154763",
        dec09_22: "159113",
        year_total: "26394",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "10679031",
@@ -985,7 +985,7 @@ export const LastNames = [
        oct07_22: "0",
        dec09_22: "0",
        year_total: "0",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667337",
@@ -1023,7 +1023,7 @@ export const LastNames = [
        oct07_22: "136507",
        dec09_22: "138104",
        year_total: "19095",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22329342",
@@ -1061,7 +1061,7 @@ export const LastNames = [
        oct07_22: "55",
        dec09_22: "55",
        year_total: "10",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667374",
@@ -1099,7 +1099,7 @@ export const LastNames = [
        oct07_22: "404853",
        dec09_22: "411891",
        year_total: "28776",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "77445948",
@@ -1137,7 +1137,7 @@ export const LastNames = [
        oct07_22: "5",
        dec09_22: "5",
        year_total: "0",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667377",
@@ -1175,7 +1175,7 @@ export const LastNames = [
        oct07_22: "81324",
        dec09_22: "81715",
        year_total: "8597",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667336",
@@ -1213,7 +1213,7 @@ export const LastNames = [
        oct07_22: "107954",
        dec09_22: "109799",
        year_total: "7714",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667350",
@@ -1251,7 +1251,7 @@ export const LastNames = [
        oct07_22: "88727",
        dec09_22: "88791",
        year_total: "1184",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667351",
@@ -1289,7 +1289,7 @@ export const LastNames = [
        oct07_22: "31672",
        dec09_22: "31684",
        year_total: "356",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "10656199",
@@ -1327,7 +1327,7 @@ export const LastNames = [
        oct07_22: "5010",
        dec09_22: "5026",
        year_total: "491",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "SN187535",
@@ -1365,7 +1365,7 @@ export const LastNames = [
        oct07_22: "249651",
        dec09_22: "256554",
        year_total: "24155",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "SN187593",
@@ -1403,7 +1403,7 @@ export const LastNames = [
        oct07_22: "251799",
        dec09_22: "259327",
        year_total: "27512",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "22667343",
@@ -1441,7 +1441,7 @@ export const LastNames = [
        oct07_22: "272622",
        dec09_22: "275765",
        year_total: "11052",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   },
   {
        meter_serialNum: "85195326",
@@ -1479,8 +1479,8 @@ export const LastNames = [
        oct07_22: "0",
        dec09_22: "0",
        year_total: "0",
-       billing_year_end: "June 2023'"
-  },
+       billing_year_end: "June 2023"
+  },  
   {
        meter_serialNum: "22169410",
        last_name: "Emtman_3",
@@ -1517,6 +1517,6 @@ export const LastNames = [
        oct07_22: "4",
        dec09_22: "4",
        year_total: "0",
-       billing_year_end: "June 2023'"
+       billing_year_end: "June 2023"
   }  
 ]
