@@ -3,8 +3,7 @@ import useSWR from 'swr'
 import styles from '../over/[last_name].module.css'
 // import styles from '../../styles/globals.css'
 // import Zoom from 'react-reveal';
-import * as React from 'react';
-  
+import * as React from 'react'; 
 import BGBlack from '../../components/BGBlack';
 
 

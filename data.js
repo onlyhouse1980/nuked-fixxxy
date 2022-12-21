@@ -1481,7 +1481,7 @@ export const people = [
         year_total: "0",
         billing_year_end: "June 2023"
    },  
-   {
+   {  
         meter_serialNum: "22169410",
         last_name: "Emtman_3",
         oct02_18: "3",
