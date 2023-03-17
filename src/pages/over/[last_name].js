@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import styles from '../over/[last_name].module.css'
 // import styles from '../../styles/globals.css'
-// import Zoom from 'react-reveal';
+import Zoom from 'react-reveal';
 import * as React from 'react'; 
 import BGBlack from '../../components/BGBlack';
 
@@ -1251,51 +1251,54 @@ function afterDecember() {
     }
     
      return (
-  
-  
-    
- <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
-  
-      
-        {/* <Zoom top cascade> */}
-          <div className={styles.title}>
-          <h1 className={styles.pageheader}>👤 <em>{data.last_name}</em></h1>
-          </div>
 
-          <table className={styles.table}>
-                  <thead>
-                  <tr style={{ fontWeight:'900', fontSize:'30' }} className={styles.th2}>
-                <td>
+
+// END OF FUNCTIONS BEGINNING OF PAGE DESIGN
+
+  <main style={{width: '100vw', height: '100vh', width: '100%' , marginTop:'10px', marginLeft:'0px', marginBottom:'100px', paddingBottom: '50px'}}>
+    <Zoom top cascade>
+      <div className={styles.title}>
+        <h1 className={styles.pageheader}>👤 <em>{data.last_name}</em></h1>
+      </div>
+      <div>
+        {/* CUSTOMER INFO TABLE */}
+        <table className={styles.table}>
+          <thead>
+            <tr style={{ fontWeight:'900', fontSize:'30' }} className={styles.th2}>
+              <td>
                 <p style={{ fontWeight:'900' }} className={styles.th2}>Mtr Sr Nr</p> 
-                </td>
-                <td>
+              </td>
+              <td>
                 <p style={{ fontWeight:'900' }} className={styles.th2}>#{data.meter_serialNum}</p>
-                </td>
-                <td>
-                
-                </td>
-              </tr>
-                  <tr>
-                
-                <td className={styles.td3}>
-                  <p className={styles.newFee}>New Fee Structure</p>
-                </td>
-              </tr>
-                  <tr className={styles.th2}>
-                <td>Billing Period</td>
-                <td>Gal Used</td>
-                <td>Remaining<br></br>(of 48,000)</td>
-                
-              </tr>
-            </thead>
-            <tbody>
+              </td>
+            </tr>
+          </thead>
+        </table>
 
-          {/* December 2022 */}
+        {/* START NEW FEE TABLE HEADER */}
+        <table>
+          <thead>
+            <tr>
+              < td className={styles.td3}>
+                <p className={styles.newFee}>New Fee Structure</p>
+              </td>
+            </tr>
 
-          <tr>
-                <td className={styles.td3}><p className={styles.p}>Dec 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/10-02/04)</p></td>
-                <td className={styles.td3}> 
+            <tr className={styles.th2}>
+              <td className={styles.newFee}>Billing Period</td>
+              <td className={styles.newFee}>Gal Used</td>
+              <td className={styles.newFee}>Remaining<br></br>(of 48,000)</td>
+            </tr>
+          </thead>
+
+          {/* START NEW FEE DATA */}
+          <tbody>
+            {/* DECEMBER 2022 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Dec 2022</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/10-02/04)</p>
+              </td>
+              <td className={styles.td3}> 
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1306,72 +1309,65 @@ function afterDecember() {
                     id="December2022"
                     value={data.feb04_23 - data.dec09_22}  
                     label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
+                    readOnly>
+                </input>
+              </td>
+              <td className={styles.td3}>
                   {afterDecember()}
-                </td>
-              </tr>
+              </td>
+            </tr>
+            
+            {/* OCTOBER 2022 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/09)</p></td>
+              <td className={styles.td3}> 
+              <input style={{
+                  backgroundColor: bgColors.Blue,
+                  margin: '0 10px 0 10px',
+                  width: '75px',
+                }}
+                  type="text"
+                  name="utilized"
+                  id="October2022"
+                  value={data.dec09_22 - data.oct07_22 }  
+                  label="answers"
+                  readOnly>
+              </input>
+              </td>
+              <td className={styles.td3}>
+                {afterOctober()}
+              </td>
+            </tr>
 
+            {/* AUGUST 2022 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/05-10/07)</p></td>
+              <td className={styles.td3}>
+              <input style={{
+                  backgroundColor: bgColors.Blue,
+                  margin: '0 10px 0 10px',
+                  width: '75px',
+                }}
+                  type="text"
+                  name="utilized"
+                  id="August2022"
+                  value={data.oct07_22 - data.aug05_22 }
+                  label="answers"
+                  readOnly>
+              </input>
+              </td>
+              <td className={styles.td3}>
+                {afterAugust()}
+              </td>
+            </tr>
 
-
-          {/* October 2022 */}    
-
-          <tr>
-                <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/09)</p></td>
-                <td className={styles.td3}> 
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="October2022"
-                    value={data.dec09_22 - data.oct07_22 }  
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {afterOctober()}
-                </td>
-              </tr>
-
-                
-          {/* OCTOBER 2022 */}
-
-          <tr>
-                <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/05-10/07)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="August2022"
-                    value={data.oct07_22 - data.aug05_22 }
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {afterAugust()}
-                </td>
-                </tr>
-                
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
-                <td className={styles.td3}>
+            {/* JUNE 2022 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1381,170 +1377,150 @@ function afterDecember() {
                     name="utilized"
                     id="June2022"
                     value={data.aug05_22 - data.jun07_22 }
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {yearlyIncluded()}
-                </td>
-                </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Year Total</p>
-                </td>
-                <td className={styles.td3}>
-                <input style={{ fontStyle: 'italic', fontWeight: 'bold', backgroundColor: bgColors.Blue, margin: '0 10px 0 10px', width: '75px', }} type="text" name="utilized" id="yearTotal" value={data.year_total} label="answers" readOnly></input>
-                </td>
-                </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Charges/Fees</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/22 - 4/23)</p>
+                    label="answers">
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {yearlyIncluded()}
+              </td>
+            </tr>
 
-                </td>
-                <td className={styles.td3}>
-                  {galOverFees22()}
-                </td>
-                
-              </tr>
-              
-
-              
-          
-            </tbody>
-          </table>
-<br /><br />
-
-          <table className={styles.table}>
-            <thead>
-              
-              <tr className={styles.th2}>
-              <td className={styles.bold}>Old Billing Structure...</td>
-              </tr>
-              <tr className={styles.th2}>
-                <td>Billing Period</td>
-                <td>Gal Used</td>
-                <td>Gal Over</td>
-                <td>Charge/Fee</td>
-              </tr>
-            </thead>
-            <tbody className={styles.tbody}>
-              
-
-
-
-
-
-              
-              
-              
-
-              
-
-              
-
-              
-
-              
-              
-              
-              
-
-
-
-
-
+            {/* YEAR TOTAL */}
             <tr>
-                <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/07)</p></td>
-                <td className={styles.td3}>
-                  <input style={{
-                      backgroundColor: bgColors.Blue,
-                      margin: '0 10px 0 10px',
-                      width: '75px',
-                      }}
+              <td className={styles.td3}>
+                <p className={styles.yearTotal}>Year Total</p>
+              </td>
+              <td className={styles.td3}>
+                <input style={{ fontStyle: 'italic', fontWeight: 'bold', backgroundColor: bgColors.Blue, margin: '0 10px 0 10px', width: '75px', }} type="text" name="utilized" id="yearTotal" value={data.year_total} label="answers" readOnly></input>
+              </td>
+            </tr>
+
+            {/* NEW BILLING CHARGES AND FEES */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Charges/Fees</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/7/22-6/6/23)</p>
+              </td>
+              <td className={styles.td3}>
+                {galOverFees22()}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        {/* START OLD BILLING TABLE HEADER */}
+        <table className={styles.table2}>
+          <thead>
+            <tr>
+              <td className={styles.td3}>
+                <p className={styles.newFee}>Old Billing Structure</p>
+              </td>
+            </tr>
+            <tr className={styles.th2}>
+              <td className={styles.newFee}>Billing Period</td>
+              <td className={styles.newFee}>Gal Used</td>
+              <td className={styles.newFee}>Gal Over</td>
+              <td className={styles.newFee}>Charge/Fee</td>
+            </tr>
+          </thead>
+
+          {/* OLD BILLING DATA SECTION */}
+          <tbody className={styles.tbody}>
+
+            {/* APR 2022 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/07)</p></td>
+              <td className={styles.td3}>
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
                     type="text"
                     name="utilized"
                     id="April2022"
                     value={data.jun07_22 - data.apr07_22}
                     label="answers"
                     readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverApril22()}
-                </td>
-                <td className={styles.td3}>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverApril22()}
+              </td>
+              <td className={styles.td3}>
                   {galOverAprilFees22()}
-                </td>
-                </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Feb 2022</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/05-4/07)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="February2022"
-                    value={data.apr07_22 - data.feb04_22}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverFebruary22()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverFebruaryFees22()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Dec 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/03-02/04)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="December2021"
-                    value={data.feb04_22 - data.dec03_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecember21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecemberFees21()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Oct 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/03-12/03)</p></td>
-                <td className={styles.td3}>
-                <input style={{
-                    backgroundColor: bgColors.Blue,
-                    margin: '0 10px 0 10px',
-                    width: '75px',
-                  }}
-                    type="text"
-                    name="utilized"
-                    id="October2021"
-                    value={data.dec03_21 - data.oct03_21}
-                    label="answers"
-                    readOnly
-                  >
-                  </input>
+              </td>
+            </tr>
+
+            {/* FEB 2022 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Feb 2022</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/05-4/07)</p></td>
+              <td className={styles.td3}>
+              <input style={{
+                  backgroundColor: bgColors.Blue,
+                  margin: '0 10px 0 10px',
+                  width: '75px',
+                }}
+                  type="text"
+                  name="utilized"
+                  id="February2022"
+                  value={data.apr07_22 - data.feb04_22}
+                  label="answers"
+                  readOnly>
+              </input>
+            </td>
+            <td className={styles.td3}>
+              {galOverFebruary22()}
+            </td>
+            <td className={styles.td3}>
+              {galOverFebruaryFees22()}
+            </td>
+          </tr>
+              
+          {/* DEC 2021 */}    
+          <tr>
+            <td className={styles.td3}><p className={styles.p}>Dec 2021</p>
+              <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/03-02/04)</p></td>
+            <td className={styles.td3}>
+              <input style={{
+                  backgroundColor: bgColors.Blue,
+                  margin: '0 10px 0 10px',
+                  width: '75px',
+                }}
+                  type="text"
+                  name="utilized"
+                  id="December2021"
+                  value={data.feb04_22 - data.dec03_21}
+                  label="answers"
+                  readOnly>
+              </input>
+            </td>
+            <td className={styles.td3}>
+              {galOverDecember21()}
+            </td>
+            <td className={styles.td3}>
+              {galOverDecemberFees21()}
+            </td>
+          </tr>
+
+          {/* OCT 2021 */}
+          <tr>
+            <td className={styles.td3}><p className={styles.p}>Oct 2021</p>
+              <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/03-12/03)</p></td>
+            <td className={styles.td3}>
+              <input style={{
+                  backgroundColor: bgColors.Blue,
+                  margin: '0 10px 0 10px',
+                  width: '75px',
+                }}
+                  type="text"
+                  name="utilized"
+                  id="October2021"
+                  value={data.dec03_21 - data.oct03_21}
+                  label="answers"
+                  readOnly>
+              </input>
                 </td>
                 <td className={styles.td3}>
                   {galOverOctober21()}
@@ -1553,7 +1529,9 @@ function afterDecember() {
                   {galOverOctoberFees21()}
                 </td>
               </tr>
-                <tr>
+
+              {/* AUG 2021 */}
+              <tr>
                 <td className={styles.td3}><p className={styles.p}>Aug 2021</p>
                   <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(08/04-10/03)</p></td>
                 <td className={styles.td3}>
@@ -1569,19 +1547,22 @@ function afterDecember() {
                     label="answers"
                     readOnly
                   >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverAugust21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverAugustFees21()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Jun 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(06/04-08/04)</p></td>
-                <td className={styles.td3}>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverAugust21()}
+              </td>
+              <td className={styles.td3}>
+                {galOverAugustFees21()}
+              </td>
+            </tr>
+
+            {/* JUN 2021 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Jun 2021</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(06/04-08/04)</p>
+              </td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1592,21 +1573,22 @@ function afterDecember() {
                     id="June2021"
                     value={data.aug04_21 - data.jun04_21}
                     label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverJune21()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverJuneFees21()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Apr 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/05-06/04)</p></td>
-                <td className={styles.td3}>
+                    readOnly>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverJune21()}
+              </td>
+              <td className={styles.td3}>
+                {galOverJuneFees21()}
+              </td>
+            </tr>
+
+            {/* APR 2021 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Apr 2021</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/05-06/04)</p></td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1617,21 +1599,22 @@ function afterDecember() {
                     id="April2021"
                     value={data.jun04_21 - data.apr05_21}
                     label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverApril21()}
-                </td>
-                <td className={styles.td3} name='fees'>
-                  {galOverAprilFees21()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Feb 2021</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/20-04/05)</p></td>
-                <td className={styles.td3}>
+                    readOnly>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverApril21()}
+              </td>
+              <td className={styles.td3} name='fees'>
+                {galOverAprilFees21()}
+              </td>
+            </tr>
+
+            {/* FEB 2021 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Feb 2021</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/20-04/05)</p></td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1642,21 +1625,22 @@ function afterDecember() {
                     id="February2021"
                     value={data.apr05_21 - data.feb19_21}
                     label="answers"
-                    readOnly
-                  >
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverFebruary()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverFebruaryFees()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Dec 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/11-02/19)</p></td>
-                <td className={styles.td3}>
+                    readOnly>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverFebruary()}
+              </td>
+              <td className={styles.td3}>
+                {galOverFebruaryFees()}
+              </td>
+            </tr>
+
+            {/* DEC 2020 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Dec 2020</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/11-02/19)</p></td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1668,20 +1652,21 @@ function afterDecember() {
                     value={data.feb19_21 - data.dec10_20}
                     label="answers"
                     readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecember()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverDecemberFees()}
-                </td>
-              </tr>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverDecember()}
+              </td>
+              <td className={styles.td3}>
+                {galOverDecemberFees()}
+              </td>
+            </tr>
               
-              <tr>
-                <td className={styles.td3}><p className={styles.p}>Oct 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/10)</p></td>
-                <td className={styles.td3}>
+            {/* OCT 2020 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Oct 2020</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/10)</p></td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1693,20 +1678,22 @@ function afterDecember() {
                     value={data.dec10_20 - data.oct07_20}
                     label="answers"
                     readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverOctober()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverOctoberFees()}
-                </td>
-              </tr>
-                <tr>
-                <td className={styles.td3}><p className={styles.p}>Aug 2020</p>
-                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
-                </td>
-                <td className={styles.td3}>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverOctober()}
+              </td>
+              <td className={styles.td3}>
+                {galOverOctoberFees()}
+              </td>
+            </tr>
+
+            {/* AUGUST 2020 */}
+            <tr>
+              <td className={styles.td3}><p className={styles.p}>Aug 2020</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', paddingTop: '-10px' }}>(08/11-10/07)</p>
+              </td>
+              <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1718,27 +1705,19 @@ function afterDecember() {
                     value={data.oct07_20 - data.aug10_20}
                     label="answers"
                     readOnly>
-                  </input>
-                </td>
-                <td className={styles.td3}>
-                  {galOverAugust()}
-                </td>
-                <td className={styles.td3}>
-                  {galOverAugustFees()}
-                </td>
-              </tr>
-                </tbody>
-                </table>
-                <br>
-                </br>
-                <br>
-                </br>
-                
-
-        
-
+                </input>
+              </td>
+              <td className={styles.td3}>
+                {galOverAugust()}
+              </td>
+              <td className={styles.td3}>
+                {galOverAugustFees()}
+              </td>
+            </tr>
+          </tbody>
+        </table>
       
-
-   <BGBlack /> 
-      
-        </main> )}
+      </div>
+      <BGBlack /> 
+    </Zoom>  
+  </main> )}
