@@ -166,3 +166,12 @@
 .newFee {
   font-weight: 700;
 }
+
+.table2 {
+  margin-top: 40px;
+}
+
+.yearTotal {
+  vertical-align: middle!important;
+  display: contents;
+}
