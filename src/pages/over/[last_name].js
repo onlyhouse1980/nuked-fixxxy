@@ -1159,11 +1159,59 @@ function afterOctober() {
   }
      }
 
+
+// ****DECEMBER
+
+
+function afterDecember() {
+  let a = data.aug05_22 - data.jun07_22
+  let b = data.oct07_22 - data.aug05_22
+  let c = data.dec09_22 - data.oct07_22
+  let d = data.feb04_23 - data.dec09_22
+  let total3 = a + b + c + d
+  let costFree = 48000;
+  let rmn = ( costFree - total3 )
+
+  if(rmn < 0) {
+
+    return <input style={{
+      color: 'red',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }} 
+          type="number" 
+          name="utilized" 
+          id="yearOver"
+          value={ rmn }   
+          label="galOver" 
+    readOnly>
+</input>
+
+  } else {
+    return <input style={{
+      color: 'black',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }} 
+          type="number" 
+          name="utilized" 
+          id="yearOver"
+          value={ rmn }   
+          label="galOver" 
+    readOnly>
+</input>
+  }
+     }
+
   
    function galOverFees22() {
     let a = data.aug05_22 - data.jun07_22 
     let b = data.oct07_22 - data.aug05_22
-    let totalYearUsed = a + b
+    let c = data.dec09_22 - data.oct07_22
+    let d = data.feb04_23 - data.dec09_22
+    let totalYearUsed = a + b + c + d
     let rmn = (48000-totalYearUsed)
   
     if(rmn < 0) {
@@ -1242,8 +1290,34 @@ function afterOctober() {
             </thead>
             <tbody>
 
+          {/* December 2022 */}
 
-          {/* NOVEMBER 2022 */}    
+          <tr>
+                <td className={styles.td3}><p className={styles.p}>Dec 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/10-02/04)</p></td>
+                <td className={styles.td3}> 
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="December2022"
+                    value={data.feb04_23 - data.dec09_22}  
+                    label="answers"
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {afterDecember()}
+                </td>
+              </tr>
+
+
+
+          {/* October 2022 */}    
 
           <tr>
                 <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
