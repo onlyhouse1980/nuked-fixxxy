@@ -1205,13 +1205,60 @@ function afterDecember() {
   }
      }
 
+  // ***FEBRUARY 2023***
+
+  function afterFebruary() {
+    let a = data.aug05_22 - data.jun07_22
+    let b = data.oct07_22 - data.aug05_22
+    let c = data.dec09_22 - data.oct07_22
+    let d = data.feb04_23 - data.dec09_22
+    let e = data.apr6_23 - data.feb04_23
+    let total4 = a + b + c + d + e
+    let costFree = 48000;
+    let rmn = ( costFree - total4 )
+  
+    if(rmn < 0) {
+  
+      return <input style={{
+        color: 'red',
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }} 
+            type="number" 
+            name="utilized" 
+            id="yearOver"
+            value={ rmn }   
+            label="galOver" 
+      readOnly>
+  </input>
+  
+    } else {
+      return <input style={{
+        color: 'black',
+        backgroundColor: bgColors.Blue,
+        margin: '0 10px 0 10px',
+        width: '75px',
+      }} 
+            type="number" 
+            name="utilized" 
+            id="yearOver"
+            value={ rmn }   
+            label="galOver" 
+      readOnly>
+  </input>
+    }
+       }
+
+
   
    function galOverFees22() {
     let a = data.aug05_22 - data.jun07_22 
     let b = data.oct07_22 - data.aug05_22
     let c = data.dec09_22 - data.oct07_22
     let d = data.feb04_23 - data.dec09_22
-    let totalYearUsed = a + b + c + d
+    let e = data.apr6_23 - data.feb04_23
+    let totalYearUsed = a + b + c + d + e
     let rmn = (48000-totalYearUsed)
   
     if(rmn < 0) {
@@ -1293,6 +1340,29 @@ function afterDecember() {
 
           {/* START NEW FEE DATA */}
           <tbody>
+          <tr>
+              <td className={styles.td3}><p className={styles.p}>Feb 2023</p>
+                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/04 - 04/06)</p>
+              </td>
+              <td className={styles.td3}> 
+                <input style={{
+                    backgroundColor: bgColors.Blue,
+                    margin: '0 10px 0 10px',
+                    width: '75px',
+                  }}
+                    type="text"
+                    name="utilized"
+                    id="December2022"
+                    value={data.apr6_23 - data.feb04_23}  
+                    label="answers"
+                    readOnly>
+                </input>
+              </td>
+              <td className={styles.td3}>
+                  {afterFebruary()}
+              </td>
+            </tr>
+
             {/* DECEMBER 2022 */}
             <tr>
               <td className={styles.td3}><p className={styles.p}>Dec 2022</p>
@@ -1316,7 +1386,7 @@ function afterDecember() {
                   {afterDecember()}
               </td>
             </tr>
-            
+            <React.StrictMode>
             {/* OCTOBER 2022 */}
             <tr>
               <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
@@ -1339,7 +1409,7 @@ function afterDecember() {
                 {afterOctober()}
               </td>
             </tr>
-
+            </React.StrictMode>
             {/* AUGUST 2022 */}
             <tr>
               <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
@@ -1412,7 +1482,7 @@ function afterDecember() {
           <thead>
             <tr>
               <td className={styles.td3}>
-                <p className={styles.newFee}>Old Billing Structure</p>
+                <p className={styles.oldFee}>Old Billing Structure</p>
               </td>
             </tr>
             <tr className={styles.th2}>
