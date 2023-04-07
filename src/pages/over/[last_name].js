@@ -1205,6 +1205,52 @@ function afterDecember() {
   }
      }
 
+
+// ****DECEMBER
+
+
+function afterDecember() {
+  let a = data.aug05_22 - data.jun07_22
+  let b = data.oct07_22 - data.aug05_22
+  let c = data.dec09_22 - data.oct07_22
+  let d = data.feb04_23 - data.dec09_22
+  let total3 = a + b + c + d
+  let costFree = 48000;
+  let rmn = ( costFree - total3 )
+
+  if(rmn < 0) {
+
+    return <input style={{
+      color: 'red',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }} 
+          type="number" 
+          name="utilized" 
+          id="yearOver"
+          value={ rmn }   
+          label="galOver" 
+    readOnly>
+</input>
+
+  } else {
+    return <input style={{
+      color: 'black',
+      backgroundColor: bgColors.Blue,
+      margin: '0 10px 0 10px',
+      width: '75px',
+    }} 
+          type="number" 
+          name="utilized" 
+          id="yearOver"
+          value={ rmn }   
+          label="galOver" 
+    readOnly>
+</input>
+  }
+     }
+
   // ***FEBRUARY***
 
   function afterFebruary() {
@@ -1255,10 +1301,7 @@ function afterDecember() {
    function galOverFees22() {
     let a = data.aug05_22 - data.jun07_22 
     let b = data.oct07_22 - data.aug05_22
-    let c = data.dec09_22 - data.oct07_22
-    let d = data.feb04_23 - data.dec09_22
-    let e = data.apr6_23 - data.feb04_23
-    let totalYearUsed = a + b + c + d + e
+    let totalYearUsed = a + b
     let rmn = (48000-totalYearUsed)
   
     if(rmn < 0) {
@@ -1317,34 +1360,33 @@ function afterDecember() {
               </td>
               <td>
                 <p style={{ fontWeight:'900' }} className={styles.th2}>#{data.meter_serialNum}</p>
-              </td>
-            </tr>
-          </thead>
-        </table>
+                </td>
+                <td>
+                
+                </td>
+              </tr>
+                  <tr>
+                
+                <td className={styles.td3}>
+                  <p className={styles.newFee}>New Fee Structure</p>
+                </td>
+              </tr>
+                  <tr className={styles.th2}>
+                <td>Billing Period</td>
+                <td>Gal Used</td>
+                <td>Remaining<br></br>(of 48,000)</td>
+                
+              </tr>
+            </thead>
+            <tbody>
 
-        {/* START NEW FEE TABLE HEADER */}
-        <table>
-          <thead>
-            <tr>
-              < td className={styles.td3}>
-                <p className={styles.newFee}>New Fee Structure</p>
-              </td>
-            </tr>
 
-            <tr className={styles.th2}>
-              <td className={styles.newFee}>Billing Period</td>
-              <td className={styles.newFee}>Gal Used</td>
-              <td className={styles.newFee}>Remaining<br></br>(of 48,000)</td>
-            </tr>
-          </thead>
+          {/* NOVEMBER 2022 */}    
 
-          {/* START NEW FEE DATA */}
-          <tbody>
           <tr>
-              <td className={styles.td3}><p className={styles.p}>Feb 2023</p>
-                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(02/04 - 04/06)</p>
-              </td>
-              <td className={styles.td3}> 
+                <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/09)</p></td>
+                <td className={styles.td3}> 
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1352,23 +1394,25 @@ function afterDecember() {
                   }}
                     type="text"
                     name="utilized"
-                    id="December2022"
-                    value={data.apr6_23 - data.feb04_23}  
+                    id="October2022"
+                    value={data.dec09_22 - data.oct07_22 }  
                     label="answers"
-                    readOnly>
-                </input>
-              </td>
-              <td className={styles.td3}>
-                  {afterFebruary()}
-              </td>
-            </tr>
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {afterOctober()}
+                </td>
+              </tr>
 
-            {/* DECEMBER 2022 */}
-            <tr>
-              <td className={styles.td3}><p className={styles.p}>Dec 2022</p>
-                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(12/10-02/04)</p>
-              </td>
-              <td className={styles.td3}> 
+                
+          {/* OCTOBER 2022 */}
+
+          <tr>
+                <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/05-10/07)</p></td>
+                <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1376,68 +1420,22 @@ function afterDecember() {
                   }}
                     type="text"
                     name="utilized"
-                    id="December2022"
-                    value={data.feb04_23 - data.dec09_22}  
+                    id="August2022"
+                    value={data.oct07_22 - data.aug05_22 }
                     label="answers"
-                    readOnly>
-                </input>
-              </td>
-              <td className={styles.td3}>
-                  {afterDecember()}
-              </td>
-            </tr>
-            <React.StrictMode>
-            {/* OCTOBER 2022 */}
-            <tr>
-              <td className={styles.td3}><p className={styles.p}>Oct 2022</p>
-                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(10/07-12/09)</p></td>
-              <td className={styles.td3}> 
-              <input style={{
-                  backgroundColor: bgColors.Blue,
-                  margin: '0 10px 0 10px',
-                  width: '75px',
-                }}
-                  type="text"
-                  name="utilized"
-                  id="October2022"
-                  value={data.dec09_22 - data.oct07_22 }  
-                  label="answers"
-                  readOnly>
-              </input>
-              </td>
-              <td className={styles.td3}>
-                {afterOctober()}
-              </td>
-            </tr>
-            </React.StrictMode>
-            {/* AUGUST 2022 */}
-            <tr>
-              <td className={styles.td3}><p className={styles.p}>Aug 2022</p>
-                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(8/05-10/07)</p></td>
-              <td className={styles.td3}>
-              <input style={{
-                  backgroundColor: bgColors.Blue,
-                  margin: '0 10px 0 10px',
-                  width: '75px',
-                }}
-                  type="text"
-                  name="utilized"
-                  id="August2022"
-                  value={data.oct07_22 - data.aug05_22 }
-                  label="answers"
-                  readOnly>
-              </input>
-              </td>
-              <td className={styles.td3}>
-                {afterAugust()}
-              </td>
-            </tr>
-
-            {/* JUNE 2022 */}
-            <tr>
-              <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
-                <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
-              <td className={styles.td3}>
+                    readOnly
+                  >
+                  </input>
+                </td>
+                <td className={styles.td3}>
+                  {afterAugust()}
+                </td>
+                </tr>
+                
+                <tr>
+                <td className={styles.td3}><p className={styles.p}>Jun 2022</p>
+                  <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(6/07-8/05)</p></td>
+                <td className={styles.td3}>
                 <input style={{
                     backgroundColor: bgColors.Blue,
                     margin: '0 10px 0 10px',
@@ -1477,26 +1475,45 @@ function afterDecember() {
           </tbody>
         </table>
 
-        {/* START OLD BILLING TABLE HEADER */}
-        <table className={styles.table2}>
-          <thead>
-            <tr>
-              <td className={styles.td3}>
-                <p className={styles.oldFee}>Old Billing Structure</p>
-              </td>
-            </tr>
-            <tr className={styles.th2}>
-              <td className={styles.newFee}>Billing Period</td>
-              <td className={styles.newFee}>Gal Used</td>
-              <td className={styles.newFee}>Gal Over</td>
-              <td className={styles.newFee}>Charge/Fee</td>
-            </tr>
-          </thead>
+          <table className={styles.table}>
+            <thead>
+              
+              <tr className={styles.th2}>
+              <td className={styles.bold}>Old Billing Structure...</td>
+              </tr>
+              <tr className={styles.th2}>
+                <td>Billing Period</td>
+                <td>Gal Used</td>
+                <td>Gal Over</td>
+                <td>Charge/Fee</td>
+              </tr>
+            </thead>
+            <tbody className={styles.tbody}>
+              
 
-          {/* OLD BILLING DATA SECTION */}
-          <tbody className={styles.tbody}>
 
-            {/* APR 2022 */}
+
+
+
+              
+              
+              
+
+              
+
+              
+
+              
+
+              
+              
+              
+              
+
+
+
+
+
             <tr>
               <td className={styles.td3}><p className={styles.p}>Apr 2022</p>
                 <p style={{ fontSize: 9, width:'75px',  color: 'white', margin: '-20px 0 0 10px', padding: 0 }}>(04/08-6/07)</p></td>

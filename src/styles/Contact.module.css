@@ -1,8 +1,8 @@
 .blackbox {
   position: center;
   display: grid-inline;
-  background: radial-gradient(#fff, #0000);
-  box-shadow: 2px 2px 8px rgb(60, 60, 60);
+  background: rgb(136, 131, 131);
+  box-shadow: 2px 1px 20px rgb(0, 0, 0);
   padding: 10px 10px 10px 10px;
   top: 85px;
   bottom: 0;
@@ -34,6 +34,7 @@
 .bottomliner {
   position: absolute !important;
   left: 20px !important;
+  
   
 }
 
