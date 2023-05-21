@@ -24,6 +24,3 @@ export default function ParkMaddings() {
   );
 }
 
-export function MobileDevice() {
-    query = async (@media only screen and (max-width: 768px)) {
-}
