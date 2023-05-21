@@ -17,11 +17,8 @@ export default function ParkMaddings() {
                 
                  ></iframe>
             </div>
-      {/* <ControlledCarousel /> */}
-      {/* <Post /> */}
-      {/* <Footer /> */}
+      
     </>
   );
 }
-
 
