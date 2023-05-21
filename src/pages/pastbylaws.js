@@ -39,11 +39,11 @@ export async function getStaticProps() {
         
         
         
-        <button className={styles.button}><a  href='/archive/2010bl.pdf'>2010</a></button>
+        <button className={styles.button}><a  href='/archbylaws/2010'>2010</a></button>
         
-        <button className={styles.button}><a  href='/archive/1982bl.pdf'>1982</a></button>  
-        <button className={styles.button}><a  href='/archive/1977bl.pdf'>1977</a></button>    
-        <button className={styles.button}><a  href='/archive/1975bl.pdf'>1975</a></button>
+        <button className={styles.button}><a  href='/archbylaws/1982'>1982</a></button>  
+        <button className={styles.button}><a  href='/archbylaws/1977'>1977</a></button>    
+        <button className={styles.button}><a  href='/archbylaws/1975'>1975</a></button>
         </div>
         </div>
         

@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  
+  .ExternalFiles {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767.98px) {
+    .ExternalFiles {
+        height: 100vh;
+    }
+  }

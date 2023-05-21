@@ -23,9 +23,9 @@ const Parades = () => {
       {
         id: 3,
         title: '2020 Parade',
-        url: 'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1668240698/obcg/My_video_qngaun.mp4#t=0.001',        
+        url: 'parades/parade3',        
         video_url:
-          '/2020parade.jpeg',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1668240698/obcg/My_video_qngaun.mp4#t=0.001',
       },
       {
         id: 4,

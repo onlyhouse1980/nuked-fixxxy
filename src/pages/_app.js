@@ -4,6 +4,8 @@ import 'mdbreact/dist/css/mdb.css';
 import Layout from '../components/Layout';
 import { AnimatePresence } from "framer-motion";
 import '../styles/globals.css'
+import "../css/customcss.css";
+
 
 
 
@@ -12,6 +14,7 @@ export default function App ({
   pageProps: { session, ...pageProps },
   }) {
     return (
+      
       
       <Layout>
 

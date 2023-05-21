@@ -14,6 +14,7 @@ import {
 import { motion } from 'framer-motion'
 import React from 'react'
 import styles from '../styles/NavBar.module.css'
+import Image from 'next/image';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -34,8 +35,8 @@ class Navbar extends React.Component {
         <motion.div whileHover= {{ scale: 2 }} >
           <MDBNavbarBrand>
             <a 
-              href="https://obcg.org"><img 
-              src="../../Images/WebPFiles/obcglogo.webp" 
+              href="https://obcg.org"><Image 
+              src="/Images/WebPFiles/obcglogo.webp" 
               alt="logo" 
               width={60}
               className={styles.logoimg} 
@@ -101,47 +102,37 @@ class Navbar extends React.Component {
                  
                   <MDBDropdownMenu>
                     <MDBDropdownItem>
-                    <Link target='blank' href='/Efficiency.pdf'>
+                    <Link href='/efficiency'>
                         <a onClick={this.toggleCollapse}>Water Use Efficiency</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/Sysplan.pdf'>
+                    <Link href='/sysplan'>
                         <a onClick={this.toggleCollapse}>Water System Plan</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/consumer.pdf'>
-                        <a onClick={this.toggleCollapse}>Consumer Confidence 2020</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/CCR_April_2022_reporting_year_2021.pdf'>
-                        <a onClick={this.toggleCollapse}>Consumer Confidence 2021</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/Bylaws.pdf'>
+                    <Link href='/bylaws'>
                         <a onClick={this.toggleCollapse}>Current Bylaws</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/pastbylaws'>
+                    <Link href='/pastbylaws'>
                         <a onClick={this.toggleCollapse}>Past Bylaws</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/masCountyFranchisePermit.pdf'>
+                    <Link  href='/franchisepermit'>
                         <a onClick={this.toggleCollapse}>Mason County Franchise Permit</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>                   
-                      <Link target='_blank' href='/FAQ.pdf'>
+                      <Link href='/faq'>
                         <a onClick={this.toggleCollapse}>FAQs</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>                   
-                      <Link target='_blank' href='/misc'>
+                      <Link  href='/misc'>
                         <a onClick={this.toggleCollapse}>Misc. Files</a>
                       </Link>
                     </MDBDropdownItem> 
@@ -162,12 +153,12 @@ class Navbar extends React.Component {
                   <MDBDropdownMenu>
                     
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/consumer.pdf'>
+                    <Link target='_blank' href='/consumer'>
                         <a onClick={this.toggleCollapse}>CCR 2020</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/CCR_April_2022_reporting_year_2021.pdf'>
+                    <Link target='_blank' href='/consumer21'>
                         <a onClick={this.toggleCollapse}>CCR 2021</a>
                       </Link>
                     </MDBDropdownItem>
