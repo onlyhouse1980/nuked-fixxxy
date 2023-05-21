@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import styles from '../styles/pastbylaws.module.css';
 import { motion } from 'framer-motion'
 
@@ -39,11 +39,11 @@ export async function getStaticProps() {
         
         
         
-        <button className={styles.button}><a  href='/archbylaws/2010'>2010</a></button>
+        <button className={styles.button}><Link  href='/archbylaws/2010'>2010</Link></button>
         
-        <button className={styles.button}><a  href='/archbylaws/1982'>1982</a></button>  
-        <button className={styles.button}><a  href='/archbylaws/1977'>1977</a></button>    
-        <button className={styles.button}><a  href='/archbylaws/1975'>1975</a></button>
+        <button className={styles.button}><Link  href='/archbylaws/1982'>1982</Link></button>  
+        <button className={styles.button}><Link  href='/archbylaws/1977'>1977</Link></button>    
+        <button className={styles.button}><Link  href='/archbylaws/1975'>1975</Link></button>
         </div>
         </div>
         

@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import styles from '../styles/misc.module.css';
 import { motion } from 'framer-motion'
 
@@ -32,11 +32,11 @@ export async function getStaticProps() {
               <p></p>
               <div className={styles.divBlock}>
                 <div className={styles.indDates}>
-                  <button className={styles.button}><a  href='/misc/waterline1982'>1982 Water line replacement</a></button>
-                  <button className={styles.button}><a  href='/misc/legalproperty'>Legal property</a></button>
-                  <button className={styles.button}><a  href='/misc/map-master-water-lines'>Map Water Line</a></button>
-                  <button className={styles.button}><a  href='/misc/parkmaddings'>Park Madings Orchard Beach </a></button>
-                  <button className={styles.button}><a  href='/misc/historicalmeetings'>Assorted Documents</a></button>
+                  <button className={styles.button}><Link  href='/misc/waterline1982'>1982 Water line replacement</Link></button>
+                  <button className={styles.button}><Link  href='/misc/legalproperty'>Legal property</Link></button>
+                  <button className={styles.button}><Link  href='/misc/map-master-water-lines'>Map Water Line</Link></button>
+                  <button className={styles.button}><Link  href='/misc/parkmaddings'>Park Madings Orchard Beach </Link></button>
+                  <button className={styles.button}><Link  href='/misc/historicalmeetings'>Assorted Documents</Link></button>
                 </div>
               </div>
             </motion.container>
