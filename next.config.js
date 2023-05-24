@@ -21,8 +21,7 @@
       ]
     },
   }
-
-  module.exports = {
+module.exports = {
     async redirects() {
       return [
         {
@@ -31,8 +30,9 @@
           permanent: true,
         },
       ]
-    },
+    },   
   }
+  
 
 
 
