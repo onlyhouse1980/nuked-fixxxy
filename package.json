@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines" : { 
+    "npm" : "9.5.1",
+    "node" : "18.16.0"
+  },
   "dependencies": {
     "@babel/core": "^7.20.2",
     "@next/bundle-analyzer": "^12.2.2",
