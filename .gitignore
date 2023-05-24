@@ -1,3 +1,6 @@
 node_modules
 .next/*;
 .yarn/*;
+.next/trace
+.DS_Store
+yarn-error.log
