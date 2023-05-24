@@ -127,7 +127,7 @@ class Navbar extends React.Component {
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>                   
-                      <Link href='/faq'>
+                      <Link href='/pdfs/faq'>
                         <a onClick={this.toggleCollapse}>FAQs</a>
                       </Link>
                     </MDBDropdownItem>
@@ -153,12 +153,12 @@ class Navbar extends React.Component {
                   <MDBDropdownMenu>
                     
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/consumer'>
+                    <Link target='_blank' href='/pdfs/consumer'>
                         <a onClick={this.toggleCollapse}>CCR 2020</a>
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
-                    <Link target='_blank' href='/consumer21'>
+                    <Link target='_blank' href='/pdfs/consumer21'>
                         <a onClick={this.toggleCollapse}>CCR 2021</a>
                       </Link>
                     </MDBDropdownItem>
