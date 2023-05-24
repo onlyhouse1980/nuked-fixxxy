@@ -4,7 +4,7 @@ exports.id = 5091;
 exports.ids = [5091];
 exports.modules = {
 
-/***/ 96035:
+/***/ 4705:
 /***/ ((module) => {
 
 // Exports
@@ -17,7 +17,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7326:
+/***/ 49317:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -27,9 +27,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_Articles_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(96035);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85893);
+/* harmony import */ var _styles_Articles_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4705);
 /* harmony import */ var _styles_Articles_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_Articles_module_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66197);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__]);
@@ -176,11 +175,11 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 20997:
+/***/ 16689:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react");
 
 /***/ }),
 
@@ -199,7 +198,7 @@ module.exports = import("framer-motion");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(7326));
+var __webpack_exports__ = __webpack_require__.X(0, [5893], () => (__webpack_exec__(49317)));
 module.exports = __webpack_exports__;
 
 })();

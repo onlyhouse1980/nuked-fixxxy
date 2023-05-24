@@ -4,7 +4,7 @@ exports.id = 2521;
 exports.ids = [2521];
 exports.modules = {
 
-/***/ 36735:
+/***/ 71247:
 /***/ ((module) => {
 
 // Exports
@@ -15,7 +15,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 72092:
+/***/ 10843:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25,9 +25,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_About_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(36735);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85893);
+/* harmony import */ var _styles_About_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(71247);
 /* harmony import */ var _styles_About_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_About_module_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66197);
 /* harmony import */ var react_reveal_Zoom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81952);
@@ -90,19 +89,19 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 16689:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react");
+
+/***/ }),
+
 /***/ 81952:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("react-reveal/Zoom");
-
-/***/ }),
-
-/***/ 20997:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
@@ -121,7 +120,7 @@ module.exports = import("framer-motion");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(72092));
+var __webpack_exports__ = __webpack_require__.X(0, [5893], () => (__webpack_exec__(10843)));
 module.exports = __webpack_exports__;
 
 })();

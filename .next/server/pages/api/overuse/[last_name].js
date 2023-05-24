@@ -5,14 +5,14 @@ exports.id = 2018;
 exports.ids = [2018];
 exports.modules = {
 
-/***/ 47294:
+/***/ 93197:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ overHandler)
 /* harmony export */ });
-/* harmony import */ var _data1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(22466);
+/* harmony import */ var _data1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16774);
 
 function overHandler({ query: { last_name  }  }, res) {
     const filtered = _data1__WEBPACK_IMPORTED_MODULE_0__/* .LastNames.filter */ .M.filter((p)=>p.last_name === last_name);
@@ -36,7 +36,7 @@ function overHandler({ query: { last_name  }  }, res) {
 var __webpack_require__ = require("../../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2466], () => (__webpack_exec__(47294)));
+var __webpack_exports__ = __webpack_require__.X(0, [6774], () => (__webpack_exec__(93197)));
 module.exports = __webpack_exports__;
 
 })();

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Cloudinary.module.scss'
+import { Image } from 'next/image';
 
 export default function Home() {
   const [imageSrc, setImageSrc] = useState();
@@ -74,7 +75,7 @@ console.log('data', data);
             <input type="file" name="file" />
           </p>
           
-          <img src={imageSrc} />
+          <Image src={imageSrc} width={''} height={''} alt='' />
           
           {imageSrc && !uploadData && (
             <p>

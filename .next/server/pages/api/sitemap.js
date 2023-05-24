@@ -19,7 +19,7 @@ module.exports = require("stream");
 
 /***/ }),
 
-/***/ 42927:
+/***/ 95326:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -56,7 +56,7 @@ function Sitemap() {
                 url: "/contact",
                 changefreq: "never",
                 priority: 0.3
-            }, 
+            }
         ];
         // Create a stream to write to
         const stream = new SitemapStream({
@@ -80,7 +80,7 @@ function Sitemap() {
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(42927));
+var __webpack_exports__ = (__webpack_exec__(95326));
 module.exports = __webpack_exports__;
 
 })();

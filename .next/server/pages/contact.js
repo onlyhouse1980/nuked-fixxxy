@@ -4,7 +4,7 @@ exports.id = 9335;
 exports.ids = [9335];
 exports.modules = {
 
-/***/ 21845:
+/***/ 97237:
 /***/ ((module) => {
 
 // Exports
@@ -19,7 +19,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 54993:
+/***/ 92188:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -29,9 +29,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_Contact_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21845);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85893);
+/* harmony import */ var _styles_Contact_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97237);
 /* harmony import */ var _styles_Contact_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_Contact_module_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66197);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25675);
@@ -143,11 +142,35 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 94957:
+/***/ 53918:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/head.js");
+module.exports = require("next/dist/shared/lib/amp-context.js");
+
+/***/ }),
+
+/***/ 45732:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/amp-mode.js");
+
+/***/ }),
+
+/***/ 92796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
+
+/***/ }),
+
+/***/ 64486:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-blur-svg.js");
 
 /***/ }),
 
@@ -167,27 +190,27 @@ module.exports = require("next/dist/shared/lib/image-config.js");
 
 /***/ }),
 
-/***/ 28854:
+/***/ 99552:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+module.exports = require("next/dist/shared/lib/image-loader");
 
 /***/ }),
 
-/***/ 93297:
+/***/ 82470:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
+module.exports = require("next/dist/shared/lib/side-effect.js");
 
 /***/ }),
 
-/***/ 59232:
+/***/ 40618:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/utils.js");
+module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
@@ -199,19 +222,25 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 20997:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react/jsx-runtime");
-
-/***/ }),
-
 /***/ 66197:
 /***/ ((module) => {
 
 "use strict";
 module.exports = import("framer-motion");;
+
+/***/ }),
+
+/***/ 45577:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+exports._ = exports._interop_require_default = _interop_require_default;
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
 
 /***/ })
 
@@ -222,7 +251,7 @@ module.exports = import("framer-motion");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [4118,5675], () => (__webpack_exec__(54993)));
+var __webpack_exports__ = __webpack_require__.X(0, [5893,2636,5675], () => (__webpack_exec__(92188)));
 module.exports = __webpack_exports__;
 
 })();
