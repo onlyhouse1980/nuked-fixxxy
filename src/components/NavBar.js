@@ -14,7 +14,7 @@ import {
 import { motion } from 'framer-motion'
 import React from 'react'
 import styles from '../styles/NavBar.module.css'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -29,241 +29,240 @@ class Navbar extends React.Component {
   };
 
   render() {
-    return (
-      <>
-        <MDBNavbar color='indigo' z-index='10!important' dark expand='md' height='50px!important'>
-        <motion.div whileHover= {{ scale: 2 }} >
-          <MDBNavbarBrand>
-            <a 
-              href="https://obcg.org"><Image 
-              src="/Images/WebPFiles/obcglogo.webp" 
-              alt="logo" 
-              width={60}
-              className={styles.logoimg} 
-              height={60} />
-            </a>
-          </MDBNavbarBrand>
+    return <>
+      <MDBNavbar color='indigo' z-index='10!important' dark expand='md' height='50px!important'>
+      <motion.div whileHover= {{ scale: 2 }} >
+        <MDBNavbarBrand>
+          <Link
+            href="https://obcg.org"><Image 
+            src="/Images/WebPFiles/obcglogo.webp" 
+            alt="logo" 
+            width={60}
+            className={styles.logoimg} 
+            height={60} />
+          </Link>
+        </MDBNavbarBrand>
+        </motion.div>
+        <MDBNavbarToggler 
+          onClick={this.toggleCollapse} />
+        <MDBCollapse 
+          id='navbarCollapse3' 
+          isOpen={this.state.isOpen} navbar>
+        <MDBNavbarNav left className={styles.dropdownNav}>
+            
+          </MDBNavbarNav>
+          <MDBNavbarNav right>
+          <motion.div whileHover= {{ scale: 1.15 }} >
+          <MDBNavItem>
+              <Link href='/' className='nav-link' onClick={this.toggleCollapse}>
+                Home
+              </Link>
+            </MDBNavItem>
           </motion.div>
-          <MDBNavbarToggler 
-            onClick={this.toggleCollapse} />
-          <MDBCollapse 
-            id='navbarCollapse3' 
-            isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left className={styles.dropdownNav}>
-              
-            </MDBNavbarNav>
-            <MDBNavbarNav right>
-            <motion.div whileHover= {{ scale: 1.15 }} >
+          <motion.div whileHover={{ scale: 1.15 }} >
             <MDBNavItem>
-                <Link href='/'>
-                  <a className='nav-link' 
-                    onClick={this.toggleCollapse}
-                    >Home</a>
-                </Link>
-              </MDBNavItem>
+              <Link href='/about' className='nav-link' onClick={this.toggleCollapse}>
+                About
+              </Link>
+            </MDBNavItem>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.15 }} >
+            <MDBNavItem>
+              <Link href='/articles' className='nav-link' onClick={this.toggleCollapse}>
+              Articles of Incorporation
+              </Link>
+            </MDBNavItem>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.15 }} >
+            <MDBNavItem>
+              <Link href='/executive' className='nav-link' onClick={this.toggleCollapse}>
+                Executive Board
+              </Link>
+            </MDBNavItem>
             </motion.div>
             <motion.div whileHover={{ scale: 1.15 }} >
-              <MDBNavItem>
-                <Link href='/about'>
-                  <a className='nav-link' onClick={this.toggleCollapse} >About</a>
-                </Link>
-              </MDBNavItem>
+            <MDBNavItem>
+              <Link href='/register' className='nav-link' onClick={this.toggleCollapse}>
+                Check Usage
+              </Link>
+            </MDBNavItem>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.15 }} >
-              <MDBNavItem>
-                <Link href='/articles'>
-                <a className='nav-link' onClick={this.toggleCollapse} >Articles of Incorporation</a>
-                </Link>
-              </MDBNavItem>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.15 }} >
-              <MDBNavItem>
-                <Link href='/executive'>
-                  <a className='nav-link' onClick={this.toggleCollapse} >Executive Board</a>
-                </Link>
-              </MDBNavItem>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.15 }} >
-              <MDBNavItem>
-                <Link href='/register'>
-                  <a className='nav-link' onClick={this.toggleCollapse} >Check Usage</a>
-                </Link>
-              </MDBNavItem>
-              </motion.div>
+            
+            <MDBNavItem>
+              <MDBDropdown>
               
-              <MDBNavItem>
-                <MDBDropdown>
-                
-                  <MDBDropdownToggle nav>
-                  <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Documents</span><span className={styles.ddf}>◿</span>
-                    </motion.div>
-                  </MDBDropdownToggle>
-                 
-                  <MDBDropdownMenu>
-                    <MDBDropdownItem>
-                    <Link href='/efficiency'>
-                        <a onClick={this.toggleCollapse}>Water Use Efficiency</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link href='/sysplan'>
-                        <a onClick={this.toggleCollapse}>Water System Plan</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link href='/bylaws'>
-                        <a onClick={this.toggleCollapse}>Current Bylaws</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link href='/pastbylaws'>
-                        <a onClick={this.toggleCollapse}>Past Bylaws</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link  href='/franchisepermit'>
-                        <a onClick={this.toggleCollapse}>Mason County Franchise Permit</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>                   
-                      <Link href='/pdfs/faq'>
-                        <a onClick={this.toggleCollapse}>FAQs</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>                   
-                      <Link  href='/misc'>
-                        <a onClick={this.toggleCollapse}>Misc. Files</a>
-                      </Link>
-                    </MDBDropdownItem> 
-                                        
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
-
-              <MDBNavItem>
-                <MDBDropdown>
-                
-                  <MDBDropdownToggle nav>
-                  <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Consumer Confidence</span><span className={styles.ddf}>◿</span>
-                    </motion.div>
-                  </MDBDropdownToggle>
-                 
-                  <MDBDropdownMenu>
-                    
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/pdfs/consumer'>
-                        <a onClick={this.toggleCollapse}>CCR 2020</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/pdfs/consumer21'>
-                        <a onClick={this.toggleCollapse}>CCR 2021</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    
-                                        
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
-
-              <MDBNavItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle nav>
-                  <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Minutes</span><span className={styles.ddf}>◿</span>
+                <MDBDropdownToggle nav>
+                <motion.div whileHover={{ scale: 1.15 }} >
+                  <span className='mr-2'>Documents</span><span className={styles.ddf}>◿</span>
                   </motion.div>
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu>
-                    <MDBDropdownItem>
-                    <Link target='blank' href='/obcg_minutes_2022.pdf'>
-                        <a onClick={this.toggleCollapse}>2022</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='blank' href='/minutes061221.pdf'>
-                        <a onClick={this.toggleCollapse}>2021</a>
-                      </Link>
-                    </MDBDropdownItem> 
-                    <MDBDropdownItem>
-                    <Link target='blank' href='/2020Minutes.pdf'>
-                        <a onClick={this.toggleCollapse}>2020</a>
-                      </Link>
-                    </MDBDropdownItem> 
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/2019Minutes.pdf'>
-                        <a onClick={this.toggleCollapse}>2019</a>
-                      </Link>
-                    </MDBDropdownItem>                   
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/2018Minutes.pdf'>
-                        <a onClick={this.toggleCollapse}>2018</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/2017Minutes.pdf'>
-                        <a onClick={this.toggleCollapse}>2017</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/2016Minutes.pdf'>
-                        <a onClick={this.toggleCollapse}>2016</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/2015Minutes.pdf'>
-                        <a onClick={this.toggleCollapse}>2015</a>
-                      </Link>
-                    </MDBDropdownItem>
-                     <MDBDropdownItem>
-                    <Link target='_blank' href='/archive'>
-                        <a onClick={this.toggleCollapse}>Archive</a>
-                      </Link>
-                    </MDBDropdownItem>                  
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBDropdown>
-                
-                  <MDBDropdownToggle nav>
-                  <motion.div whileHover={{ scale: 1.15 }} >
-                    <span className='mr-2'>Community</span><span className={styles.ddf}>◿</span>
-                    </motion.div>
-                  </MDBDropdownToggle>
-                 
-                  <MDBDropdownMenu>
-                    
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/videos'>
-                        <a onClick={this.toggleCollapse}>Whale Videos</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    <MDBDropdownItem>
-                    <Link target='_blank' href='/parades'>
-                        <a onClick={this.toggleCollapse}>Parade</a>
-                      </Link>
-                    </MDBDropdownItem>
-                    
-                                        
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
-              <motion.div whileHover={{ scale: 1.15 }} >
-              <MDBNavItem>
-                <Link href='/contact'>
-                  <a className='nav-link' onClick={this.toggleCollapse} >Contact</a>
-                </Link>
-              </MDBNavItem>
-              </motion.div>
+                </MDBDropdownToggle>
+               
+                <MDBDropdownMenu>
+                  <MDBDropdownItem>
+                  <Link href='/pdfs/efficiency' onClick={this.toggleCollapse}>
+                      Water Use Efficiency
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link href='/Sysplan.pdf' onClick={this.toggleCollapse}>
+                      Water System Plan
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link href='/pdfs/proposed' onClick={this.toggleCollapse}>
+                      Current Bylaws
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link href='/pdfs/bylaws' onClick={this.toggleCollapse}>
+                      Past Bylaws
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link href='/pdfs/franchisepermit' onClick={this.toggleCollapse}>
+                      Mason County Franchise Permit
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>                   
+                    <Link href='/FAQ.pdf' onClick={this.toggleCollapse}>
+                      FAQs
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>                   
+                    <Link href='/misc' onClick={this.toggleCollapse}>
+                      Misc. Files
+                    </Link>
+                  </MDBDropdownItem> 
+                                      
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+            <MDBNavItem>
+              <MDBDropdown>
               
+                <MDBDropdownToggle nav>
+                <motion.div whileHover={{ scale: 1.15 }} >
+                  <span className='mr-2'>Consumer Confidence</span><span className={styles.ddf}>◿</span>
+                  </motion.div>
+                </MDBDropdownToggle>
+               
+                <MDBDropdownMenu>
+                  
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/pdfs/consumer' onClick={this.toggleCollapse}>
+                      CCR 2020
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/pdfs/consumer21' onClick={this.toggleCollapse}>
+                      CCR 2021
+                    </Link>
+                  </MDBDropdownItem>
+                  
+                                      
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav>
+                <motion.div whileHover={{ scale: 1.15 }} >
+                  <span className='mr-2'>Minutes</span><span className={styles.ddf}>◿</span>
+                </motion.div>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem>
+                  <Link
+                    target='blank'
+                    href='/obcg_minutes_2022.pdf'
+                    onClick={this.toggleCollapse}>
+                      2022
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link target='blank' href='/minutes061221.pdf' onClick={this.toggleCollapse}>
+                      2021
+                    </Link>
+                  </MDBDropdownItem> 
+                  <MDBDropdownItem>
+                  <Link target='blank' href='/2020Minutes.pdf' onClick={this.toggleCollapse}>
+                      2020
+                    </Link>
+                  </MDBDropdownItem> 
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/2019Minutes.pdf' onClick={this.toggleCollapse}>
+                      2019
+                    </Link>
+                  </MDBDropdownItem>                   
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/2018Minutes.pdf' onClick={this.toggleCollapse}>
+                      2018
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/2017Minutes.pdf' onClick={this.toggleCollapse}>
+                      2017
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/2016Minutes.pdf' onClick={this.toggleCollapse}>
+                      2016
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/2015Minutes.pdf' onClick={this.toggleCollapse}>
+                      2015
+                    </Link>
+                  </MDBDropdownItem>
+                   <MDBDropdownItem>
+                  <Link target='_blank' href='/archive' onClick={this.toggleCollapse}>
+                      Archive
+                    </Link>
+                  </MDBDropdownItem>                  
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBDropdown>
               
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar>
-      </>
-    );
+                <MDBDropdownToggle nav>
+                <motion.div whileHover={{ scale: 1.15 }} >
+                  <span className='mr-2'>Community</span><span className={styles.ddf}>◿</span>
+                  </motion.div>
+                </MDBDropdownToggle>
+               
+                <MDBDropdownMenu>
+                  
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/videos' onClick={this.toggleCollapse}>
+                      Whale Videos
+                    </Link>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                  <Link target='_blank' href='/parades' onClick={this.toggleCollapse}>
+                      Parade
+                    </Link>
+                  </MDBDropdownItem>
+                  
+                                      
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+            <motion.div whileHover={{ scale: 1.15 }} >
+            <MDBNavItem>
+              <Link href='/contact' className='nav-link' onClick={this.toggleCollapse}>
+                Contact
+              </Link>
+            </MDBNavItem>
+            </motion.div>
+            
+            
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
+    </>;
   }
 }
 
