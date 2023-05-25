@@ -1,0 +1,7 @@
+export default function Minutes22017() {
+    return (
+    <div style={{position:"relative", height:"100vh", width:"100%"}}>
+        <iframe src="https://drive.google.com/file/d/1dHFxkiB_J-kipSbCjNMIr4CplV3aBZUm/preview" width="100%" height="900px"></iframe>  
+    </div>
+    )
+}
