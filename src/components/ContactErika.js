@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/ContactErika.module.scss'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 const ContactErika = () => {
     return (
