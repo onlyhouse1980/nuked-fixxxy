@@ -32,11 +32,11 @@ export async function getStaticProps() {
               <p></p>
               <div className={styles.divBlock}>
                 <div className={styles.indDates}>
-                  <button className={styles.button}><Link  href='/misc/waterline1982'>1982 Water line replacement</Link></button>
-                  <button className={styles.button}><Link  href='/misc/legalproperty'>Legal property</Link></button>
-                  <button className={styles.button}><Link  href='/misc/map-master-water-lines'>Map Water Line</Link></button>
-                  <button className={styles.button}><Link  href='/misc/parkmaddings'>Park Madings Orchard Beach </Link></button>
-                  <button className={styles.button}><Link  href='/misc/historicalmeetings'>Assorted Documents</Link></button>
+                  <button className={styles.button}><Link  href='/pdfs/misc/waterline1982'>1982 Water line replacement</Link></button>
+                  <button className={styles.button}><Link  href='/pdfs/misc/legalproperty'>Legal property</Link></button>
+                  <button className={styles.button}><Link  href='/pdfs/misc/map-master-water-lines'>Map Water Line</Link></button>
+                  <button className={styles.button}><Link  href='/pdfs/misc/parkmaddings'>Park Madings Orchard Beach </Link></button>
+                  <button className={styles.button}><Link  href='/pdfs/misc/historicalmeetings'>Assorted Documents</Link></button>
                 </div>
               </div>
             </motion.container>
