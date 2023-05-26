@@ -176,43 +176,43 @@ class Navbar extends React.Component {
                   <MDBDropdownItem>
                   <Link
                     target='blank'
-                    href='/pdfs/minutes/2022Minutes'
+                    href='/pdfs/misc/minutes/2022Minutes'
                     onClick={this.toggleCollapse}>
                       2022
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='blank' href='/pdfs/minutes/2022minutes' onClick={this.toggleCollapse}>
+                  <Link target='blank' href='/pdfs/misc/minutes/2022minutes' onClick={this.toggleCollapse}>
                       2021
                     </Link>
                   </MDBDropdownItem> 
                   <MDBDropdownItem>
-                  <Link target='blank' href='/pdfs/minutes/2020Minutes' onClick={this.toggleCollapse}>
+                  <Link target='blank' href='/pdfs/misc/minutes/2020Minutes' onClick={this.toggleCollapse}>
                       2020
                     </Link>
                   </MDBDropdownItem> 
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/minutes/2019Minutes' onClick={this.toggleCollapse}>
+                  <Link target='_blank' href='/pdfs/misc/minutes/2019Minutes' onClick={this.toggleCollapse}>
                       2019
                     </Link>
                   </MDBDropdownItem>                   
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/minutes/2018Minutes' onClick={this.toggleCollapse}>
+                  <Link target='_blank' href='/pdfs/misc/minutes/2018Minutes' onClick={this.toggleCollapse}>
                       2018
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/minutes/2017Minutes' onClick={this.toggleCollapse}>
+                  <Link target='_blank' href='/pdfs/misc/minutes/2017Minutes' onClick={this.toggleCollapse}>
                       2017
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/minutes/2016Minutes' onClick={this.toggleCollapse}>
+                  <Link target='_blank' href='/pdfs/misc/minutes/2016Minutes' onClick={this.toggleCollapse}>
                       2016
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/minutes/2015Minutes' onClick={this.toggleCollapse}>
+                  <Link target='_blank' href='/pdfs/misc/minutes/2015Minutes' onClick={this.toggleCollapse}>
                       2015
                     </Link>
                   </MDBDropdownItem>
