@@ -26,7 +26,7 @@ function EffiencyPDF() {
         </Modal.Header>
         <Modal.Body>
             <div className='ExternalFiles'>
-                <iframe src='/Efficiency.pdf' width={1900} height={1080}></iframe>
+                <iframe src='/Efficiency.pdf' width="100%" height={600}></iframe>
             </div>
         </Modal.Body>
       </Modal>

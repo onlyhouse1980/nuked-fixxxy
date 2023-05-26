@@ -4,7 +4,7 @@ export const App = () =>  {
   return (
    <div className='container'>
     <h1>Water Use Efficiency</h1>
-    <iframe src={embedURL} width="640" height="480"></iframe>
+    <iframe src={embedURL} width="100%" height="480"></iframe>
   </div>
 
   )
