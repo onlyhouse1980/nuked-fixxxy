@@ -50,7 +50,7 @@ export const Members = [
     },{
        id: "4",
        meter_serialNum: "22667347",
-       last_name: "Emtman_1",
+       last_name: "Emtman",
        jun_22: "2807",
        aug_22: "279",
        oct_22: "473",
@@ -434,7 +434,7 @@ export const Members = [
     },{
        id: "28",
        meter_serialNum: "22329342",
-       last_name: "Czeck_Cappuccino",
+       last_name: "Morris",
        jun_22: "0",
        aug_22: "10",
        oct_22: "0",
