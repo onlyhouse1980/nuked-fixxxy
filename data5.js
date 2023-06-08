@@ -222,7 +222,7 @@ export const Members = [
        budget: "48000",
        year_remain: "-51018",
        billing_year_end: "June 2023'",
-       fees: "$ 1.275,45"
+       fees: "$ 1,275.45"
     },{
        id: "15",
        meter_serialNum: "22667338",
@@ -238,7 +238,7 @@ export const Members = [
        budget: "48000",
        year_remain: "-10563",
        billing_year_end: "June 2023'",
-       fees: "$ 264,08"
+       fees: "$ 264.08"
     },{
        id: "16",
        meter_serialNum: "77445947",
@@ -462,7 +462,7 @@ export const Members = [
        budget: "48000",
        year_remain: "-9858",
        billing_year_end: "June 2023'",
-       fees: "$ 246,45"
+       fees: "$ 246.45"
     },{
        id: "30",
        meter_serialNum: "77445948",
