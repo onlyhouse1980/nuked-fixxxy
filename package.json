@@ -2,13 +2,12 @@
   "name": "obcg.org",
   "version": "0.2.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-install": "./vercel-submodule-workaround.sh && yarn --ignore-scripts --production=false",
-    "license": "UNLICENSED"
+    "lint": "next lint"
   },
   
   "dependencies": {
