@@ -590,7 +590,7 @@ export const Members = [
        budget: "48000",
        year_remain: "-898",
        billing_year_end: "June 2023'",
-       fees: "$ 22,45"
+       fees: "$ 22.45"
     },{
        id: "38",
        meter_serialNum: "22667343",
