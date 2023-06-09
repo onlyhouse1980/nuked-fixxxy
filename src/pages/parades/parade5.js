@@ -9,8 +9,7 @@ export default function Parade1() {
     id='obcg_4th_1_fhgyie'
     maxWidth='1200'
     maxHeight='720'
-    src="https://res.cloudinary.com/dfnaxhqqq/video/upload/c_scale,f_auto,g_center,h_720,q_auto,w_1200/v1682981538/obcg_4th_1_fhgyie.mp4" 
-    imageUrl="https://obcg.org/Images/obcglogo.webp"
+    src="https://res.cloudinary.com/dfnaxhqqq/video/upload/v1686317207/obcg/obcg4thupscaled_zvpkwt.mp4"
     controls
     autoPlay={false}
     loop
