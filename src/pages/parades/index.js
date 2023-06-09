@@ -11,7 +11,7 @@ const Parades = () => {
         title: '2018 First Parade',
         url: 'parades/parade1',
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657634720/obcg/OBCG_2018__4th_July_Parade_p8kgjw.mp4#t=0.001',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/q_auto,vc_auto/v1657634720/obcg/OBCG_2018__4th_July_Parade_p8kgjw.mp4#t=0.001',
       },
       {
         id: 2,
@@ -37,9 +37,9 @@ const Parades = () => {
           {
         id: 5,
         title: '2022 Parade',
-        url: 'parades/parade3',
+        url: 'parades/parade5',
         video_url:
-          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657634987/obcg/OBCG_2022_16x9_qrxgj6.mp4#t=0.001',
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1682981538/obcg_4th_1_fhgyie.mp4#t=0.001',
       },
     ]
   
@@ -58,35 +58,39 @@ const Parades = () => {
       vid.pause()
     }
   
-    return <>
+    return (
+    <>
+    <div className={styles.headline}>
       <h1 className='text-center'>OBCG Annual 4th of July Parade</h1>
+    </div>
       <div className='container'>
-        <div className='row'>
-          {media_urls.map((media) => (
-            <div key={media.id} className='col-lg-4 col-sm-6 mb-4'>
-              <Link href={media.url} legacyBehavior>
-              <div className='card h-100 bg-indigo-500'>
-                <div className={styles.cardBody}>
-                <h4 className={styles.cardTitle}> {media.title}</h4>
-                  <video
-                    preload="metadata"
-                    width='100%'
-                    height='100%'
-                    padding-bottom='10px'
-                    controls
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <source src={media.video_url} type='video/mp4' />
-                  </video>
+          <div className='row'>
+            {media_urls.map((media) => (
+              <div key={media.id} className='col-lg-4 col-sm-6 mb-4'>
+                <Link href={media.url}>
+                <div className='card h-100 bg-indigo-500'>
+                  <div className={styles.cardBody}>
+                  <h4 className={styles.cardTitle}> {media.title}</h4>
+                    <video
+                      preload="metadata"
+                      width='100%'
+                      height='auto'
+                      padding-bottom='10px'
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <source src={media.video_url} type='video/mp4' />
+                    </video>
+                  </div>
                 </div>
+                </Link>
               </div>
-              </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </>;
+      </>
+    )
+  
   }
   
   export default Parades
