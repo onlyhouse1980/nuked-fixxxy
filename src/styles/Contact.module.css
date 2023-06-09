@@ -26,10 +26,10 @@
   overflow: screen;
 }
 .mapImage {
-  position: absolute;
+  position: relative !important;
 
-  width: 70vw !important;
-  height: 100% !important;
+  width: 100% !important;
+  height: auto !important;
 }
 .bottomliner {
   position: absolute !important;
