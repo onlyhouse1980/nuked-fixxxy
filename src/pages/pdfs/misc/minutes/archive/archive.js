@@ -1,4 +1,4 @@
-import styles from '../../../../styles/Home.module.css';
+import styles from '/Users/admin/Projects/nuked-fixxxy/src/styles/archive.module.css'
 import { motion } from 'framer-motion'
 
 export async function getStaticProps() {
