@@ -150,12 +150,12 @@ class Navbar extends React.Component {
                 <MDBDropdownMenu>
                   
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/consumer2022' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/consumer2022' onClick={this.toggleCollapse}>
                       CCR 2020
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/consumer2021' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/consumer2021' onClick={this.toggleCollapse}>
                       CCR 2021
                     </Link>
                   </MDBDropdownItem>
@@ -192,32 +192,32 @@ class Navbar extends React.Component {
                     </Link>
                   </MDBDropdownItem> 
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/misc/minutes/2019Minutes' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/misc/minutes/2019Minutes' onClick={this.toggleCollapse}>
                       2019
                     </Link>
                   </MDBDropdownItem>                   
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/misc/minutes/2018Minutes' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/misc/minutes/2018Minutes' onClick={this.toggleCollapse}>
                       2018
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/misc/minutes/2017Minutes' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/misc/minutes/2017Minutes' onClick={this.toggleCollapse}>
                       2017
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/pdfs/misc/minutes/2016Minutes' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/misc/minutes/2016Minutes' onClick={this.toggleCollapse}>
                       2016
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/2015Minutes.pdf' onClick={this.toggleCollapse}>
+                  <Link  href='/pdfs/misc/minutes/2015Minutes' onClick={this.toggleCollapse}>
                       2015
                     </Link>
                   </MDBDropdownItem>
                    <MDBDropdownItem>
-                  <Link target='_blank' href='/archive' onClick={this.toggleCollapse}>
+                  <Link  href='/archive' onClick={this.toggleCollapse}>
                       Archive
                     </Link>
                   </MDBDropdownItem>                  
@@ -236,12 +236,12 @@ class Navbar extends React.Component {
                 <MDBDropdownMenu>
                   
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/videos' onClick={this.toggleCollapse}>
+                  <Link  href='/videos' onClick={this.toggleCollapse}>
                       Whale Videos
                     </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                  <Link target='_blank' href='/parades' onClick={this.toggleCollapse}>
+                  <Link  href='/parades' onClick={this.toggleCollapse}>
                       Parade
                     </Link>
                   </MDBDropdownItem>
