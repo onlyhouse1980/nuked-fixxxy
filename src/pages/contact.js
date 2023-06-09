@@ -36,9 +36,9 @@ const Contact = () => (
     <motion.div variants={item}><Image className={styles.mapImage}   src="/Images/WebPFiles/fullsmall.webp"
       alt="upload of Orchard Beach" 
       minwidth="90vw" 
-      minheight="100%"
-      width="1920px"
-      height="714px" 
+      minheight={1080}
+      width={1920}
+      height={1080} 
       />
       </motion.div>
       <div className={styles.bottomliner}>
