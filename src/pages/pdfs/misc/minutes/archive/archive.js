@@ -1,4 +1,4 @@
-import styles from '../styles/archive.module.css';
+import styles from '../../../../../archive.module.css';
 import { motion } from 'framer-motion'
 
 export async function getStaticProps() {
