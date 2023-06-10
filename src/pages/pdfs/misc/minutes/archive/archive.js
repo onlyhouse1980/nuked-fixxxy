@@ -37,9 +37,9 @@ export async function getStaticProps() {
         
         
         
-        <button className={styles.button}><a  href='/archive/20140621.pdf.pdf'>2014 06/21</a></button>
-        <button className={styles.button}><a  href='/archive/2014.pdf.pdf'>2014 01/26</a></button>
-        <button className={styles.button}><a  href='/archive/2013.pdf.pdf'>2013</a></button>
+        <button className={styles.button}><a  href='/archive/20140621.pdf'>2014 06/21</a></button>
+        <button className={styles.button}><a  href='/archive/2014.pdf'>2014 01/26</a></button>
+        <button className={styles.button}><a  href='/archive/2013.pdf'>2013</a></button>
         <button className={styles.button}><a  href='/archive/2012.pdf'>2012</a></button>
         <button className={styles.button}><a  href='/archive/2010.pdf'>2010</a></button>
         <button className={styles.button}><a  href='/archive/2008.pdf'>2008</a></button>
