@@ -78,17 +78,17 @@ const Executive = () => (
         </motion.div>
         <motion.div variants={item} className={styles.content}>
           <motion.img
-            src="/Images/WebPFiles/team-3.webp"
+            src="https://res.cloudinary.com/dfnaxhqqq/image/upload/c_scale,h_778,w_778/v1686608652/obcg/IMG-20230612-WA0001_unoemy.webp"
             loading="lazy"
             width="300"
-            alt="Member Photo Secretary/Treasurer James Loder"
+            alt="Member Photo Secretary/Treasurer"
             className={styles.Image5}
           />
           <div className={styles.contentNameplate}>
             <p>
               Secretary/Treasurer
               <br />
-              James Loder
+              DeeDee Benitez
               <br />
               <Link href="/contactus3" passHref className={styles.clink}>
                 Contact
