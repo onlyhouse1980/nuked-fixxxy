@@ -1,7 +1,21 @@
-export default function Minutes2021() {
-    return (
-    <div style={{position:"relative", height:"100vh", width:"100%"}}>
-        <iframe src="https://drive.google.com/file/d/1Ya3UAOaicqwgq7lznpTOHSWNmx62IquO/preview" width="100%" height="900px"></iframe>  
+import React, { useState } from "react";
+import styles from "./2023Minutes.module.css";
+
+export const App = () => {
+  const [embedURL] = useState(
+    "https://drive.google.com/file/d/1Ya3UAOaicqwgq7lznpTOHSWNmx62IquO/preview"
+  );
+  return (
+    <div className={styles.container}>
+      <iframe
+        className={styles.iframe}
+        src={embedURL}
+        width="100%"
+        height="500"
+      ></iframe>
     </div>
-    )
-}
+  );
+};
+
+export default App;
+

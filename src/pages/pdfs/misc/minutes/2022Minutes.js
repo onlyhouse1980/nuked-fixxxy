@@ -1,8 +1,20 @@
+import React, { useState } from "react";
+import styles from "./2022Minutes.module.css";
 
-export default function Minutes2022() {
-    return (
-    <div style={{position:"relative", height:"100vh", width:"100%"}}>
-        <iframe src="https://drive.google.com/file/d/1qXVAsV-Rqeej1bAxG9Ky-5vx-YAgfqwL/preview" width="100%" height="900px"></iframe>  
+export const App = () => {
+  const [embedURL] = useState(
+    "https://drive.google.com/file/d/1qXVAsV-Rqeej1bAxG9Ky-5vx-YAgfqwL/preview"
+  );
+  return (
+    <div className="container">
+      <iframe
+        className={styles.iframe}
+        src={embedURL}
+        width="100%"
+        height="500px"
+      ></iframe>
     </div>
-    )
-}
+  );
+};
+
+export default App;
