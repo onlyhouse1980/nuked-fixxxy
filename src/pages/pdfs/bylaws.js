@@ -7,7 +7,6 @@ export const App = () => {
   );
   return (
     <div className="container">
-      <h5>Past Bylaws</h5>
       <iframe
         className={styles.iframPDF}
         src={embedURL}
