@@ -1,11 +1,12 @@
-import styles from "./pdfs.module.css";
 import React, { useState } from "react";
+import styles from "./pdfs.module.css";
+
 export const App = () => {
   const [embedURL] = useState(
     "https://drive.google.com/file/d/1C5qGn2uNg4T6pxUdgwVobAlTngwSJa-N/preview"
   );
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h5>Consumer Confidencce 2022</h5>
       <iframe
         className={styles.iframe}
