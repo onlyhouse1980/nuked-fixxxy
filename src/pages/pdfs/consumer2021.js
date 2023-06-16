@@ -8,7 +8,7 @@ export const App = () => {
     <div className="container">
       <h5>Consumer Confidencce 2020</h5>
       <iframe
-        className={styles.iframPDF}
+        className={styles.iframe}
         src={embedURL}
         width="100%"
         height="500"
