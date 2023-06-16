@@ -9,3 +9,37 @@
         height: 87vh;
     }
 }
+
+.container {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+        max-height: 100vh;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        max-height: 100vh;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        max-height: 100vh;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        max-height: 100vh;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+        max-height: 100vh;
+    }
+}
