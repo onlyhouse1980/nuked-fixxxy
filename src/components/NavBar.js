@@ -178,7 +178,7 @@ class Navbar extends React.Component {
                   <MDBDropdownMenu>
                     <MDBDropdownItem>
                       <Link
-                        href="/pdfs/consumer2022"
+                        href="/pdfs/consumer2021"
                         onClick={this.toggleCollapse}
                       >
                         CCR 2020
@@ -186,7 +186,7 @@ class Navbar extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem>
                       <Link
-                        href="/pdfs/consumer2021"
+                        href="/pdfs/consumer2022"
                         onClick={this.toggleCollapse}
                       >
                         CCR 2021
@@ -194,7 +194,7 @@ class Navbar extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem>
                       <Link
-                        href="/pdfs/consumer2022"
+                        href="/pdfs/consumer2023"
                         onClick={this.toggleCollapse}
                       >
                         CCR 2022
