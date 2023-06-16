@@ -1,4 +1,4 @@
-import styles from "pdfs.module.css";
+import styles from "./pdfs.module.css";
 import React, { useState } from "react";
 export const App = () => {
   const [embedURL] = useState(
