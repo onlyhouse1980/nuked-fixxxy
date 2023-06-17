@@ -7,7 +7,7 @@ export const App = () => {
   );
   return (
     <div className={styles.container}>
-      <h5>Consumer Confidencce 2022</h5>
+      <h5>Consumer Confidence 2022</h5>
       <iframe
         className={styles.iframe}
         src={embedURL}
