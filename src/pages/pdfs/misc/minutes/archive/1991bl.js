@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../2023Minutes.module.css";
+import styles from "../../../../../styles/pdfs.module.css";
 
 export const App = () => {
   const [embedURL] = useState(
@@ -9,7 +9,7 @@ export const App = () => {
     <div className="container">
       <h5>1991 Bylaws</h5>
       <iframe
-        className={styles.iframPDF}
+        className={styles.iframPDFBL}
         src={embedURL}
         width="100%"
         height="500"

@@ -3,7 +3,7 @@ import styles from "../../../../../styles/pdfs.module.css";
 
 export const App = () => {
   const [embedURL] = useState(
-    "https://drive.google.com/file/d/1VR69FLJLTl5tqR0ulVy6swKgCN-UEz_i/preview"
+    "https://drive.google.com/file/d/1bgCwlQhu1hJd2OITJ-4Fvb5_qV-HdN2Q/preview"
   );
   return (
     <div className="container">

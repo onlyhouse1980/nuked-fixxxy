@@ -1,14 +1,15 @@
-import React, { useState } from "react";
 import styles from "../../../../../styles/pdfs.module.css";
 
+import React, { useState } from "react";
 export const App = () => {
   const [embedURL] = useState(
-    "https://drive.google.com/file/d/1VR69FLJLTl5tqR0ulVy6swKgCN-UEz_i/preview"
+    "https://drive.google.com/file/d/1SbzIL_fsnXrn_JfadTAgnPEes6FTa1n8/preview"
   );
   return (
     <div className="container">
+      <h5>1982 Special Meeting</h5>
       <iframe
-        className={styles.iframPDF}
+        className={styles.iframPDFBL}
         src={embedURL}
         width="100%"
         height="530"

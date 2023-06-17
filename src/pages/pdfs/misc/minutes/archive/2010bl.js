@@ -3,15 +3,16 @@ import styles from "../../../../../styles/pdfs.module.css";
 
 export const App = () => {
   const [embedURL] = useState(
-    "https://drive.google.com/file/d/1VR69FLJLTl5tqR0ulVy6swKgCN-UEz_i/preview"
+    "https://drive.google.com/file/d/1_xV-0pw8m3agEf_6bfpHiJDeQK7vevo8/preview"
   );
   return (
     <div className="container">
+      <h5>2010 Bylaws</h5>
       <iframe
-        className={styles.iframPDF}
+        className={styles.iframPDFBL}
         src={embedURL}
         width="100%"
-        height="530"
+        height="500"
       ></iframe>
     </div>
   );

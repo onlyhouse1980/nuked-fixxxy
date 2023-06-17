@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "../../../../../styles/pdfs.module.css";
+import styles from "../2022Minutes.module.css";
 
 export const App = () => {
   const [embedURL] = useState(
-    "https://drive.google.com/file/d/1VR69FLJLTl5tqR0ulVy6swKgCN-UEz_i/preview"
+    "https://drive.google.com/file/d/1zJRynuWXjQY63jcr04hz_47jMvG_0JBL/preview"
   );
   return (
     <div className="container">
