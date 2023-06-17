@@ -1,3 +1,4 @@
+import styles from "../../styles/pdfs.module.css";
 import React, { useState } from "react";
 export const App = () => {
   const [embedURL] = useState(
@@ -5,7 +6,7 @@ export const App = () => {
   );
   return (
     <div className="container">
-      <iframe src={embedURL} width="100%" height="500"></iframe>
+      <iframe className={styles.iframPDF} src={embedURL} width="100%" height="500"></iframe>
     </div>
   );
 };
