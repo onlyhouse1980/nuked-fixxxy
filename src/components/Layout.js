@@ -19,7 +19,7 @@ function Layout(props) {
     </Head>
     
       <Navbar style='z-index:10!important'/>
-      <MDBContainer style={{paddingTop:30}}>{props.children}</MDBContainer>
+      <MDBContainer style={{width:'100%'}}>{props.children}</MDBContainer>
       
       <Footer />
       <style jsx global>{`
