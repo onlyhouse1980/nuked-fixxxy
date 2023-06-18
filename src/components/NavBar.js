@@ -283,7 +283,7 @@ class Navbar extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem>
                       <Link
-                        href="../pdfs/misc/minutes/archive/archive"
+                        href="/pdfs/misc/minutes/archive/archive"
                         onClick={this.toggleCollapse}
                       >
                         Archive
