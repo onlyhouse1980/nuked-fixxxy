@@ -37,16 +37,17 @@ export async function getStaticProps() {
         
         
         
-        <button className={styles.button}><a  href='/archive/20140621.pdf'>2014 06/21</a></button>
-        <button className={styles.button}><a  href='/archive/2014.pdf'>2014 01/26</a></button>
-        <button className={styles.button}><a  href='/archive/2013.pdf'>2013</a></button>
-        <button className={styles.button}><a  href='/archive/2012.pdf'>2012</a></button>
-        <button className={styles.button}><a  href='/archive/2010.pdf'>2010</a></button>
-        <button className={styles.button}><a  href='/archive/2008.pdf'>2008</a></button>
-        <button className={styles.button}><a  href='/archive/2006.pdf'>2006</a></button>
-        <button className={styles.button}><a  href='/archive/archive/20041016.pdf'>2004</a></button>
-        <button className={styles.button}><a  href='/archive/2002.pdf'>2002</a></button>
-        <button className={styles.button}><a  href='/archive/2000.pdf'>2000</a></button>
+        <button className={styles.button}><a  href='./20140621'>2014 06/21</a></button>
+        <button className={styles.button}><a  href='./2014'>2014 01/26</a></button>
+        <button className={styles.button}><a  href='./2013'>2013</a></button>
+        <button className={styles.button}><a  href='./2012'>2012</a></button>
+        <button className={styles.button}><a  href='./2010'>2010</a></button>
+        <button className={styles.button}><a  href='./2010bl'>2010 Bilaws</a></button>
+        <button className={styles.button}><a  href='./2008'>2008</a></button>
+        <button className={styles.button}><a  href='./2006'>2006</a></button>
+        <button className={styles.button}><a  href='./2004'>2004</a></button>
+        <button className={styles.button}><a  href='./2002'>2002</a></button>
+        <button className={styles.button}><a  href='./2000'>2000</a></button>
         
         <button className={styles.button}><a  href='./1998'>1998</a></button>
         <button className={styles.button}><a  href='./1997'>1997</a></button>
