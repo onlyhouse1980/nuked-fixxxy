@@ -73,12 +73,14 @@ export async function getStaticProps() {
         <button className={styles.button}><a  href='./1981'>1981</a></button>    
         <button className={styles.button}><a  href='./1980'>1980</a></button>    
    
-        <button className={styles.button}><a  href='/archive/1979.pdf'>1979</a></button>    
-        <button className={styles.button}><a  href='/archive/1978.pdf'>1978</a></button>    
-        <button className={styles.button}><a  href='/archive/1977.pdf'>1977</a></button>    
-        <button className={styles.button}><a  href='/archive/1976.pdf'>1976</a></button>    
-        <button className={styles.button}><a  href='/archive/1975.pdf'>1975</a></button>    
-        <button className={styles.button}><a  href='/archive/1974.pdf'>1974</a></button>    
+        <button className={styles.button}><a  href='./1979'>1979</a></button>    
+        <button className={styles.button}><a  href='./1978'>1978</a></button>    
+        <button className={styles.button}><a  href='./1977'>1977</a></button>
+        <button className={styles.button}><a  href='./1977bl'>1977 Bylaws</a></button>    
+        <button className={styles.button}><a  href='./1976'>1976</a></button>  
+        <button className={styles.button}><a  href='./1975'>1975</a></button>  
+        <button className={styles.button}><a  href='./1975bl'>1975 Bylaws</a></button>    
+        <button className={styles.button}><a  href='./1974'>1974</a></button>  
         </div>
         </div>
         
