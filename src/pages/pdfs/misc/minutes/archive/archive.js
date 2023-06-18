@@ -58,19 +58,20 @@ export async function getStaticProps() {
         <button className={styles.button}><a  href='./1991'>1991</a></button>
         
         <button className={styles.button}><a  href='./1990'>1990</a></button>
-        <button className={styles.button}><a  href='/archive/1989.pdf'>1989</a></button>
-        <button className={styles.button}><a  href='/archive/1988.pdf'>1988</a></button>
-        <button className={styles.button}><a  href='/archive/1987.pdf'>1987</a></button>
-        <button className={styles.button}><a  href='/archive/1986.pdf'>1986</a></button>
-        <button className={styles.button}><a  href='/archive/1985.pdf'>1985</a></button>
-        <button className={styles.button}><a  href='/archive/1984.pdf'>1984</a></button>
-        <button className={styles.button}><a  href='/archive/1983.pdf'>1983</a></button>
-        <button className={styles.button}><a  href='/archive/19822.pdf'>1982 05/22</a></button>
-        <button className={styles.button}><a  href='/archive/1982.pdf'>1982 07/11</a></button>
+        <button className={styles.button}><a  href='./1989'>1989</a></button>
+        <button className={styles.button}><a  href='./1988'>1988</a></button>
+        <button className={styles.button}><a  href='./1987'>1987</a></button>
+        <button className={styles.button}><a  href='./1986'>1986</a></button>
+        <button className={styles.button}><a  href='./1985'>1985</a></button>
+        <button className={styles.button}><a  href='./1984'>1984</a></button>
+        <button className={styles.button}><a  href='./1983'>1983</a></button>
+        <button className={styles.button}><a  href='./19822'>1982 Annual</a></button>
+        <button className={styles.button}><a  href='./1982'>1982 Special</a></button>
         
         
-        <button className={styles.button}><a  href='/archive/1981.pdf'>1981</a></button>    
-        <button className={styles.button}><a  href='/archive/1980.pdf'>1980</a></button>    
+        <button className={styles.button}><a  href='./1981'>1981</a></button>    
+        <button className={styles.button}><a  href='./1980'>1980</a></button>    
+   
         <button className={styles.button}><a  href='/archive/1979.pdf'>1979</a></button>    
         <button className={styles.button}><a  href='/archive/1978.pdf'>1978</a></button>    
         <button className={styles.button}><a  href='/archive/1977.pdf'>1977</a></button>    
