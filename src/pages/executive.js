@@ -1,6 +1,7 @@
 import styles from "../styles/executive.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const container = {
   hidden: { opacity: 0 },
@@ -34,7 +35,6 @@ const Executive = () => (
         <br />
         <b>Executive Board</b>
       </h2>
-      <p></p>
       <div className={styles.divBlock}>
         <motion.div variants={item} className={styles.content}>
           <motion.img
@@ -50,9 +50,9 @@ const Executive = () => (
               <br />
               Jim Farrell
               <br />
-              <Link href="/contactus1" passHref className={styles.clink}>
+              {/* <Link href="/contactus1" passHref className={styles.clink}>
                 Contact
-              </Link>
+              </Link> */}
             </p>
           </div>
         </motion.div>
@@ -70,9 +70,9 @@ const Executive = () => (
               <br />
               Erika Aust
               <br />
-              <Link href="/contactus" passHref className={styles.clink}>
+              {/* <Link href="/contactus" passHref className={styles.clink}>
                 Contact
-              </Link>
+              </Link> */}
             </p>
           </div>
         </motion.div>
@@ -90,9 +90,9 @@ const Executive = () => (
               <br />
               DeeDee Benitez
               <br />
-              <Link href="/contactus3" passHref className={styles.clink}>
+              {/* <Link href="/contactus3" passHref className={styles.clink}>
                 Contact
-              </Link>
+              </Link> */}
             </p>
           </div>
         </motion.div>
