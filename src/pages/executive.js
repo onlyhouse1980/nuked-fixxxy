@@ -1,7 +1,6 @@
 import styles from "../styles/executive.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const container = {
   hidden: { opacity: 0 },
