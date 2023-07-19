@@ -1036,7 +1036,7 @@ export const LastNames = [
   {
     id: "24",
     meter_serialNum: "22667352",
-    last_name: "Spaulding",
+    last_name: "Spalding",
     oct02_18: "719",
     nov02_18: "719",
     dec04_18: "719",
