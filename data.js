@@ -217,7 +217,7 @@ export const people = [
     dec09_22: "84397",
     feb04_23: "84534",
     apr06_23: "85714",
-    jun05_23: "109898",
+    jun05_23: "88948",
     year_total: "30229",
     budget: "48000",
     year_remain: "17771",
@@ -1216,7 +1216,7 @@ export const people = [
   {
     id: "28",
     meter_serialNum: "22329342",
-    last_name: "Czeck_Cappuccino",
+    last_name: "Morris",
     oct02_18: "32",
     nov02_18: "32",
     dec04_18: "32",
