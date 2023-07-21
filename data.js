@@ -218,7 +218,7 @@ export const people = [
     feb04_23: "84534",
     apr06_23: "85714",
     jun05_23: "88948",
-    year_total: "30229",
+    year_total: "38721",
     budget: "48000",
     year_remain: "17771",
     billing_year_end: "June 2023",
