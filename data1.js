@@ -1,5 +1,5 @@
 export const LastNames = [
-  {
+ {
     id: "1",
     meter_serialNum: "13391844",
     last_name: "Main_Well",
@@ -218,7 +218,7 @@ export const LastNames = [
     feb04_23: "84534",
     apr06_23: "85714",
     jun05_23: "88948",
-    year_total: "30229",
+    year_total: "38721",
     budget: "48000",
     year_remain: "17771",
     billing_year_end: "June 2023",
