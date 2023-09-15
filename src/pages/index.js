@@ -22,8 +22,8 @@ const index = () => (
     </h2>
     <div className={styles.meeting}>
       <h4>
-      REMINDER: IMPORTANT WATER MEETING 
-      @11 A.M. SUNDAY, SEPTEMBER 17
+      REMINDER: IMPORTANT WATER MEETING<br /> 
+      11 A.M. SUNDAY, SEPTEMBER 17<br />
       210 E. Orchard Beach Drive
       </h4>
     </div>
