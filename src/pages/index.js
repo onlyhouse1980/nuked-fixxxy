@@ -24,6 +24,7 @@ const index = () => (
       <h4>
       REMINDER: IMPORTANT WATER MEETING 
       @11 A.M. SUNDAY, SEPTEMBER 17
+      210 E. Orchard Beach Drive
       </h4>
     </div>
     </div>
