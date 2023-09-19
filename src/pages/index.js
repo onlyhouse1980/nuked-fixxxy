@@ -20,13 +20,7 @@ const index = () => (
     <h2 className={styles.bgText}>
       <b>Community Group</b>
     </h2>
-    <div className={styles.meeting}>
-      <h4>
-      REMINDER: IMPORTANT WATER MEETING<br /> 
-      11 A.M. SUNDAY, SEPTEMBER 17<br />
-      210 E. Orchard Beach Drive
-      </h4>
-    </div>
+    
     </div>
   <div>
     <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
