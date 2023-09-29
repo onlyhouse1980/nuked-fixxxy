@@ -158,67 +158,7 @@ export default function Person() {
                 ></input>
               </td>
             </tr>
-            <tr>
-              <td className={styles.td3}>
-                <p className={styles.p}>
-                  Total gallons used sofar of the annual allotment (of 48,000)
-                </p>
-              </td>
-              <td className={styles.td3}>
-                <input
-                  style={{
-                    backgroundColor: bgColors.Blue,
-                  }}
-                  type="text"
-                  name="utilized"
-                  id="thisYear"
-                  value={data.june05_23 }
-                  label="answers"
-                  readOnly
-                ></input>
-              </td>
-            </tr>
-
-            <tr>
-              <td className={styles.td3} function person>
-                <p className={styles.p}>
-                  Percentage annual allotment (48,000 gallons) used.
-                  <br />
-                </p>
-              </td>
-              <td className={styles.td3}>
-                <input
-                  style={{
-                    backgroundColor: bgColors.Blue,
-                  }}
-                  type="text"
-                  id="Percent"
-                  label="answers"
-                  readOnly
-                ></input>
-              </td>
-            </tr>
-
-            <tr>
-              <td className={styles.td3} function person>
-                <p className={styles.p}>
-                  End of billing year.
-                  <br />
-                </p>
-              </td>
-              <td className={styles.td3}>
-                <input
-                  style={{
-                    backgroundColor: bgColors.Blue,
-                  }}
-                  type="text"
-                  id="yearEnd1"
-                  value="June 2024"
-                  label="answers"
-                  readOnly
-                ></input>
-              </td>
-            </tr>
+            
 
             <tr>
               <td className={styles.h5head}>
