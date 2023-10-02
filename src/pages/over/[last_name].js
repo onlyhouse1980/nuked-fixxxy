@@ -1508,6 +1508,57 @@ export default function Over() {
     }
   }
 
+// ***June 2023***
+
+  function afterJune23() {
+    let a = data.aug05_22 - data.jun07_22;
+    let b = data.oct07_22 - data.aug05_22;
+    let c = data.dec09_22 - data.oct07_22;
+    let d = data.feb04_23 - data.dec09_22;
+    let e = data.apr06_23 - data.feb04_23;
+    let f = data.jun05_23 - data.apr06_23;
+    let g = data.aug02_23 - data.jun05_23;
+    let total6 = a + b + c + d + e + f + g;
+    let costFree = 48000;
+    let rmn = costFree - total6;
+
+    if (rmn < 0) {
+      return (
+        <input
+          style={{
+            color: "red",
+            backgroundColor: bgColors.Blue,
+            margin: "0 10px 0 10px",
+            width: "75px",
+          }}
+          type="number"
+          name="utilized"
+          id="yearOver"
+          value={rmn}
+          label="galOver"
+          readOnly
+        ></input>
+      );
+    } else {
+      return (
+        <input
+          style={{
+            color: "black",
+            backgroundColor: bgColors.Blue,
+            margin: "0 10px 0 10px",
+            width: "75px",
+          }}
+          type="number"
+          name="utilized"
+          id="yearOver"
+          value={rmn}
+          label="galOver"
+          readOnly
+        ></input>
+      );
+    }
+  }
+
   function galOverFees22() {
     let a = data.aug05_22 - data.jun07_22;
     let b = data.oct07_22 - data.aug05_22;
@@ -1618,6 +1669,42 @@ export default function Over() {
 
             {/* START NEW FEE DATA */}
             <tbody>
+
+              {/* JUNE 2023 */}
+              <tr>
+                <td className={styles.td3}>
+                  <p className={styles.p}>Jun 2023</p>
+                  <p
+                    style={{
+                      fontSize: 9,
+                      width: "75px",
+                      color: "white",
+                      margin: "-20px 0 0 10px",
+                      padding: 0,
+                    }}
+                  >
+                    (6/5/23-8/2/23)
+                  </p>
+                </td>
+                <td className={styles.td3}>
+                  <input
+                    style={{
+                      backgroundColor: bgColors.Blue,
+                      margin: "0 10px 0 10px",
+                      width: "75px",
+                    }}
+                    type="text"
+                    name="utilized"
+                    id="February2023"
+                    value={ata aug02_23 - data.jun05_23}
+                    label="answers"
+                    readOnly
+                  ></input>
+                </td>
+                <td className={styles.td3}>{afterJune23()}</td>
+              </tr>
+
+              
               {/* APRIL 2023 */}
               <tr>
                 <td className={styles.td3}>
