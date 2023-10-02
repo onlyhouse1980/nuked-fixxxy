@@ -1696,7 +1696,7 @@ export default function Over() {
                     type="text"
                     name="utilized"
                     id="February2023"
-                    value={ata aug02_23 - data.jun05_23}
+                    value={data.aug02_23 - data.jun05_23}
                     label="answers"
                     readOnly
                   ></input>
