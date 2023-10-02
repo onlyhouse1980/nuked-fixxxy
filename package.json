@@ -2,7 +2,7 @@
   "name": "obcg.org",
   "version": "0.2.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -30,7 +30,7 @@
     "jspdf": "^2.5.1",
     "mdbreact": "5.0.0",
     "mini-css-extract-plugin": "^2.6.1",
-    "next": "^13.4.4",
+    "next": "^13.5.3",
     "next-cloudinary": "^4.12.0",
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "^1.5.1",
