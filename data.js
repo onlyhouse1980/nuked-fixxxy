@@ -1877,5 +1877,11 @@ export const people = [
     year_remain: "48000",
     billing_year_end: "June 2023",
     fees: "0",
-  }
+  },
+  {
+    id: "41",
+    meter_serialNum: "2223174",
+    last_name: "Eide_3",
+    oct05_23: "50"
+  }  
 ];
