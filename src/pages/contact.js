@@ -3,11 +3,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import profilePic from '../../public/Images/WebPFiles/fullsmall.webp'
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
+
 
 const div = {
   hidden: { opacity: 0 },
@@ -18,14 +14,15 @@ const div = {
     }
   }
 }
-const Contact = () => (
+export default function Contact() {
+  return(
   <div>
     <div className={styles.content}>
     <div className={styles.blackbox}>
     <div><h2 className={styles.headliner}>Orchard Beach Established 1954</h2></div>
     <div ><Image className={styles.mapImage}   
       src={profilePic}
-      alt="upload of Orchard Beach" 
+      alt="Schematic map of Orchard Beach" 
       fill
       priority
       />
@@ -42,6 +39,4 @@ const Contact = () => (
     </div>
     </div>
   </div>
-);
-
-export default Contact;
+)}
