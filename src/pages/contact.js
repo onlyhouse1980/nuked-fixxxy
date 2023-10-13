@@ -15,6 +15,10 @@ const div = {
   }
 }
 export default function Contact() {
+  const address = `Orchard Beach<br /> 
+Grapeview, WA 98546`;
+const email = `orchardwater@yahoo.com`;
+
   return(
   <div>
     <div className={styles.content}>
@@ -30,11 +34,10 @@ export default function Contact() {
       <div className={styles.bottomliner}>
       <div ><h3>OBCG</h3></div>
       <div >
-      Orchard Beach<br /> 
-      Grapeview, WA 98546 <br />
+      {address} <br />
       Email: 
       
-      <button label="Write me an E-Mail"><a href = "mailto:orchardwater@yahoo.com?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></div>
+      <button label="Write me an E-Mail"><a href = "${email}?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></div>
       </div>
     </div>
     </div>
