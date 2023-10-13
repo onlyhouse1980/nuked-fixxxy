@@ -24,7 +24,8 @@ import useSWR from 'swr'
 
 
 
-const Example = () => (
+export default function Register() {
+  return(
 
   
 
@@ -82,6 +83,4 @@ const Example = () => (
   
   </motion.div>
   
-);
-
-export default Example;
+)}
