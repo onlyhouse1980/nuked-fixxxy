@@ -23,7 +23,7 @@ const Executive = () => (
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
   >
-    <motion.container
+    <motion.div
       className={styles.bgcontainer}
       variants={container}
       initial="hidden"
@@ -49,9 +49,7 @@ const Executive = () => (
               <br />
               Jim Farrell
               <br />
-              {/* <Link href="/contactus1" passHref className={styles.clink}>
-                Contact
-              </Link> */}
+              
             </p>
           </div>
         </motion.div>
@@ -69,9 +67,7 @@ const Executive = () => (
               <br />
               Erika Aust
               <br />
-              {/* <Link href="/contactus" passHref className={styles.clink}>
-                Contact
-              </Link> */}
+              
             </p>
           </div>
         </motion.div>
@@ -89,14 +85,12 @@ const Executive = () => (
               <br />
               DeeDee Benitez
               <br />
-              {/* <Link href="/contactus3" passHref className={styles.clink}>
-                Contact
-              </Link> */}
+              
             </p>
           </div>
         </motion.div>
       </div>
-    </motion.container>
+    </motion.div>
   </motion.div>
 );
 
