@@ -18,15 +18,12 @@ const item = {
   show: { opacity: 1 }
 }
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
 
-const Articles = () => (
+
+export default function Articles() {
+  return(
   <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-    {/* <VideoBg1 />  */}
+  
     <motion.container className={styles.bgcontainer}
     variants={container}
     initial="hidden"
@@ -51,6 +48,4 @@ const Articles = () => (
     </div>
     </motion.container>
   </motion.div>
-);
-
-export default Articles;
+)}
