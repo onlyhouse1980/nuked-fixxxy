@@ -1,9 +1,10 @@
 import styles from '../../styles/Whales.module.css'
 import Link from 'next/link'
+import { useCallback } from 'react';
 
 
 
-const Parades = () => {
+
   
     const media_urls = [
       {
@@ -42,21 +43,22 @@ const Parades = () => {
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1682981538/obcg_4th_1_fhgyie.mp4#t=0.001',
       },
     ]
-  
-    // handle mouse enter
-    const handleMouseEnter = (e) => {
-      const vid = e.target
-      vid.muted = true
-      vid.play()
-    }
-  
-    // handle mouse leave
-    const handleMouseLeave = (e) => {
-      const vid = e.target
-      vid.muted = false
-      vid.currentTime = 0
-      vid.pause()
-    }
+    const Parades = () => {
+
+      // handle mouse enter
+      const handleMouseEnter = useCallback((e) => {
+        const vid = e.target
+        vid.muted = true
+        vid.play()
+      }, [])
+      
+      // handle mouse leave
+      const handleMouseLeave = useCallback((e) => {
+        const vid = e.target
+        vid.muted = false
+        vid.currentTime = 0
+        vid.pause()
+      }, [])
   
     return (
     <>
@@ -72,9 +74,11 @@ const Parades = () => {
                   <div className={styles.cardBody}>
                   <h4 className={styles.cardTitle}> {media.title}</h4>
                     <video
+                      key={media.id}
                       preload="metadata"
                       width='100%'
                       height='auto'
+                      controls
                       padding-bottom='10px'
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
