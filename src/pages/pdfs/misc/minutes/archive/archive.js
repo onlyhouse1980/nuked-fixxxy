@@ -1,34 +1,11 @@
 import styles from '../../../../../styles/archive.module.css'
-import { motion } from 'framer-motion'
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
-        const container = {
-          hidden: { opacity: 0 },
-          show: {
-            opacity: 1,
-            transition: {
-              staggerChildren: 0.5
-            }
-          }
-        }
-        
-        const item = {
-          hidden: { opacity: 0 },
-          show: { opacity: 1 }
-        }
-        
-        const Archive = () => (
-          <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+        export default function Archive() {
+          return(
+          <div >
             
-            <motion.container className={styles.bgcontainer}
-            variants={container}
-            initial="hidden"
-            animate="show" >
-            <h2 className='text-center.pdf'><b>OBCG</b><br /><b>Minutes Archive</b></h2>
+            <div className={styles.bgcontainer}>
+            <h2 style={{textAlign:"center"}}><b>OBCG</b><br /><b>Minutes Archive</b></h2>
             <p></p>
             <div className={styles.divBlock}>
             
@@ -84,8 +61,7 @@ export async function getStaticProps() {
         </div>
         </div>
         
-        </motion.container>
-        </motion.div>
-        );
+        </div>
+        </div>
+        )}
         
-        export default Archive;
