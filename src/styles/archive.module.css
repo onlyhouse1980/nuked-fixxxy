@@ -1,3 +1,10 @@
+.h2 {
+    text-align: center!important;
+}
+
+.centerText {
+    text-align: center;
+}
 .dates {
     display: flex;
     flex-direction: column;
@@ -47,6 +54,10 @@
     box-shadow: 2px 2px 8px rgb(60, 60, 60);
     padding: 10px;
     margin-bottom: 40vh;
+}
+
+.headText {
+    text-align: center;
 }
 
 .content img {
