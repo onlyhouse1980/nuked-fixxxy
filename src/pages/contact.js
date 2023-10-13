@@ -1,6 +1,7 @@
 import styles from '../styles/Contact.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import profilePic from '../../public/Images/WebPFiles/fullsmall.webp'
 
 export async function getStaticProps() {
   return {
@@ -17,42 +18,30 @@ const div = {
     }
   }
 }
-
-const item = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 }
-}
-
 const Contact = () => (
-  <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }} className={styles.body}>
-    {/* <VideoBg1 /> */}
-    <motion.div className={styles.content}
-    variants={div}
-    initial="hidden"
-    animate="show"
-    >
+  <div>
+    <div className={styles.content}>
     <div className={styles.blackbox}>
-    <motion.div variants={item}><h2 className={styles.headliner}>Orchard Beach Established 1954</h2></motion.div>
-    <motion.div variants={item}><Image className={styles.mapImage}   src="/Images/WebPFiles/fullsmall.webp"
+    <div><h2 className={styles.headliner}>Orchard Beach Established 1954</h2></div>
+    <div ><Image className={styles.mapImage}   
+      src={profilePic}
       alt="upload of Orchard Beach" 
-      minwidth="90vw" 
-      minheight={1080}
-      width={1920}
-      height={1080} 
+      fill
+      priority
       />
-      </motion.div>
+      </div>
       <div className={styles.bottomliner}>
-      <motion.div variants={item}><h3>OBCG</h3></motion.div>
-      <motion.div variants={item}>
+      <div ><h3>OBCG</h3></div>
+      <div >
       Orchard Beach<br /> 
       Grapeview, WA 98546 <br />
       Email: 
       
-      <button label="Write me an E-Mail"><a href = "mailto:orchardwater@yahoo.com?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></motion.div>
+      <button label="Write me an E-Mail"><a href = "mailto:orchardwater@yahoo.com?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></div>
       </div>
     </div>
-    </motion.div>
-  </motion.div>
+    </div>
+  </div>
 );
 
 export default Contact;
