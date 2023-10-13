@@ -12,7 +12,7 @@ import {
   MDBDropdownItem,
 } from "mdbreact";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/NavBar.module.css";
 import Image from "next/legacy/image";
 
@@ -25,13 +25,15 @@ class Navbar extends React.Component {
   }
 
   toggleCollapse = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+    this.setState((prevState) => ({
+      isOpen: !prevState.isOpen,
+    }));
   };
-
   render() {
     return (
       <>
         <MDBNavbar
+          className="nav"
           color="indigo"
           z-index="10!important"
           dark
@@ -40,7 +42,7 @@ class Navbar extends React.Component {
         >
           <motion.div whileHover={{ scale: 2 }}>
             <MDBNavbarBrand>
-              <Link href="https://obcg.org">
+              <Link href="/">
                 <Image
                   src="/Images/WebPFiles/obcglogo.webp"
                   alt="logo"
@@ -70,6 +72,7 @@ class Navbar extends React.Component {
                 <MDBNavItem>
                   <Link
                     href="/about"
+                    as="/about"
                     className="nav-link"
                     onClick={this.toggleCollapse}
                   >
@@ -81,6 +84,7 @@ class Navbar extends React.Component {
                 <MDBNavItem>
                   <Link
                     href="/articles"
+                    as="/articles"
                     className="nav-link"
                     onClick={this.toggleCollapse}
                   >
@@ -92,6 +96,7 @@ class Navbar extends React.Component {
                 <MDBNavItem>
                   <Link
                     href="/executive"
+                    as="/executive"
                     className="nav-link"
                     onClick={this.toggleCollapse}
                   >
@@ -103,6 +108,7 @@ class Navbar extends React.Component {
                 <MDBNavItem>
                   <Link
                     href="/register"
+                    as="/register"
                     className="nav-link"
                     onClick={this.toggleCollapse}
                   >
