@@ -3,15 +3,16 @@ import Navbar from './NavBar';
 import Footer from './Footer';
 import Head from 'next/head';
 import React from 'react'
+import styles from "../styles/styles.module.css"
 
 
 
-function Layout(props) {
+export default function Layout(props) {
   return (
     <>
      <Head>
-      <title>Orchard Beach Community Group - Water District</title>
-      <meta name="description" content="Orchard Beach Community Group Water Management"></meta>
+      <title>{props.title}</title>
+      <meta name="description" content={props.description}></meta>
       
 
         
@@ -22,7 +23,7 @@ function Layout(props) {
       <MDBContainer style={{width:'100%'}}>{props.children}</MDBContainer>
       
       <Footer />
-      <style jsx global>{`
+      {/* <style jsx global>{`
           endregion__next {
           max-width: 100vw;
           display: flex;
@@ -40,11 +41,10 @@ function Layout(props) {
       `}
 
            
-          </style> 
+          </style>  */}
                
     </>
     
   );
 }
 
-export default Layout;
