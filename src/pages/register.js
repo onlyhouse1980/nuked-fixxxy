@@ -13,26 +13,14 @@ import Zoom from 'react-reveal/Zoom';
 import { motion } from 'framer-motion'
 import React from 'react'
 import { MDBAnimation } from "mdbreact";
-/* import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content' */
-
 import useSWR from 'swr'
-
-
-
-
-
-
 
 export default function Register() {
   return(
-
-  
-
-  <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
-  <React.Fragment>
-  <div suppressHydrationWarning={true}>
-    { process.browser }
+    <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+    <React.Fragment>
+    <div suppressHydrationWarning={true}>
+      { process.browser }
     
 </div>
   <Zoom>
