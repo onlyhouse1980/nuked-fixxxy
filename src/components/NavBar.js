@@ -33,12 +33,10 @@ class Navbar extends React.Component {
     return (
       <>
         <MDBNavbar
-          className="nav"
+          className={styles.nav}
           color="indigo"
-          z-index="10!important"
           dark
           expand="md"
-          height="50px!important"
         >
           <motion.div whileHover={{ scale: 2 }}>
             <MDBNavbarBrand>
@@ -61,6 +59,7 @@ class Navbar extends React.Component {
                 <MDBNavItem>
                   <Link
                     href="/"
+                    as="/"
                     className="nav-link"
                     onClick={this.toggleCollapse}
                   >
