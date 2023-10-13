@@ -22,7 +22,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 1px;
-    background-image: url('../../public/Images/FB-30-8x10-1280x1024-819x1024.webp');
+    background-image: url('/Images/FB-30-8x10-1280x1024-819x1024.webp');
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -34,7 +34,7 @@
 }
 
 .contentNameplate {
-    background-image: url(../../public/Images/metal-plate.webp) ;
+    background-image: url(/Images/metal-plate.webp) ;
 
     
 
