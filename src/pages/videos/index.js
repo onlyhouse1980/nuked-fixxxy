@@ -1,7 +1,8 @@
 import styles from "../../styles/Whales.module.css";
 import Link from "next/link";
+import { useCallback } from "react";
 
-const Whales = () => {
+
   const media_urls = [
     {
       id: 1,
@@ -25,21 +26,21 @@ const Whales = () => {
         "https://res.cloudinary.com/dfnaxhqqq/video/upload/v1657501527/obcg/whale3_ziwwhq.mp4#t=0.001",
     },
   ];
-
+  const Whales = () => {
   // handle mouse enter
-  const handleMouseEnter = (e) => {
-    const vid = e.target;
-    vid.muted = true;
-    vid.play();
-  };
+const handleMouseEnter = useCallback((e) => {
+  const vid = e.target;
+  vid.muted = true;
+  vid.play();
+}, []);
 
-  // handle mouse leave
-  const handleMouseLeave = (e) => {
-    const vid = e.target;
-    vid.muted = false;
-    vid.currentTime = 0;
-    vid.pause();
-  };
+// handle mouse leave
+const handleMouseLeave = useCallback((e) => {
+  const vid = e.target;
+  vid.muted = false;
+  vid.currentTime = 0;
+  vid.pause();
+}, []);
 
   return (
     <>
@@ -55,10 +56,10 @@ const Whales = () => {
                   <div className={styles.cardBody}>
                     <h4 className={styles.cardTitle}> {media.title}</h4>
                     <video
-                      preload="metadata"
+                      preload="none"
                       width="100%"
                       height="auto"
-                      padding-bottom="10px"
+                      style={{ paddingBottom: "10px" }}
                       controls
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
