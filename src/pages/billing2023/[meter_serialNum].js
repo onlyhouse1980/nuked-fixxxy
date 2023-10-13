@@ -17,11 +17,10 @@ var bgColors = {
 };
 const fetcher = async (url) => {
   const res = await fetch(url);
-  const data = await res.json();
-
-  if (res.status !== 200) {
-    throw new Error(data.message);
+  if (!res.ok) {
+    throw new Error('Response not ok');
   }
+  const data = await res.json();
   return data;
 };
 
