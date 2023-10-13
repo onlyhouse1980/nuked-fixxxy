@@ -5,7 +5,7 @@ import styles from '../../../../../styles/archive.module.css'
           <div >
             
             <div className={styles.bgcontainer}>
-            <h2 style={{textAlign:"center"}}><b>OBCG</b><br /><b>Minutes Archive</b></h2>
+            <h2 className={styles.centerText} style={{textAlign: "center"}}><b>OBCG</b><br /><b>Minutes Archive</b></h2>
             <p></p>
             <div className={styles.divBlock}>
             
