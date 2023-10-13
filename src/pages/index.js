@@ -4,14 +4,10 @@ import styles from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
 
 
-const index = () => (
+export default function index(){
+  return(
   <div>
      <div className={styles.mainName}>
     <h2 className={styles.bgText}>
@@ -40,7 +36,7 @@ const index = () => (
         src="/Images/WebPFiles/hero-bg.webp"
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={85}
       />
     </motion.div>
     <motion.div animate={{
@@ -76,7 +72,7 @@ const index = () => (
         src="/Images/WebPFiles/boat.webp"
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={85}
       />
     </motion.div>
     <motion.div animate={{
@@ -94,7 +90,7 @@ const index = () => (
         src="/Images/WebPFiles/whale.webp"
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={85}
       />
     </motion.div>
     <motion.div animate={{
@@ -113,7 +109,7 @@ const index = () => (
         /*filter="blur"*/
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={85}
       />
     </motion.div>
    
@@ -122,8 +118,4 @@ const index = () => (
 
     </div>
     </div>
-)
-
-
-
-export default index
+)}
