@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
+import profileImage from "../../public/Images/WebPFiles/psound.webp"
 
 
 
@@ -14,6 +15,7 @@ export default function index(){
         <title>Orchard Beach Community Group</title>
         <meta property="og:title" content="Orchard Beach Community Group" key="title" /> 
     </Head>
+    <profileImage className={styles.profileImage} />
      <div className={styles.mainName}>
     <h2 className={styles.bgText}>
       <b>Orchard Beach</b>
@@ -26,7 +28,7 @@ export default function index(){
   <div>
     <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     <motion.div animate={{
-        opacity: [1, 1, 0, 0, 0, 0, 0, 1, 1],        
+        opacity: [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],        
       }}
       transition={{
         duration: 15,
@@ -37,15 +39,16 @@ export default function index(){
       }} 
       className={styles.bgWrap}>
       <Image
-        alt="Orchard Beach"
-        src="/Images/WebPFiles/hero-bg.webp"
+        className={styles.Psound}
+        alt="Whale Sighting"
+        src="/Images/WebPFiles/psound.webp"
         layout="fill"
         objectFit="cover"
         quality={85}
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 1, 0, 0, 0, 0, 0],       
+        opacity: [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],       
       }}
       transition={{
         duration: 12,
@@ -63,7 +66,7 @@ export default function index(){
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 0, 0, 1, 0, 0, 0],        
+        opacity: [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],        
       }}
       transition={{
         duration: 12,
@@ -80,8 +83,8 @@ export default function index(){
         quality={85}
       />
     </motion.div>
-    <motion.div animate={{
-        opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1],        
+    {/* <motion.div animate={{
+        opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0],        
       }}
       transition={{
         duration: 12,
@@ -97,9 +100,9 @@ export default function index(){
         objectFit="cover"
         quality={85}
       />
-    </motion.div>
+    </motion.div> */}
     <motion.div animate={{
-        opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1],        
+        opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],        
       }}
       transition={{
         duration: 12,
@@ -109,16 +112,15 @@ export default function index(){
       }} 
       className={styles.bgWrap}>
       <Image
-        className={styles.Psound}
-        alt="Whale Sighting"
-        src="/Images/WebPFiles/psound.webp"
+        alt="Orchard Beach"
+        src="/Images/WebPFiles/hero-bg.webp"
         layout="fill"
         objectFit="cover"
         quality={85}
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 1, 1, 0, 0, 0, 0],        
+        opacity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],        
       }}
       transition={{
         duration: 12,
