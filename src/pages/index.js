@@ -4,8 +4,9 @@ import styles from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
 import profileImage from "../../public/Images/WebPFiles/psound.webp"
+import { inView } from "framer-motion"
 
-
+const PhotoArray = []
 
 export default function index(){
   return(
@@ -15,7 +16,7 @@ export default function index(){
         <title>Orchard Beach Community Group</title>
         <meta property="og:title" content="Orchard Beach Community Group" key="title" /> 
     </Head>
-    <profileImage className={styles.profileImage} />
+    
      <div className={styles.mainName}>
     <h2 className={styles.bgText}>
       <b>Orchard Beach</b>
@@ -27,11 +28,12 @@ export default function index(){
     </div>
   <div>
     <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+    
     <motion.div animate={{
-        opacity: [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],        
+        opacity: [1, 0, 0, 0, 0],        
       }}
       transition={{
-        duration: 15,
+        duration: 30,
         ease: "easeInOut",
         
         repeat: Infinity,
@@ -48,10 +50,10 @@ export default function index(){
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],       
+        opacity: [0, 1, 0, 0, 0],       
       }}
       transition={{
-        duration: 12,
+        duration: 30,
         ease: "easeInOut",
         repeat: Infinity,
         repeatDelay: 0
@@ -66,16 +68,17 @@ export default function index(){
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],        
+        opacity: [0, 0, 1, 0, 0],        
       }}
       transition={{
-        duration: 12,
+        duration: 30,
         ease: "easeInOut",
         repeat: Infinity,
         repeatDelay: 0
       }} 
       className={styles.bgWrap}>
       <Image
+        className={styles.bgWrapBoat}
         alt="Droplets"
         src="/Images/WebPFiles/boat.webp"
         layout="fill"
@@ -84,7 +87,7 @@ export default function index(){
       />
     </motion.div>
     {/* <motion.div animate={{
-        opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0],        
+        opacity: [0, 0, 0, 0, 0],        
       }}
       transition={{
         duration: 12,
@@ -102,10 +105,10 @@ export default function index(){
       />
     </motion.div> */}
     <motion.div animate={{
-        opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],        
+        opacity: [0, 0, 0, 1, 0],        
       }}
       transition={{
-        duration: 12,
+        duration: 30,
         ease: "easeInOut",
         repeat: Infinity,
         repeatDelay: 0
@@ -120,10 +123,10 @@ export default function index(){
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],        
+        opacity: [0, 0, 0, 0, 1],        
       }}
       transition={{
-        duration: 12,
+        duration: 30,
         ease: "easeInOut",
         repeat: Infinity,
         repeatDelay: 0
@@ -136,6 +139,7 @@ export default function index(){
         layout="fill"
         objectFit="cover"
         quality={85}
+        style={{zIndex:"-4"}}
       />
     </motion.div>
    

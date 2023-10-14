@@ -4619,6 +4619,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"animo-core@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "animo-core@npm:1.0.8"
+  checksum: 07aaaff6f2b184841436eb1c66c98f35722c8b4ae1eba93d724c4555c9076a6c899bec649e19e5e53e6e3d7192cdf72b72cbb013430f391f563288bea2051baf
+  languageName: node
+  linkType: hard
+
 "ansi-regex@npm:^5.0.1":
   version: 5.0.1
   resolution: "ansi-regex@npm:5.0.1"
@@ -9675,6 +9682,7 @@ __metadata:
     "@types/nodemailer": ^6.4.8
     "@types/react": ^18.0.18
     "@types/styled-components": 5.1.26
+    animo-core: ^1.0.8
     ansi-regex: ^6.0.1
     axios: ^1.4.0
     babel-plugin-styled-components: ^2.0.7
