@@ -4,8 +4,7 @@ export default function Document() {
   return (
     <Html lang="en-US">
       <Head>
-        <title>Orchard Beach Community Group</title>
-        <meta property="og:title" content="Orchard Beach Community Group" key="title" />
+        
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"

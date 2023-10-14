@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Head from 'next/head';
 import styles from '../styles/styles.module.css'
 import * as React from "react";
 import { motion } from "framer-motion";
@@ -8,7 +8,12 @@ import { motion } from "framer-motion";
 
 export default function index(){
   return(
+    
   <div>
+    <Head>
+        <title>Orchard Beach Community Group</title>
+        <meta property="og:title" content="Orchard Beach Community Group" key="title" /> 
+    </Head>
      <div className={styles.mainName}>
     <h2 className={styles.bgText}>
       <b>Orchard Beach</b>
