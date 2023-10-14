@@ -78,7 +78,7 @@ export default function index(){
       }} 
       className={styles.bgWrap}>
       <Image
-        className={styles.bgWrapBoat}
+        className={styles.Psound}
         alt="Droplets"
         src="/Images/WebPFiles/boat.webp"
         layout="fill"
