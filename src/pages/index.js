@@ -30,7 +30,7 @@ export default function index(){
     <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     
     <motion.div animate={{
-        opacity: [1, 0, 0, 0, 0],        
+        opacity: [1, 0, 0, 0, 1],        
       }}
       transition={{
         duration: 30,
@@ -139,7 +139,6 @@ export default function index(){
         layout="fill"
         objectFit="cover"
         quality={85}
-        style={{zIndex:"-4"}}
       />
     </motion.div>
    
