@@ -94,7 +94,26 @@ export default function index(){
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [1, 0, 1, 0, 1, 0, 1, 0, 1],        
+        opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1],        
+      }}
+      transition={{
+        duration: 12,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatDelay: 0
+      }} 
+      className={styles.bgWrap}>
+      <Image
+        className={styles.Psound}
+        alt="Whale Sighting"
+        src="/Images/WebPFiles/psound.webp"
+        layout="fill"
+        objectFit="cover"
+        quality={85}
+      />
+    </motion.div>
+    <motion.div animate={{
+        opacity: [0, 0, 0, 1, 1, 0, 0, 0, 0],        
       }}
       transition={{
         duration: 12,

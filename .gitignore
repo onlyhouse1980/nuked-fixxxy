@@ -6,3 +6,5 @@ node_modules
 yarn-error.log
 .next/cache
 .next/server
+.yarnrc.yml
+.DS_Store
