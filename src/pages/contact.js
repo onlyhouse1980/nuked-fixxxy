@@ -15,7 +15,7 @@ const div = {
   }
 }
 export default function Contact() {
-  const address = `Orchard Beach<br /> 
+  const address = `Orchard Beach
 Grapeview, WA 98546`;
 const email = `orchardwater@yahoo.com`;
 
