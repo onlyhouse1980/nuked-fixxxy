@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container .imgBox {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+        }
+        .container .imgBox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgBox">
+            <img src="./Images/WebPFiles/boat.webp">
+            <img src="./Images/WebPFiles/psound.webp">
+        </div>
+        <div class="imgBox">
+            <img src="./Images/WebPFiles/sunrise.webp">
+            <img src="./Images/WebPFiles/hero-bg.webp">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="./hover-effect.umd"></script>
+    <script type="text/javascript">
+        Array.from(document.querySelectorAll('.imgBox')).forEach((e) => {
+            const imgs = Array.from(e.querySelectorAll('img'));
+            new hoverEffect({
+                parent: e,
+                intensity: 0.3,
+                image1: imgs[0].getAttribute('src'),
+                image2: imgs[1].getAttribute('src'),
+                displacementImage: '2.jpg'
+            });
+        })
+    </script>    
+</body>
+</html>
