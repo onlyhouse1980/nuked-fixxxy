@@ -1832,7 +1832,7 @@ export default function Over() {
                       padding: 0,
                     }}
                   >
-                    (12/10-02/04)
+                    (02/04-04/06)
                   </p>
                 </td>
                 <td className={styles.td3}>
