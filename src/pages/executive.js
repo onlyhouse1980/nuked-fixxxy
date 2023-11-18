@@ -35,7 +35,7 @@ const Executive = () => (
         <b>Executive Board</b>
       </h2>
       <div className={styles.divBlock}>
-        <motion.div variants={item} className={styles.content}>
+       
         
         <motion.div variants={item} className={styles.content}>
           <motion.img
