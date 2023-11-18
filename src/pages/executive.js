@@ -22,7 +22,7 @@ const Executive = () => (
     exit={{ opacity: 0 }}
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-  >
+  >    
     <motion.div
       className={styles.bgcontainer}
       variants={container}
