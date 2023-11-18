@@ -36,23 +36,7 @@ const Executive = () => (
       </h2>
       <div className={styles.divBlock}>
         <motion.div variants={item} className={styles.content}>
-          <motion.img
-            src="/Images/WebPFiles/team-1.webp"
-            loading="lazy"
-            width="300"
-            alt="Member Photo President"
-            className={styles.Image5}
-          />
-          <div className={styles.contentNameplate}>
-            <p>
-              President
-              <br />
-              Jim Farrell
-              <br />
-              
-            </p>
-          </div>
-        </motion.div>
+        
         <motion.div variants={item} className={styles.content}>
           <motion.img
             src="/Images/WebPFiles/team-2.webp"
