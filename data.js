@@ -40,11 +40,7 @@ export const people = [
     jun05_23: "21830271",
     aug02_23: "21993983",
     oct05_23: "22196300",
-    year_total: "773271",
-    budget: "1776000",
-    year_remain: "1002729",
-    billing_year_end: "June 2023",
-    fees: "#N/A",
+    dec04_23: "22284261"
   },
   {
     id: "2",
@@ -87,11 +83,7 @@ export const people = [
     jun05_23: "194989",
     aug02_23: "218438",
     oct05_23: "241898",
-    year_total: "304",
-    budget: "48000",
-    year_remain: "47696",
-    billing_year_end: "June 2023",
-    fees: "#N/A",
+    dec04_23: "241898"
   },
   {
     id: "3",
@@ -134,11 +126,7 @@ export const people = [
     jun05_23: "458351",
     aug02_23: "461856",
     oct05_23: "469487",
-    year_total: "39505",
-    budget: "48000",
-    year_remain: "8495",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "472786"
   },
   {
     id: "4",
@@ -181,11 +169,7 @@ export const people = [
     jun05_23: "109898",
     aug02_23: "111281",
     oct05_23: "111639",
-    year_total: "7019",
-    budget: "48000",
-    year_remain: "40981",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "112323"
   },
   {
     id: "5",
@@ -228,11 +212,7 @@ export const people = [
     jun05_23: "88948",
     aug02_23: "91804",
     oct05_23: "93522",
-    year_total: "38721",
-    budget: "48000",
-    year_remain: "17771",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "93999"
   },
   {
     id: "6",
@@ -275,11 +255,7 @@ export const people = [
     jun05_23: "65109",
     aug02_23: "66410",
     oct05_23: "66844",
-    year_total: "8785",
-    budget: "48000",
-    year_remain: "39215",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "66844"
   },
   {
     id: "7",
@@ -322,11 +298,7 @@ export const people = [
     jun05_23: "1758",
     aug02_23: "5198",
     oct05_23: "5800",
-    year_total: "1637",
-    budget: "48000",
-    year_remain: "46363",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "6314"
   },
   {
     id: "8",
@@ -369,11 +341,7 @@ export const people = [
     jun05_23: "320340",
     aug02_23: "321331",
     oct05_23: "322964",
-    year_total: "1732",
-    budget: "48000",
-    year_remain: "46268",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "325218"
   },
   {
     id: "9",
@@ -416,11 +384,7 @@ export const people = [
     jun05_23: "3",
     aug02_23: "3",
     oct05_23: "3",
-    year_total: "0",
-    budget: "48000",
-    year_remain: "48000",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "3"
   },
   {
     id: "10",
@@ -463,11 +427,7 @@ export const people = [
     jun05_23: "151089",
     aug02_23: "161460",
     oct05_23: "170962",
-    year_total: "31694",
-    budget: "48000",
-    year_remain: "16306",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "173949"
   },
   {
     id: "11",
@@ -509,11 +469,7 @@ export const people = [
     jun05_23: "183072",
     aug02_23: "192923",
     oct05_23: "202284",
-    year_total: "17210",
-    budget: "48000",
-    year_remain: "30790",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "205766"
   },
   {
     id: "12",
@@ -556,11 +512,7 @@ export const people = [
     jun05_23: "178049",
     aug02_23: "181023",
     oct05_23: "184251",
-    year_total: "12088",
-    budget: "48000",
-    year_remain: "35912",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "185674"
   },
   {
     id: "13",
@@ -603,11 +555,7 @@ export const people = [
     jun05_23: "114499",
     aug02_23: "118818",
     oct05_23: "122470",
-    year_total: "26914",
-    budget: "48000",
-    year_remain: "21086",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "125431"
   },
   {
     id: "14",
@@ -650,11 +598,7 @@ export const people = [
     jun05_23: "537355",
     aug02_23: "539439",
     oct05_23: "541909",
-    year_total: "99018",
-    budget: "48000",
-    year_remain: "-51018",
-    billing_year_end: "June 2023",
-    fees: "1275.45",
+    dec04_23: "542818"
   },
   {
     id: "15",
@@ -697,11 +641,7 @@ export const people = [
     jun05_23: "404524",
     aug02_23: "435506",
     oct05_23: "507002",
-    year_total: "58563",
-    budget: "48000",
-    year_remain: "-10563",
-    billing_year_end: "June 2023",
-    fees: "264.08",
+    dec04_23: "525404"
   },
   {
     id: "16",
@@ -744,11 +684,7 @@ export const people = [
     jun05_23: "277911",
     aug02_23: "280999",
     oct05_23: "303914",
-    year_total: "36960",
-    budget: "48000",
-    year_remain: "11040",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "306302"
   },
   {
     id: "17",
@@ -791,11 +727,7 @@ export const people = [
     jun05_23: "50210",
     aug02_23: "51756",
     oct05_23: "53242",
-    year_total: "8288",
-    budget: "48000",
-    year_remain: "39712",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "53421"
   },
   {
     id: "18",
@@ -838,11 +770,7 @@ export const people = [
     jun05_23: "155476",
     aug02_23: "161521",
     oct05_23: "166588",
-    year_total: "30710",
-    budget: "48000",
-    year_remain: "17290",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "170942"
   },
   {
     id: "19",
@@ -885,11 +813,7 @@ export const people = [
     jun05_23: "156505",
     aug02_23: "164062",
     oct05_23: "171458",
-    year_total: "16703",
-    budget: "48000",
-    year_remain: "31297",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "173243"
   },
   {
     id: "20",
@@ -932,11 +856,7 @@ export const people = [
     jun05_23: "114382",
     aug02_23: "128030",
     oct05_23: "131346",
-    year_total: "14419",
-    budget: "48000",
-    year_remain: "33581",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "132000"
   },
   {
     id: "21",
@@ -979,11 +899,7 @@ export const people = [
     jun05_23: "71195",
     aug02_23: "71364",
     oct05_23: "72484",
-    year_total: "1701",
-    budget: "48000",
-    year_remain: "46299",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "72558"
   },
   {
     id: "22",
@@ -1026,11 +942,7 @@ export const people = [
     jun05_23: "157753",
     aug02_23: "161610",
     oct05_23: "162362",
-    year_total: "18555",
-    budget: "48000",
-    year_remain: "29445",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "163204"
   },
   {
     id: "23",
@@ -1073,11 +985,7 @@ export const people = [
     jun05_23: "545771",
     aug02_23: "552086",
     oct05_23: "559099",
-    year_total: "38395",
-    budget: "48000",
-    year_remain: "9605",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "564536"
   },
   {
     id: "24",
@@ -1120,11 +1028,7 @@ export const people = [
     jun05_23: "59021",
     aug02_23: "66368",
     oct05_23: "72402",
-    year_total: "16762",
-    budget: "48000",
-    year_remain: "31238",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "73553"
   },
   {
     id: "25",
@@ -1167,11 +1071,7 @@ export const people = [
     jun05_23: "172158",
     aug02_23: "176576",
     oct05_23: "182388",
-    year_total: "39439",
-    budget: "48000",
-    year_remain: "8561",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "187188"
   },
   {
     id: "26",
@@ -1214,11 +1114,7 @@ export const people = [
     jun05_23: "0",
     aug02_23: "0",
     oct05_23: "0",
-    year_total: "0",
-    budget: "48000",
-    year_remain: "48000",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "0"
   },
   {
     id: "27",
@@ -1261,11 +1157,7 @@ export const people = [
     jun05_23: "146704",
     aug02_23: "150676",
     oct05_23: "153950",
-    year_total: "27695",
-    budget: "48000",
-    year_remain: "20305",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "155649"
   },
   {
     id: "28",
@@ -1308,11 +1200,7 @@ export const people = [
     jun05_23: "57",
     aug02_23: "617",
     oct05_23: "948",
-    year_total: "12",
-    budget: "48000",
-    year_remain: "47988",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "1044"
   },
   {
     id: "29",
@@ -1355,11 +1243,7 @@ export const people = [
     jun05_23: "440973",
     aug02_23: "446603",
     oct05_23: "453116",
-    year_total: "57858",
-    budget: "48000",
-    year_remain: "-9858",
-    billing_year_end: "June 2023",
-    fees: "246.45",
+    dec04_23: "458436"
   },
   {
     id: "30",
@@ -1402,11 +1286,7 @@ export const people = [
     jun05_23: "5",
     aug02_23: "5",
     oct05_23: "5",
-    year_total: "0",
-    budget: "48000",
-    year_remain: "48000",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "5"
   },
   {
     id: "31",
@@ -1449,11 +1329,7 @@ export const people = [
     jun05_23: "89847",
     aug02_23: "94092",
     oct05_23: "98168",
-    year_total: "16729",
-    budget: "48000",
-    year_remain: "31271",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "102368"
   },
   {
     id: "32",
@@ -1496,11 +1372,7 @@ export const people = [
     jun05_23: "114769",
     aug02_23: "119136",
     oct05_23: "123318",
-    year_total: "12684",
-    budget: "48000",
-    year_remain: "35316",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "125152"
   },
   {
     id: "33",
@@ -1543,11 +1415,7 @@ export const people = [
     jun05_23: "89295",
     aug02_23: "89527",
     oct05_23: "89640",
-    year_total: "1688",
-    budget: "48000",
-    year_remain: "46312",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "89687"
   },
   {
     id: "34",
@@ -1590,11 +1458,7 @@ export const people = [
     jun05_23: "31889",
     aug02_23: "31958",
     oct05_23: "32034",
-    year_total: "561",
-    budget: "48000",
-    year_remain: "47439",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "32047"
   },
   {
     id: "35",
@@ -1637,11 +1501,7 @@ export const people = [
     jun05_23: "5506",
     aug02_23: "6283",
     oct05_23: "6690",
-    year_total: "971",
-    budget: "48000",
-    year_remain: "47029",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "6711"
   },
   {
     id: "36",
@@ -1684,11 +1544,7 @@ export const people = [
     jun05_23: "276943",
     aug02_23: "282950",
     oct05_23: "290061",
-    year_total: "44544",
-    budget: "48000",
-    year_remain: "3456",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "296466"
   },
   {
     id: "37",
@@ -1731,11 +1587,7 @@ export const people = [
     jun05_23: "280713",
     aug02_23: "295507",
     oct05_23: "315374",
-    year_total: "48898",
-    budget: "48000",
-    year_remain: "-898",
-    billing_year_end: "June 2023",
-    fees: "22.45",
+    dec04_23: "322213"
   },
   {
     id: "38",
@@ -1778,11 +1630,7 @@ export const people = [
     jun05_23: "286331",
     aug02_23: "303046",
     oct05_23: "310990",
-    year_total: "21618",
-    budget: "48000",
-    year_remain: "26382",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "313814"
   },
   {
     id: "39",
@@ -1825,11 +1673,7 @@ export const people = [
     jun05_23: "0",
     aug02_23: "906",
     oct05_23: "920",
-    year_total: "0",
-    budget: "48000",
-    year_remain: "48000",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "920"
   },
   {
     id: "40",
@@ -1872,16 +1716,49 @@ export const people = [
     jun05_23: "4",
     aug02_23: "4",
     oct05_23: "4",
-    year_total: "0",
-    budget: "48000",
-    year_remain: "48000",
-    billing_year_end: "June 2023",
-    fees: "0",
+    dec04_23: "4"
   },
   {
     id: "41",
     meter_serialNum: "222223174",
     last_name: "Eide_3",
-    oct05_23: "50"
-  }  
-];
+    oct02_18: "0",
+    nov02_18: "0",
+    dec04_18: "0",
+    jan01_19: "0",
+    feb01_19: "0",
+    mar03_19: "0",
+    apr01_19: "0",
+    may06_19: "0",
+    jun04_19: "0",
+    jun30_19: "0",
+    aug06_19: "0",
+    sep02_19: "0",
+    oct11_19: "0",
+    dec03_19: "0",
+    jan03_20: "0",
+    apr05_20: "0",
+    jun10_20: "0",
+    aug10_20: "0",
+    oct07_20: "0",
+    dec10_20: "0",
+    feb19_21: "0",
+    apr05_21: "0",
+    jun04_21: "0",
+    aug04_21: "0",
+    oct03_21: "0",
+    dec03_21: "0",
+    feb04_22: "0",
+    apr07_22: "0",
+    jun07_22: "0",
+    aug05_22: "0",
+    oct07_22: "0",
+    dec09_22: "0",
+    feb04_23: "0",
+    apr06_23: "0",
+    jun05_23: "0",
+    aug02_23: "0",
+    oct05_23: "50",
+    dec04_23: "50"
+  }
+]
