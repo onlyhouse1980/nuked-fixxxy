@@ -1648,8 +1648,10 @@ export default function Over() {
 
   function december2023() {
     let a = data.dec04_23 - data.oct04_23
+    let b = 6000
+    let overlimit = b - a 
 
-    if (a > 6000) {
+    if (overlimit < 0) {
       return (
         <input
           style={{
@@ -1662,7 +1664,7 @@ export default function Over() {
           name="greaterThan"
           id="gTDecember2023"
           /*chech this one for error*/
-          value={"$" + (a * -1 * 0.025).toFixed(2)}
+          value={"$" + (overlimit * -1 * 0.025).toFixed(2)}
           label="results"
           readOnly
         ></input>
@@ -1743,7 +1745,10 @@ export default function Over() {
                 <td className={styles.newFee}>Billing Period</td>
                 <td className={styles.newFee}>Gal Used</td>
                 <td className={styles.newFee}>
-                  Overlimit<br></br>Charge
+                  Gal Over
+                </td>
+                <td className={styles.newFee}>
+                  Fee
                 </td>
               </tr>
             </thead>
@@ -1776,6 +1781,21 @@ export default function Over() {
                     name="utilized"
                     id="October2023"
                     value={data.dec04_23 - data.oct05_23}
+                    label="answers"
+                    readOnly
+                  ></input>
+                </td>
+                <td className={styles.td3}>
+                  <input
+                    style={{
+                      backgroundColor: bgColors.Blue,
+                      margin: "0 10px 0 10px",
+                      width: "75px",
+                    }}
+                    type="text"
+                    name="utilized"
+                    id="October2023"
+                    value={6000 - (data.dec04_23 - data.oct05_23)}
                     label="answers"
                     readOnly
                   ></input>
