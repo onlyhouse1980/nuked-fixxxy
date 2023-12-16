@@ -1737,7 +1737,7 @@ export default function Over() {
           </table>
 
           {/* START MONTHLY RATES */}
-          <table>
+          <table className={styles.monthlyRate}>
             <thead>
               <tr>
                 <td className={styles.td3}>
@@ -1806,6 +1806,7 @@ export default function Over() {
                 </td>
                 <td className={styles.td3}>{december2023()}</td>
               </tr>
+              <br></br>
             </tbody>  
           </table>
 

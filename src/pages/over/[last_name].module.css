@@ -175,3 +175,9 @@
   vertical-align: middle!important;
   display: contents;
 }
+
+.monthlyRate {
+  border-bottom: 2px solid black;
+  
+  margin-bottom: 7px;
+}
