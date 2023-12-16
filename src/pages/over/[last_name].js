@@ -1784,7 +1784,7 @@ export default function Over() {
                     type="text"
                     name="utilized"
                     id="October2023"
-                    value={data.dec04_23 - data.oct05_23}
+                    value={(data.dec04_23 - data.oct05_23)}
                     label="answers"
                     readOnly
                   ></input>
@@ -1799,7 +1799,7 @@ export default function Over() {
                     type="text"
                     name="utilized"
                     id="October2023"
-                    value={6000 - (data.dec04_23 - data.oct05_23)}
+                    value={(6000 - (data.dec04_23 - data.oct05_23))*-1}
                     label="answers"
                     readOnly
                   ></input>
