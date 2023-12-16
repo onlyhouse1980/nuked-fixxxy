@@ -1748,7 +1748,7 @@ export default function Over() {
                   Gal Over
                 </td>
                 <td className={styles.newFee}>
-                  Fee
+                  Charge/Fee
                 </td>
               </tr>
             </thead>
