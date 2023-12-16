@@ -1646,12 +1646,16 @@ export default function Over() {
     }
   }
 
+  
   function december2023() {
-    let a = data.dec04_23 - data.oct04_23
-    let b = 6000
-    let overlimit = b - a 
+    let a = data.dec04_23 
+    let b = data.oct05_23
+    let c = a - b
+    let overuse = 6000 - c 
+    
 
-    if (overlimit < 0) {
+
+    if (overuse < 0) {
       return (
         <input
           style={{
@@ -1664,7 +1668,7 @@ export default function Over() {
           name="greaterThan"
           id="gTDecember2023"
           /*chech this one for error*/
-          value={"$" + (overlimit * -1 * 0.025).toFixed(2)}
+          value={"$" + (c * 0.025).toFixed(2)}
           label="results"
           readOnly
         ></input>
