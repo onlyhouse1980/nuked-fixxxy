@@ -1651,11 +1651,11 @@ export default function Over() {
     let a = data.dec04_23 
     let b = data.oct05_23
     let c = a - b
-    let overuse = 6000 - c 
+     
     
 
 
-    if (overuse < 0) {
+    if (c > 6000) {
       return (
         <input
           style={{
@@ -1668,7 +1668,7 @@ export default function Over() {
           name="greaterThan"
           id="gTDecember2023"
           /*chech this one for error*/
-          value={"$" + (c * 0.025).toFixed(2)}
+          value={"$" + ((c - 6000) * 0.025).toFixed(2)}
           label="results"
           readOnly
         ></input>
