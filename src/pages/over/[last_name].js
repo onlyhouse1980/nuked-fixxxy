@@ -1646,6 +1646,48 @@ export default function Over() {
     }
   }
 
+  function december2023() {
+    let a = data.dec04_23 - data.oct04_23
+
+    if (a > 6000) {
+      return (
+        <input
+          style={{
+            backgroundColor: bgColors.Blue,
+            margin: "0 10px 0 10px",
+            width: "75px",
+          }}
+          type="text"
+          display="none"
+          name="greaterThan"
+          id="gTDecember2023"
+          /*chech this one for error*/
+          value={"$" + (a * -1 * 0.025).toFixed(2)}
+          label="results"
+          readOnly
+        ></input>
+      );
+      } else {
+        return (
+          <input
+            style={{
+              backgroundColor: bgColors.Blue,
+              margin: "0 10px 0 10px",
+              width: "75px",
+            }}
+            type="text"
+            display="none"
+            name="greaterThan"
+            id="gTDecember2023"
+            /*chech this one for error*/
+            value={0}
+            label="results"
+            readOnly
+          ></input>
+        );
+    }
+  }
+
   return (
     // END OF FUNCTIONS BEGINNING OF PAGE DESIGN
 
@@ -1688,6 +1730,61 @@ export default function Over() {
             </thead>
           </table>
 
+          {/* START MONTHLY RATES */}
+          <table>
+            <thead>
+              <tr>
+                <td className={styles.td3}>
+                  <p className={styles.newFee}>Bi Monthly Rates</p>
+                </td>
+              </tr>
+
+              <tr className={styles.th2}>
+                <td className={styles.newFee}>Billing Period</td>
+                <td className={styles.newFee}>Gal Used</td>
+                <td className={styles.newFee}>
+                  Overlimit<br></br>Charge
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              
+              {/* OCTOBER 2023 */}
+              <tr>
+                <td className={styles.td3}>
+                  <p className={styles.p}>Oct 2023</p>
+                  <p
+                    style={{
+                      fontSize: 9,
+                      width: "75px",
+                      color: "white",
+                      margin: "-20px 0 0 10px",
+                      padding: 0,
+                    }}
+                  >
+                    (10/5/23) - (12/4/23)
+                  </p>
+                </td>
+                <td className={styles.td3}>
+                  <input
+                    style={{
+                      backgroundColor: bgColors.Blue,
+                      margin: "0 10px 0 10px",
+                      width: "75px",
+                    }}
+                    type="text"
+                    name="utilized"
+                    id="October2023"
+                    value={data.dec04_23 - data.oct05_23}
+                    label="answers"
+                    readOnly
+                  ></input>
+                </td>
+                <td className={styles.td3}>{december2023()}</td>
+              </tr>
+            </tbody>  
+          </table>
+
           {/* START NEW FEE TABLE HEADER */}
           <table>
             <thead>
@@ -1705,6 +1802,9 @@ export default function Over() {
                 </td>
               </tr>
             </thead>
+
+            
+
 
             {/* START NEW FEE DATA */}
             <tbody>
