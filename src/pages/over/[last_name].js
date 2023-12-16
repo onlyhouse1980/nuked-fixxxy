@@ -1815,7 +1815,7 @@ export default function Over() {
             <thead>
               <tr>
                 <td className={styles.td3}>
-                  <p className={styles.newFee}>New Fee Structure</p>
+                  <p className={styles.newFee}>Special Fee Structure</p>
                 </td>
               </tr>
 
