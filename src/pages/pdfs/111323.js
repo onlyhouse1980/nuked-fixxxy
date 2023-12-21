@@ -6,7 +6,7 @@ export const App = () => {
   );
   return (
     <div className="container">
-      <h5>New President Meeting Minutes</h5>
+      <h5>2023 Brd. Appt. Minutes</h5>
       <iframe
         className={styles.iframe}
         src={embedURL}

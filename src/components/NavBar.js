@@ -224,7 +224,7 @@ class Navbar extends React.Component {
                         href="/pdfs/111323"
                         onClick={this.toggleCollapse}
                       >
-                        New President
+                        2023 Brd. Appt.
                       </Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem>
