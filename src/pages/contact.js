@@ -1,7 +1,7 @@
 import styles from '../styles/Contact.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import profilePic from '../../public/Images/WebPFiles/fullsmall.webp'
+
 
 
 
@@ -15,31 +15,32 @@ const div = {
   }
 }
 export default function Contact() {
-  const address = `Orchard Beach
-Grapeview, WA 98546`;
+  
 const email = `orchardwater@yahoo.com`;
 
   return(
   <div>
-    <div className={styles.content}>
-    <div className={styles.blackbox}>
-    <div><h2 className={styles.headliner}>Orchard Beach Established 1954</h2></div>
-    <div ><Image className={styles.mapImage}   
-      src={profilePic}
+    
+    <container className={styles.content}>
+    <h2 className={styles.h2Title}>Orchard Beach Established 1954</h2>
+    <Image className={styles.mapImage}   
+      src="/Images/WebPFiles/fullsmall.webp"
       alt="Schematic map of Orchard Beach" 
-      fill
+      width={900}
+      height={1000}
       priority
       />
-      </div>
-      <div className={styles.bottomliner}>
+      
+      <div className={styles.info}>
       <div ><h3>OBCG</h3></div>
       <div >
-      {address} <br />
+      Orchard Beach
+Grapeview, WA 98546 <br />
       Email: 
       
       <button label="Write me an E-Mail"><a href = "${email}?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></div>
       </div>
-    </div>
-    </div>
+    </container>
+    
   </div>
 )}
