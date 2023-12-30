@@ -27,7 +27,7 @@
 }
 .mapImage {
   position: relative !important;
-  object-fit:contain!important:
+  object-fit:contain!important;
   width: auto !important;
   height: auto !important;
 }
