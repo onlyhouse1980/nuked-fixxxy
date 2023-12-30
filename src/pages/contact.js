@@ -29,8 +29,8 @@ const email = `orchardwater@yahoo.com`;
           <Image className={styles.mapImage}   
             src={profilePic}
             alt="Schematic map of Orchard Beach"
-            width={240}
-            height={300}
+            width={480}
+            height={600}
             priority
           />
         </div>
