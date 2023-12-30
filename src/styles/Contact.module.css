@@ -28,8 +28,8 @@
 .mapImage {
   position: relative !important;
 
-  width: 100% !important;
-  height: auto !important;
+  width: auto !important;
+  height: 100% !important;
 }
 .bottomliner {
   position: absolute !important;
