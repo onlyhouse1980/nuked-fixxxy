@@ -19,6 +19,7 @@ export default function Contact() {
 const email = `orchardwater@yahoo.com`;
 
   return(
+<<<<<<< HEAD
   <div>
     
     <container className={styles.content}>
@@ -43,4 +44,32 @@ Grapeview, WA 98546 <br />
     </container>
     
   </div>
+=======
+    <div className={styles.content}>
+      <div className={styles.blackbox}>
+        <div>
+          <h2 className={styles.headliner}>Orchard Beach Established 1954</h2>
+        </div>
+        <div>
+          <Image className={styles.mapImage}   
+            src={profilePic}
+            alt="Schematic map of Orchard Beach"
+            width={480}
+            height={600}
+            priority
+          />
+        </div>
+        <div className={styles.bottomliner}>
+          <div>
+            <h3>OBCG</h3>
+          </div>
+          <div>
+            {address} <br />
+            Email: 
+            <button label="Write me an E-Mail"><a href = "${email}?&subject=OBCG%20Member%20Email">orchardwater@yahoo.com</a></button></div>
+          </div>
+        </div>
+      </div>
+    
+>>>>>>> 593b98636ef7caa324e1b011fa79edee645b9792
 )}
