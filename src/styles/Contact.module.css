@@ -16,7 +16,7 @@
 
 
 .h2Title {
-  margin-left:40px;
+  margin-left:auto;
   font-weight: 700;
 }
 
@@ -35,6 +35,7 @@
 
 .body {
   background-color: transparent;
+  width:100vw;
 }
 
 /* .content {
@@ -54,4 +55,7 @@
   margin-bottom: 100px;
 }
 
-
+.mapImage {
+  width: 100%;
+  height: auto;
+}
