@@ -8,3 +8,7 @@ yarn-error.log
 .next/server
 .yarnrc.yml
 .DS_Store
+.pnp.cjs
+.pnp.loader.mjs
+yarn.lock
+yarn.lock
