@@ -16,12 +16,12 @@
 
 
 .h2Title {
-  margin-left:auto;
+  margin-left: 1em;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .content {
-  font-weight: 900;
   position: flex;
   display: inline-block;
   background-color: rgba(109, 105, 105, 0.749);
@@ -58,4 +58,18 @@
 .mapImage {
   width: 100%;
   height: auto;
+  margin: auto;
+  margin-top: -100px;
 }
+
+@media only screen and (min-width: 768px) {
+.mapImage {
+  position: relative;
+  display: block;
+ 
+  width: 70%;
+  height: auto;
+  transform: rotate(70deg);
+  margin: auto;
+  margin-top: -390px;
+}}
