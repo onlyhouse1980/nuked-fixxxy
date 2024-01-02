@@ -47,12 +47,8 @@
 } */
 
 .info {
-  position: relative;
-  object-fit:contain!important;
-  width: auto !important;
-  height: auto !important;
+  
   margin-left: 30px;
-  margin-bottom: 100px;
   
 }
 
