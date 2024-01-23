@@ -51,21 +51,21 @@ export default function Person() {
     Answer.value = info1 - info2;
   }
 
-  function usedSofar(props) {
+ /*  function usedSofar(props) {
     let info1 = parseInt(document.getElementById("info1").value);
     let info2 = parseInt(document.getElementById("info2").value);
     var Answer = document.getElementById("thisYear");
     Answer.value = Number(info1 - info2) + Number(Answer.value);
-  }
+  } */
 
-  function moreInfo(props) {
+ /*  function moreInfo(props) {
     let info1 = parseInt(document.getElementById("info1").value);
     let info2 = parseInt(document.getElementById("info2").value);
     let info3 = 48000;
     var Answer = document.getElementById("Percent");
 
     Answer.value = (((info1 - info2) / info3) * 100).toFixed(0) + "%";
-  }
+  } */
 
   return (
     <>
@@ -113,8 +113,8 @@ export default function Person() {
                   gradient="blue"
                   onClick={() => {
                     sayHi();
-                    usedSofar();
-                    moreInfo();
+                    // usedSofar();
+                    // moreInfo();
                   }}
                 >
                   Calculate
@@ -124,7 +124,7 @@ export default function Person() {
             <tr>
               <td className={styles.td3}>
                 <p className={styles.p}></p>
-                <p className={styles.p}>Last reading by Vendor - October 05, 2023</p>
+                <p className={styles.p}>Last reading by Vendor - December 04, 2023</p>
               </td>
               <td className={styles.td3}>
                 <input
@@ -134,7 +134,7 @@ export default function Person() {
                   type="text"
                   id="info2"
                   label="August 02, 2022"
-                  value={data.oct05_23}
+                  value={data.dec04_23}
                   readOnly
                 />
               </td>
@@ -142,7 +142,7 @@ export default function Person() {
             <tr>
               <td className={styles.td3}>
                 <p className={styles.p}>
-                  Gallons used since October 05, 2023.
+                  Gallons used since December 04, 2023.
                 </p>
               </td>
               <td className={styles.td3}>
