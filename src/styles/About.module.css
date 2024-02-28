@@ -9,3 +9,8 @@
 .content img {
     width: 100%!important;
 }
+
+.iframe {
+    display: block;
+    margin: 0 auto;
+}

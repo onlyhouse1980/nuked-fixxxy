@@ -42,6 +42,13 @@ import { useCallback } from 'react';
         video_url:
           'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1682981538/obcg_4th_1_fhgyie.mp4#t=0.001',
       },
+      {
+        id: 6,
+        title: '2023 Parade',
+        url: 'parades/parade6',
+        video_url:
+          'https://res.cloudinary.com/dfnaxhqqq/video/upload/v1709113418/2023_Parade_fqpwlo.mp4#t=0.001',
+      },
     ]
     const Parades = () => {
 
