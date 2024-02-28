@@ -170,7 +170,44 @@ class Navbar extends React.Component {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
+              <MDBNavItem>
+                <MDBDropdown>
+                  <MDBDropdownToggle nav>
+                    <motion.div whileHover={{ scale: 1.15 }}>
+                      <span className="mr-2">Consumer Confidence</span>
+                      <span className={styles.ddf}>◿</span>
+                    </motion.div>
+                  </MDBDropdownToggle>
 
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem>
+                      <Link
+                        href="/pdfs/consumer2023"
+                        onClick={this.toggleCollapse}
+                      >
+                         CCR 2022
+                      </Link>
+                    </MDBDropdownItem>
+
+                    <MDBDropdownItem>
+                      <Link
+                        href="/pdfs/consumer2022"
+                        onClick={this.toggleCollapse}
+                      >
+                        CCR 2021
+                      </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>
+                      <Link
+                        href="/pdfs/consumer2021"
+                        onClick={this.toggleCollapse}
+                      >
+                        CCR 2020
+                      </Link>
+                    </MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
                   <MDBDropdownToggle nav>
