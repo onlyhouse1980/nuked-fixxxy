@@ -87,7 +87,7 @@ class Navbar extends React.Component {
                     className="nav-link"
                     onClick={this.toggleCollapse}
                   >
-                    Articles of Incorporation
+                    Articles of Inc
                   </Link>
                 </MDBNavItem>
               </motion.div>
