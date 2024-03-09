@@ -182,6 +182,14 @@ class Navbar extends React.Component {
                   <MDBDropdownMenu>
                     <MDBDropdownItem>
                       <Link
+                        href="/pdfs/consumer2024"
+                        onClick={this.toggleCollapse}
+                      >
+                         CCR 2023
+                      </Link>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem>
+                      <Link
                         href="/pdfs/consumer2023"
                         onClick={this.toggleCollapse}
                       >
