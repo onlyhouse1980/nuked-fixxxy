@@ -1694,7 +1694,7 @@ export default function Over() {
     }
   }
   function February2024() {
-    let a = data.feb0_24 
+    let a = data.feb02_24 
     let b = data.dec04_23
     let c = a - b
      
@@ -1827,7 +1827,7 @@ export default function Over() {
                     }}
                     type="text"
                     name="utilized"
-                    id="October2023"
+                    id="December2023"
                     value={(data.feb02_24 - data.dec04_23 )}
                     label="answers"
                     readOnly
