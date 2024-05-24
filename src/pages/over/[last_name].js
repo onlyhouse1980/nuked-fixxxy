@@ -1738,53 +1738,6 @@ export default function Over() {
           ></input>
         );
     }
-
-    function April2024() {
-      let a = data.apr01_24 
-      let b = data.feb02_24
-      let c = a - b
-       
-      
-  
-  
-      if (c > 6000) {
-        return (
-          <input
-            style={{
-              backgroundColor: bgColors.Blue,
-              margin: "0 10px 0 10px",
-              width: "75px",
-            }}
-            type="text"
-            display="none"
-            name="greaterThan"
-            id="gTApril2024"
-            /*chech this one for error*/
-            value={"$" + ((c - 6000) * 0.025).toFixed(2)}
-            label="results"
-            readOnly
-          ></input>
-        );
-        } else {
-          return (
-            <input
-              style={{
-                backgroundColor: bgColors.Blue,
-                margin: "0 10px 0 10px",
-                width: "75px",
-              }}
-              type="text"
-              display="none"
-              name="greaterThan"
-              id="gtApril2024"
-              /*chech this one for error*/
-              value={0}
-              label="results"
-              readOnly
-            ></input>
-          );
-      }
-    }
   }
   return (
     // END OF FUNCTIONS BEGINNING OF PAGE DESIGN
@@ -1849,56 +1802,6 @@ export default function Over() {
               </tr>
             </thead>
             <tbody>
-
-              {/* February 2024 */}
-              <tr>
-                <td className={styles.td3}>
-                  <p className={styles.p}>Feb 2024</p>
-                  <p
-                    style={{
-                      fontSize: 9,
-                      width: "75px",
-                      color: "white",
-                      margin: "-20px 0 0 10px",
-                      padding: 0,
-                    }}
-                  >
-                    (2/2/24) - (4/1/24)
-                  </p>
-                </td>
-                <td className={styles.td3}>
-                  <input
-                    style={{
-                      backgroundColor: bgColors.Blue,
-                      margin: "0 10px 0 10px",
-                      width: "75px",
-                    }}
-                    type="text"
-                    name="utilized"
-                    id="April2024"
-                    value={(data.apr01_24 - data.feb02_24 )}
-                    label="answers"
-                    readOnly
-                  ></input>
-                </td>
-                <td className={styles.td3}>
-                  <input
-                    style={{
-                      backgroundColor: bgColors.Blue,
-                      margin: "0 10px 0 10px",
-                      width: "75px",
-                    }}
-                    type="text"
-                    name="utilized"
-                    id="February2024"
-                    value={(6000 - (data.apr01_24 - data.feb02_24))*-1}
-                    label="answers"
-                    readOnly
-                  ></input>
-                </td>
-                <td className={styles.td3}>{April2024()}</td>
-              </tr>
-
               {/* December 2023 */}
               <tr>
                 <td className={styles.td3}>
