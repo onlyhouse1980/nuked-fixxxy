@@ -1802,6 +1802,56 @@ export default function Over() {
               </tr>
             </thead>
             <tbody>
+
+              {/* February 2024 */}
+              <tr>
+                <td className={styles.td3}>
+                  <p className={styles.p}>Feb 2024</p>
+                  <p
+                    style={{
+                      fontSize: 9,
+                      width: "75px",
+                      color: "white",
+                      margin: "-20px 0 0 10px",
+                      padding: 0,
+                    }}
+                  >
+                    (2/2/24) - (4/1/24)
+                  </p>
+                </td>
+                <td className={styles.td3}>
+                  <input
+                    style={{
+                      backgroundColor: bgColors.Blue,
+                      margin: "0 10px 0 10px",
+                      width: "75px",
+                    }}
+                    type="text"
+                    name="utilized"
+                    id="December2023"
+                    value={(data.apr01_24 - data.feb02_24 )}
+                    label="answers"
+                    readOnly
+                  ></input>
+                </td>
+                <td className={styles.td3}>
+                  <input
+                    style={{
+                      backgroundColor: bgColors.Blue,
+                      margin: "0 10px 0 10px",
+                      width: "75px",
+                    }}
+                    type="text"
+                    name="utilized"
+                    id="December2023"
+                    value={(6000 - (data.feb02_24 - data.dec04_23))*-1}
+                    label="answers"
+                    readOnly
+                  ></input>
+                </td>
+                <td className={styles.td3}>{February2024()}</td>
+              </tr>
+
               {/* December 2023 */}
               <tr>
                 <td className={styles.td3}>
