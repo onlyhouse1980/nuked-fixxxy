@@ -1,0 +1,164 @@
+{
+    "title": "spreadsheet",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "apr01_19": {
+            "bsonType": "string"
+        },
+        "apr01_24": {
+            "bsonType": "string"
+        },
+        "apr05_20": {
+            "bsonType": "string"
+        },
+        "apr05_21": {
+            "bsonType": "string"
+        },
+        "apr06_23": {
+            "bsonType": "string"
+        },
+        "apr07_22": {
+            "bsonType": "string"
+        },
+        "aug01_24": {
+            "bsonType": "string"
+        },
+        "aug02_23": {
+            "bsonType": "string"
+        },
+        "aug04_21": {
+            "bsonType": "string"
+        },
+        "aug05_22": {
+            "bsonType": "string"
+        },
+        "aug06_19": {
+            "bsonType": "string"
+        },
+        "aug10_20": {
+            "bsonType": "string"
+        },
+        "dec01_24": {
+            "bsonType": "string"
+        },
+        "dec03_19": {
+            "bsonType": "string"
+        },
+        "dec03_21": {
+            "bsonType": "string"
+        },
+        "dec04_18": {
+            "bsonType": "string"
+        },
+        "dec04_23": {
+            "bsonType": "string"
+        },
+        "dec04_24": {
+            "bsonType": "string"
+        },
+        "dec09_22": {
+            "bsonType": "string"
+        },
+        "dec10_20": {
+            "bsonType": "string"
+        },
+        "feb01_19": {
+            "bsonType": "string"
+        },
+        "feb02_24": {
+            "bsonType": "string"
+        },
+        "feb04_22": {
+            "bsonType": "string"
+        },
+        "feb04_23": {
+            "bsonType": "string"
+        },
+        "feb19_21": {
+            "bsonType": "string"
+        },
+        "fees": {
+            "bsonType": "string"
+        },
+        "jan01_19": {
+            "bsonType": "string"
+        },
+        "jan03_20": {
+            "bsonType": "string"
+        },
+        "jun01_24": {
+            "bsonType": "string"
+        },
+        "jun04_19": {
+            "bsonType": "string"
+        },
+        "jun04_21": {
+            "bsonType": "string"
+        },
+        "jun05_23": {
+            "bsonType": "string"
+        },
+        "jun07_22": {
+            "bsonType": "string"
+        },
+        "jun10_20": {
+            "bsonType": "string"
+        },
+        "jun30_19": {
+            "bsonType": "string"
+        },
+        "last_name": {
+            "bsonType": "string"
+        },
+        "mar03_19": {
+            "bsonType": "string"
+        },
+        "may06_19": {
+            "bsonType": "string"
+        },
+        "meter_serialNum": {
+            "bsonType": "string"
+        },
+        "nov01_24": {
+            "bsonType": "string"
+        },
+        "nov02_18": {
+            "bsonType": "string"
+        },
+        "oct01_24": {
+            "bsonType": "string"
+        },
+        "oct02_18": {
+            "bsonType": "string"
+        },
+        "oct03_21": {
+            "bsonType": "string"
+        },
+        "oct05_23": {
+            "bsonType": "string"
+        },
+        "oct07_20": {
+            "bsonType": "string"
+        },
+        "oct07_22": {
+            "bsonType": "string"
+        },
+        "oct11_19": {
+            "bsonType": "string"
+        },
+        "sep01_24": {
+            "bsonType": "string"
+        },
+        "sep02_19": {
+            "bsonType": "string"
+        },
+        "updatedAt": {
+            "bsonType": "date"
+        }
+    },
+    "required": [
+        "_id"
+    ]
+}
