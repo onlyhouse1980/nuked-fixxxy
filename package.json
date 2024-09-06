@@ -10,14 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@babel/core": "^7.22.17",
+    "@babel/core": "^7.23.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@next/bundle-analyzer": "^12.2.2",
     "@types/nodemailer": "^6.4.8",
     "animo-core": "^1.0.8",
     "ansi-regex": "^6.0.1",
-    "axios": "^1.4.0",
+    "axios": "^1.6.8",
     "bootstrap-css-only": "^4.4.1",
     "core-js": "^3.26.0",
     "cssnano": "^5.1.12",
